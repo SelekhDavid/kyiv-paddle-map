@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-08-08T21:30:00Z",
+  "methodUk": "Ручний name-match + nearest spot by haversine to municipal-beaches.geojson. Оцінка: strong / partial / weak / none.",
+  "matches": [
+    {
+      "plesoName": "Тельбін",
+      "spotId": "telbin",
+      "confidence": "strong",
+      "distanceKm": 0.61,
+      "notesUk": "Прямий match за назвою водойми й координатами."
+    },
+    {
+      "plesoName": "Центральний",
+      "spotId": "trukhaniv",
+      "confidence": "strong",
+      "distanceKm": 0.24,
+      "notesUk": "Офіційна назва «Центральний» на Трухановому; медіа часто пишуть «Центральний (Труханів)»."
+    },
+    {
+      "plesoName": "Венеція",
+      "spotId": "hydropark",
+      "confidence": "strong",
+      "distanceKm": 0.77,
+      "notesUk": "Spot уже названий «Гідропарк / Венеція»."
+    },
+    {
+      "plesoName": "Дитячий",
+      "spotId": "hydropark",
+      "confidence": "strong",
+      "distanceKm": 0.69,
+      "notesUk": "Той самий гідропарковий кластер; окремого spot немає."
+    },
+    {
+      "plesoName": "Молодіжний",
+      "spotId": "hydropark",
+      "confidence": "strong",
+      "distanceKm": 1.08,
+      "notesUk": "Долобецький / Десенка в межах гідропаркового комплексу."
+    },
+    {
+      "plesoName": "Передмістна Слобідка",
+      "spotId": "hydropark",
+      "confidence": "strong",
+      "distanceKm": 0.74,
+      "notesUk": "Венеціанський острів / метроміст; кластер hydropark."
+    },
+    {
+      "plesoName": "Золотий",
+      "spotId": "hydropark",
+      "confidence": "partial",
+      "distanceKm": 1.38,
+      "notesUk": "Гідропарковий кластер, але далі на південь острова; також ~2.1 км до telbin."
+    },
+    {
+      "plesoName": "Веселка",
+      "spotId": "hydropark",
+      "confidence": "partial",
+      "distanceKm": 1.38,
+      "notesUk": "Русанівська протока / Микільська Слобідка — поруч з hydropark, окремого spot немає."
+    },
+    {
+      "plesoName": "Пуща-Водиця",
+      "spotId": "blakytne",
+      "confidence": "partial",
+      "distanceKm": 0.71,
+      "notesUk": "Ставок Гаращиха/Горащиха ≠ Блакитні озера, але той самий район Пущі-Водиці. Альтернатива: redkyne (1.53 км)."
+    },
+    {
+      "plesoName": "Острів Оболонський",
+      "spotId": "sobachne",
+      "confidence": "weak",
+      "distanceKm": 1.8,
+      "notesUk": "Затока Наталка — окрема локація; Собаче озеро поруч, але не тотожне. Краще додати окремий spot natalka/obolonskyi-island."
+    },
+    {
+      "plesoName": "Троєщина",
+      "spotId": "sonyachne",
+      "confidence": "weak",
+      "distanceKm": 2.46,
+      "notesUk": "Пляж на затоці Десенки ≠ Сонячне озеро. Name overlap only («Троєщина»). Ближче логічно до desna-mouth, але дескриптор spot ширший."
+    },
+    {
+      "plesoName": "Галерний",
+      "spotId": "koncha-zaspa",
+      "confidence": "weak",
+      "distanceKm": null,
+      "notesUk": "Name overlap з «затока Галерна» у spot koncha-zaspa, але GIS координати Галерного ≈50.370,30.551 (Корчувате), тоді як spot koncha-zaspa ≈50.302,30.575 (~8 км південніше). Найближчий існуючий spot за GIS — radunka (0.67 км) — name mismatch."
+    },
+    {
+      "plesoName": "Райдуга",
+      "spotId": null,
+      "confidence": "none",
+      "distanceKm": null,
+      "notesUk": "Озеро Райдуга/Райдужне (Воскресенка). Не плутати з radunka (Озеро Радунка) — інші назва й координати."
+    },
+    {
+      "plesoName": "Вербний",
+      "spotId": null,
+      "confidence": "none",
+      "distanceKm": null,
+      "nearestExisting": { "id": "sobachne", "km": 3.37 },
+      "notesUk": "Озеро Вербне (Оболонь). Немає окремого spot; район у GIS помилково позначений як Голосіївський."
+    },
+    {
+      "plesoName": "Чорторий",
+      "spotId": null,
+      "confidence": "none",
+      "distanceKm": null,
+      "nearestExisting": { "id": "sobachne", "km": 3.59 },
+      "notesUk": "Парк «Муромець» / гирло Десни. Немає точного spot; loosely area of desna-mouth / dnipro-kyiv-reach."
+    }
+  ],
+  "spotsWithoutMunicipalBeach": [
+    "vyrlytsia",
+    "sonyachne (lake ≠ beach Троєщина)",
+    "blakytne (near Pushcha beach, not same water)",
+    "redkyne",
+    "koncha-zaspa (name collision with Галерний)",
+    "yazinkove",
+    "berkovetske",
+    "radunka (≠ Райдуга)",
+    "typete",
+    "nedozadne",
+    "sobachne",
+    "almazne",
+    "basaika",
+    "zhukiv-island",
+    "all oblast reservoirs/quarries/rivers outside city municipal list"
+  ],
+  "suggestedNewSpotsOrLinks": [
+    { "id": "pleso-raiduha", "nameUk": "Пляж Райдуга / оз. Райдужне" },
+    { "id": "pleso-verbne", "nameUk": "Пляж Вербний / оз. Вербне" },
+    { "id": "pleso-natalka", "nameUk": "Острів Оболонський / затока Наталка" },
+    { "id": "pleso-chortoryi", "nameUk": "Пляж Чорторий / Муромець" },
+    { "id": "pleso-troieshchyna-desenka", "nameUk": "Пляж Троєщина (Десенка)" },
+    { "id": "pleso-galernyi", "nameUk": "Пляж Галерний (Корчувате)", "note": "розвести з koncha-zaspa" }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "scrapedAt": "2026-08-08T21:30:00Z",
+  "seasonYear": 2026,
+  "officialSeasonOpen": false,
+  "officialSeasonNoteUk": "Через воєнний стан офіційний пляжний сезон у Києві не відкривали (третій рік поспіль). КП «Плесо» обслуговує 15 муніципальних пляжів; рішення про купання — на власний ризик, з урахуванням тривог і відсутності капітальних укриттів на пляжах.",
+  "sources": [
+    {
+      "id": "cdc-2026-07-13",
+      "authority": "ДУ «Київський міський ЦКПХ МОЗ»",
+      "samplingDates": ["2026-07-13", "2026-07-14"],
+      "publishedAt": "2026-07-17",
+      "url": "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+      "granularity": "named_list",
+      "noteUk": "Найдетальніший публічний зріз з переліком локацій. Окремо фіксує хімічні відхилення на 2 водоймах."
+    },
+    {
+      "id": "pleso-2026-07-24",
+      "authority": "КП «Плесо»",
+      "samplingDates": null,
+      "publishedAt": "2026-07-24",
+      "url": "https://pleso.kyiv.ua/2026/07/24/%d0%b2%d0%be%d0%b4%d0%b0-%d0%bd%d0%b0-%d0%bc%d1%83%d0%bd%d1%96%d1%86%d0%b8%d0%bf%d0%b0%d0%bb%d1%8c%d0%bd%d0%b8%d1%85-%d0%bf%d0%bb%d1%8f%d0%b6%d0%b0%d1%85-%d0%ba%d0%b8%d1%94%d0%b2%d0%b0-%d0%b2%d1%96/",
+      "granularity": "aggregate_all_ok_micro",
+      "noteUk": "Усі санітарно-мікробіологічні показники в нормі; без per-beach таблиці."
+    },
+    {
+      "id": "pleso-via-kyivcity-2026-08-04",
+      "authority": "КП «Плесо» (через портал Києва)",
+      "samplingDates": ["2026-08-04"],
+      "publishedAt": "2026-08-07",
+      "url": "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+      "granularity": "aggregate_all_ok_micro",
+      "noteUk": "Найновіше офіційне повідомлення на дату зрізу: плановий відбір 4 серпня; усі мікробіологічні показники відповідають нормам. Per-beach списку немає."
+    },
+    {
+      "id": "gis-municipal-beaches",
+      "authority": "ІАС «Майно» / Портал даних Києва (дані КП «Плесо»)",
+      "samplingDates": null,
+      "publishedAt": null,
+      "url": "https://data.kyivcity.gov.ua/dataset/perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+      "granularity": "per_beach_boolean",
+      "noteUk": "Поле beachstatus («Чи можна купатись») — адмін/каталоговий прапор, не замінює лабораторні звіти. last_editeddate у більшості обʼєктів ~2025-06-20."
+    }
+  ],
+  "cdcNamedStatus_2026_07_13": {
+    "ok": [
+      "Центральний",
+      "Передмісна слобідка",
+      "Молодіжний",
+      "Золотий",
+      "Венеція",
+      "Дитячий",
+      "Веселка",
+      "Галерний",
+      "Чорторий",
+      "Троєщина (р. Десенка)",
+      "Тельбін",
+      "затока Наталка (Острів Оболонський)",
+      "Райдужне / Райдуга (Радуга)"
+    ],
+    "deviation_chemical": [
+      {
+        "name": "ставок Гаращиха (Пуща-Водиця)",
+        "gisName": "Пуща-Водиця",
+        "gisWaterobject": "ставок Горащиха на р. Котурка у Пущі-Водиці (8 лінія)",
+        "status": "exceedance_sanitary_chemical"
+      },
+      {
+        "name": "озеро Вербне",
+        "gisName": "Вербний",
+        "gisWaterobject": "озеро Вербне",
+        "status": "exceedance_sanitary_chemical"
+      }
+    ],
+    "counts": { "ok": 13, "deviation": 2, "totalReferenced": 15 }
+  },
+  "plesoLabAggregate_2026_08_04": {
+    "microbiology": "all_within_norms",
+    "chemistry": "not_stated_per_beach",
+    "counts": { "beachesCoveredClaim": 15, "namedBreakdown": false }
+  },
+  "recommendedCompositeView": {
+    "asOf": "2026-08-08",
+    "summaryUk": "Інфраструктурно всі 15 муніципальних пляжів у GIS мають beachstatus=1. Мікробіологія за Плесо (04.08.2026) — усі в нормі. Останній публічний per-beach зріз ЦКПХ (13–14.07.2026) показував хімічні відхилення на Вербному та Пущі-Водиці; щодо хімії станом на серпень окремого оновленого списку не знайдено.",
+    "trustOrder": [
+      "cdcNamedStatus_2026_07_13 (named, but older)",
+      "plesoLabAggregate_2026_08_04 (newer micro, no names)",
+      "gis beachstatus (catalog only)"
+    ]
+  }
+}

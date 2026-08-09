@@ -1,0 +1,1140 @@
+[
+  {
+    "id": "telbin",
+    "nameUk": "Озеро Тельбін",
+    "nameEn": "Lake Telbin",
+    "lat": 50.423483,
+    "lng": 30.605589,
+    "kind": "lake",
+    "region": "Kyiv city",
+    "osmHint": "Озеро Тельбін",
+    "paddleSuitability": "excellent",
+    "swimSuitability": "good",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Міська водойма — перевірте актуальні правила КП «Плесо» / районної адміністрації",
+      "labelEn": "City lake — verify current Pleaso / district rules",
+      "notesUk": "Не входить до Дніпровського каскаду. SUP-прокат історично працював тут (SUP PORT). Заборони навігації КОДА стосуються області; правила міста можуть відрізнятися і змінюватись.",
+      "sources": [
+        "https://sup-port.kyiv.ua/sup-port-telbin/",
+        "https://news.telegraf.com.ua/ukr/kiev/2025-06-10/5911585-chista-voda-ta-khoroshiy-plyazh-de-znakhoditsya-naykrashche-ozero-dlya-kupannya-v-kievi"
+      ]
+    },
+    "touristLoad": {
+      "grade": 5,
+      "labelUk": "дуже високе",
+      "basis": "official beach lists, rental listings, local guides, summer peak mentions",
+      "peakHintUk": "вихідні 11:00–18:00 — натовп на пляжі",
+      "sources": [
+        "SUP PORT Telbin",
+        "Kyiv city guide / Телеграф beach reviews"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "beach",
+      "rental_sup",
+      "showers",
+      "cafes",
+      "lifeguard_seasonal"
+    ],
+    "accessUk": "м. Лівобережна + автобус до Березняків",
+    "tipsUk": "Спокійна гладь, добре для новачків SUP. Купальний сезон залежить від офіційного відкриття пляжів.",
+    "matchedOsmId": "way/6141739",
+    "matchedOsmIds": [
+      "way/6141739"
+    ]
+  },
+  {
+    "id": "vyrlytsia",
+    "nameUk": "Озеро Вирлиця",
+    "nameEn": "Lake Vyrlytsia",
+    "lat": 50.397281,
+    "lng": 30.659807,
+    "kind": "lake",
+    "region": "Kyiv city",
+    "paddleSuitability": "good",
+    "swimSuitability": "good",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Міська водойма — місцеві правила / сезонні заборони",
+      "labelEn": "City lake — local / seasonal rules",
+      "notesUk": "Популярна «природна» водойма біля метро. Перевіряйте санітарний статус і місцеві обмеження перед виходом.",
+      "sources": [
+        "https://funtime.com.ua/nature/vyrlytsya-lake"
+      ]
+    },
+    "touristLoad": {
+      "grade": 4,
+      "labelUk": "високе",
+      "basis": "travel portals, metro proximity buzz, beach mentions",
+      "peakHintUk": "спекотні вихідні — багато купальників на південному березі",
+      "sources": [
+        "FunTime",
+        "local travel blogs"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "beach",
+      "metro_nearby"
+    ],
+    "accessUk": "м. Вирлиця",
+    "tipsUk": "Глибина значна; бережіть новачків біля глибинних ділянок.",
+    "matchedOsmId": "way/28237004",
+    "matchedOsmIds": [
+      "way/28237004"
+    ],
+    "osmHint": "Вирлиця"
+  },
+  {
+    "id": "sonyachne",
+    "nameUk": "Сонячне озеро (Позняки)",
+    "nameEn": "Sonyachne Lake",
+    "lat": 50.419459,
+    "lng": 30.63864,
+    "kind": "lake",
+    "region": "Kyiv city / Pozniaky",
+    "paddleSuitability": "good",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Міська водойма — перевірте актуальний статус",
+      "labelEn": "City lake — verify status",
+      "notesUk": "Районна водойма з коливаннями якості води рік від року.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє",
+      "basis": "local recreation mentions, lower rental density than Telbin",
+      "peakHintUk": "вечори буднів — відносно спокійно",
+      "sources": [
+        "district recreation mentions"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "beach"
+    ],
+    "accessUk": "м. Харківська / Позняки",
+    "tipsUk": "Не плутати з водоймами Троєщини; OSM — Сонячне біля Харківського масиву.",
+    "matchedOsmId": "relation/11601776",
+    "matchedOsmIds": [
+      "relation/11601776"
+    ],
+    "osmHint": "Сонячне"
+  },
+  {
+    "id": "blakytne",
+    "nameUk": "Горащиха / Блакитні (Пуща-Водиця)",
+    "nameEn": "Horashchykha (Blakytni)",
+    "lat": 50.531485,
+    "lng": 30.351401,
+    "kind": "lake",
+    "region": "Kyiv city / adjacent",
+    "matchedOsmId": "relation/1679854",
+    "matchedOsmIds": [
+      "relation/1679854",
+      "relation/9701419"
+    ],
+    "paddleSuitability": "excellent",
+    "swimSuitability": "good",
+    "restriction": {
+      "level": "restricted",
+      "labelUk": "Коцюбинська СТГ — заборона масового відпочинку на водоймах",
+      "labelEn": "Kotsyubynske STG — mass water recreation ban",
+      "notesUk": "Протокол місцевої комісії ТЕБ і НС Коцюбинської СТГ від 28.03.2025 №2: заборона масового відпочинку (купання, риболовля, водний спорт) на водоймах громади на період воєнного стану.",
+      "sources": [
+        "https://kotsyubinskarada.gov.ua/news/222029-kupatis-zaboroneno"
+      ]
+    },
+    "touristLoad": {
+      "grade": 4,
+      "labelUk": "високе (коли відкриті)",
+      "basis": "classic Kyiv picnic destination, social/travel mentions",
+      "peakHintUk": "літні вихідні — автошляхи забиті",
+      "sources": [
+        "Kyiv weekend guides"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "beach",
+      "forest"
+    ],
+    "accessUk": "Пуща-Водиця / окружна",
+    "tipsUk": "Красива вода, але військові обмеження громади мають пріоритет."
+  },
+  {
+    "id": "koncha-zaspa",
+    "nameUk": "Конча-Заспа / затока Галерна",
+    "nameEn": "Koncha-Zaspa / Galerna bay",
+    "lat": 50.3015,
+    "lng": 30.575,
+    "kind": "river_bay",
+    "region": "Kyiv city / Obukhivskyi",
+    "paddleSuitability": "excellent",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "banned_navigation",
+      "labelUk": "Заборона навігації (Дніпро / районні розпорядження)",
+      "labelEn": "Navigation ban (Dnipro / district orders)",
+      "notesUk": "Акваторія Дніпра та каскад водосховищ — сувора заборона цивільної навігації під час воєнного стану. Обухівський район також фіксував повну заборону виходу на воду для невійськових суден. SUP/каяки підпадають під засоби навігації/розваг на воді.",
+      "sources": [
+        "https://koda.gov.ua/do-uvagy-meshkancziv-kyyivskoyi-oblasti-tryvaye-zaborona-navigacziyi-na-vodojmah-kyyivshhyny/",
+        "https://www.ukr.net/news/details/kyiv/97603342.html"
+      ]
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє / маршрути каяків (до війни — вище)",
+      "basis": "pre-war kayak route popularity, current rental stations quieter due to bans",
+      "peakHintUk": "до обмежень — популярні маршрути до островів",
+      "sources": [
+        "kayak clubs",
+        "SUP rental location pages"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "nature",
+      "islands_nearby"
+    ],
+    "accessUk": "Корчувате / Конча-Заспа",
+    "tipsUk": "Маршрут історично топовий для SUP, але зараз під військовою забороною навігації."
+  },
+  {
+    "id": "hydropark",
+    "nameUk": "Гідропарк / Венеція",
+    "nameEn": "Hydropark / Venetsiia channels",
+    "lat": 50.4428,
+    "lng": 30.5785,
+    "kind": "river_channels",
+    "region": "Kyiv city",
+    "paddleSuitability": "good",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "banned_navigation",
+      "labelUk": "Дніпровська акваторія — заборона цивільної навігації",
+      "labelEn": "Dnipro waters — civilian navigation ban",
+      "notesUk": "Канали Гідропарку пов’язані з Дніпром. Не виходьте на воду без офіційного дозволу; купальні зони можуть бути закриті окремими рішеннями міста.",
+      "sources": [
+        "https://koda.gov.ua/do-uvagy-meshkancziv-kyyivskoyi-oblasti-tryvaye-zaborona-navigacziyi-na-vodojmah-kyyivshhyny/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 5,
+      "labelUk": "дуже високе (берег/пляж)",
+      "basis": "mass city recreation hub",
+      "peakHintUk": "вихідні — пік пішохідного турнавантаження",
+      "sources": [
+        "city recreation guides"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "beach",
+      "cafes",
+      "metro_nearby"
+    ],
+    "accessUk": "м. Гідропарк",
+    "tipsUk": "Берег багатолюдний; вихід на канали — під забороною навігації."
+  },
+  {
+    "id": "trukhaniv",
+    "nameUk": "Труханів острів (узбережжя)",
+    "nameEn": "Trukhaniv Island shore",
+    "lat": 50.4605,
+    "lng": 30.535,
+    "kind": "river",
+    "region": "Kyiv city",
+    "paddleSuitability": "good",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "banned_navigation",
+      "labelUk": "Дніпро — заборона цивільної навігації",
+      "labelEn": "Dnipro — civilian navigation ban",
+      "notesUk": "Купання на офіційних пляжах може регулюватись окремо від навігації. Перевіряйте статус пляжного сезону.",
+      "sources": [
+        "https://koda.gov.ua/do-uvagy-meshkancziv-kyyivskoyi-oblasti-tryvaye-zaborona-navigacziyi-na-vodojmah-kyyivshhyny/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 4,
+      "labelUk": "високе",
+      "basis": "classic city beach, bridge access",
+      "peakHintUk": "літо вихідні — високий натовп",
+      "sources": [
+        "city beach reviews"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "beach",
+      "pedestrian_bridge"
+    ],
+    "accessUk": "пішохідний міст з Подолу",
+    "tipsUk": "Супер для пляжу; SUP — ні, поки діє заборона навігації."
+  },
+  {
+    "id": "kyivske-vdskh",
+    "nameUk": "Київське водосховище",
+    "nameEn": "Kyiv Reservoir",
+    "lat": 50.978909,
+    "lng": 30.495579,
+    "kind": "reservoir",
+    "region": "Kyiv oblast",
+    "paddleSuitability": "excellent_when_allowed",
+    "swimSuitability": "variable",
+    "restriction": {
+      "level": "banned_navigation",
+      "labelUk": "Повна заборона цивільної навігації (каскад Дніпра + ОВА)",
+      "labelEn": "Full civilian navigation ban (Dnipro cascade + OVA)",
+      "notesUk": "Ключова військова/інфраструктурна зона (ГЕС, дамба). Підхід до гідроспоруд заборонений. Не виходьте на воду.",
+      "sources": [
+        "https://koda.gov.ua/do-uvagy-meshkancziv-kyyivskoyi-oblasti-tryvaye-zaborona-navigacziyi-na-vodojmah-kyyivshhyny/",
+        "https://www.izum.ua/ru/chy-mozhna-plavaty-na-lodtsi-pid-chas-viiny-ryzyky-ta-pravyla-2026/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке (цивільний трафік придушений забороною)",
+      "basis": "ban suppresses recreational traffic; historically popular shoreline",
+      "peakHintUk": "берегові зони біля Вишгорода — окремо регулюються",
+      "sources": [
+        "KODA notices",
+        "pre-war tourism"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "shore_views"
+    ],
+    "accessUk": "Вишгород / узбережжя",
+    "tipsUk": "Позначаємо як історично придатне для SUP, але зараз — заборонено.",
+    "matchedOsmId": "relation/1605938",
+    "matchedOsmIds": [
+      "relation/1605938"
+    ],
+    "osmHint": "Київське водосховище"
+  },
+  {
+    "id": "kanivske-vdskh",
+    "nameUk": "Канівське водосховище (північ)",
+    "nameEn": "Kaniv Reservoir (north)",
+    "lat": 50.067383,
+    "lng": 30.989272,
+    "kind": "reservoir",
+    "region": "Kyiv / Cherkasy oblast adjacent",
+    "paddleSuitability": "excellent_when_allowed",
+    "swimSuitability": "variable",
+    "restriction": {
+      "level": "banned_navigation",
+      "labelUk": "Каскад Дніпровських водосховищ — заборона",
+      "labelEn": "Dnipro cascade — navigation ban",
+      "notesUk": "Частина каскаду з повною забороною цивільних маломірних суден.",
+      "sources": [
+        "https://www.ukr.net/news/details/kyiv/97603342.html"
+      ]
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке під час заборони",
+      "basis": "cascade navigation ban",
+      "peakHintUk": "до війни — дачні узбережжя",
+      "sources": [
+        "district military admin notices"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "shore"
+    ],
+    "accessUk": "південь Київщини / Ржищівський напрямок",
+    "tipsUk": "Не плануйте вихід на воду.",
+    "matchedOsmId": "way/183166149",
+    "matchedOsmIds": [
+      "way/183166149",
+      "relation/3173129"
+    ],
+    "osmHint": "Канівське"
+  },
+  {
+    "id": "desna-mouth",
+    "nameUk": "Десна (гирло / лівий берег)",
+    "nameEn": "Desna mouth",
+    "lat": 50.58,
+    "lng": 30.53,
+    "kind": "river",
+    "region": "Kyiv oblast",
+    "osmHint": "Десна",
+    "paddleSuitability": "excellent_when_allowed",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "restricted",
+      "labelUk": "Зазимська громада — заборона купання в Десні",
+      "labelEn": "Zazymska hromada — Desna swimming ban",
+      "notesUk": "Зазимська громада публічно заборонила купання в Десні; є роз’яснення КОДА щодо якості води. Не каскад Дніпра, але локальна конкретика жовта.",
+      "sources": [
+        "https://zotg.gov.ua/provodymo-svoye-dozvillya-bez-desny/",
+        "https://koda.gov.ua/roz%CA%BCyasnennya-shhodo-yakosti-vody-v-richczi-desna/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє (історично)",
+      "basis": "paddling club routes, nature tourism",
+      "peakHintUk": "травень–вересень — класичний сезон сплавів (коли дозволено)",
+      "sources": [
+        "kayak clubs"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "nature"
+    ],
+    "accessUk": "Осещина / Жукин / Вишгородський напрямок",
+    "tipsUk": "Чудова вода для SUP — лише після скасування заборони й перевірки мінної/військової ситуації."
+  },
+  {
+    "id": "irpin-river",
+    "nameUk": "Річка Ірпінь (нижня течія)",
+    "nameEn": "Irpin River (lower)",
+    "lat": 50.48,
+    "lng": 30.35,
+    "kind": "river",
+    "region": "Kyiv oblast",
+    "osmHint": "Ірпінь",
+    "paddleSuitability": "moderate_when_allowed",
+    "swimSuitability": "poor",
+    "restriction": {
+      "level": "restricted",
+      "labelUk": "Ірпінська громада — заборона купання / масового відпочинку",
+      "labelEn": "Irpin hromada — swim / mass recreation ban",
+      "notesUk": "Офіційне рішення комісії ТЕБ і НС Ірпінської МТГ: заборона масового відпочинку на водоймах. Додатково — ризик УЗВ після бойових дій 2022. Не заходьте у воду без офіційних дозвільних сигналів.",
+      "sources": [
+        "https://imr.gov.ua/uvaga-kupannya-zaboroneno-mistsevi-vodojmy-mozhut-nesty-nebezpeku/",
+        "https://visnyk-irpin.com.ua/na-terytoriyi-irpinskoyi-gromady-kupannya-u-vodojmah-zaboroneno/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 1,
+      "labelUk": "дуже низьке (обмеження + ризик)",
+      "basis": "war damage + local bans suppress tourism",
+      "peakHintUk": "не рекомендується як recreational SUP spot now",
+      "sources": [
+        "local community bans"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [],
+    "accessUk": "Ірпінь / Гостомель / Романівка",
+    "tipsUk": "Не цільова локація для SUP у поточних умовах."
+  },
+  {
+    "id": "bila-tserkva-ros",
+    "nameUk": "Біла Церква — р. Рось / Парк Олександрія",
+    "nameEn": "Bila Tserkva — Ros River",
+    "lat": 49.795,
+    "lng": 30.12,
+    "kind": "river",
+    "region": "Kyiv oblast (south)",
+    "paddleSuitability": "good_when_allowed",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "likely_ok",
+      "labelUk": "Немає чіткої громадівської заборони на всю Рось",
+      "labelEn": "No clear community-wide Ros ban found",
+      "notesUk": "Окремої заборони Білоцерківської громади на всю Рось / Олександрію не знайдено. Можливі санітарні обмеження по пробах на пляжі «Центральний» — перевіряйте перед виходом. Колір кодує локальну конкретику, не загальну заборону КОДА.",
+      "sources": [
+        "https://new.bc-rada.gov.ua/zhyteliam/bezpeka/tsyvilnyi_zakhyst_ta_bezpeka_zhyttiediialnosti/tsyvilnyi_zakhyst_ta_bezpeka_zhyttiediialnosti_informuie/pravyla_povedinky_na_vodi.html"
+      ]
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє",
+      "basis": " дендропарк tourism, local beach mentions",
+      "peakHintUk": "літо — туристи парку Олександрія",
+      "sources": [
+        "Oleksandria park visitor patterns"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "park",
+      "scenic"
+    ],
+    "accessUk": "Біла Церква",
+    "tipsUk": "Красива локація, але перевіряйте заборону навігації й купання перед поїздкою."
+  },
+  {
+    "id": "fastiv-lakes",
+    "nameUk": "Фастівські ставки / озера",
+    "nameEn": "Fastiv ponds",
+    "lat": 50.08,
+    "lng": 29.92,
+    "kind": "pond",
+    "region": "Kyiv oblast",
+    "paddleSuitability": "moderate_when_allowed",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Перевірте громаду — суцільної заборони не підтверджено",
+      "labelEn": "Check community — no blanket ban confirmed",
+      "notesUk": "Суцільної громадівської заборони всіх фастівських ставків не підтверджено; є окремі санітарні «не рекомендується» і загальні правила безпеки на воді.",
+      "sources": [
+        "http://fastiv-rada.gov.ua/dsns-informuie-pravyla-bezpechnoi-povedinky-na-vodi/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке–середнє",
+      "basis": "local recreation, fewer national travel writeups",
+      "peakHintUk": "локальні вечори",
+      "sources": [
+        "local recreation mentions"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "local_beach"
+    ],
+    "accessUk": "Фастів",
+    "tipsUk": "Менш «туристично», але діють ті самі обласні обмеження."
+  },
+  {
+    "id": "yazinkove",
+    "nameUk": "Озеро Ясинкове / південний Київ",
+    "nameEn": "Yasynkove Lake",
+    "lat": 50.355,
+    "lng": 30.565,
+    "kind": "lake",
+    "region": "Kyiv city",
+    "paddleSuitability": "moderate",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Міська водойма — місцеві правила",
+      "labelEn": "City lake — local rules",
+      "notesUk": "Невелика міська водойма; якість води та дозвіл на купання варіюються.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке",
+      "basis": "local-only mentions vs major beaches",
+      "peakHintUk": "районі жителі ввечері",
+      "sources": [
+        "local mentions"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "local"
+    ],
+    "accessUk": "Голосіївський / південь міста",
+    "tipsUk": "У OSM немає однозначної назви «Ясинкове» біля цих координат — маркер лишається за curated без привʼязки до чужої водойми. Перевіряйте воду локально."
+  },
+  {
+    "id": "berkovetske",
+    "nameUk": "Синє озеро (Берковець)",
+    "nameEn": "Berkovetske Lake",
+    "lat": 50.509854,
+    "lng": 30.401951,
+    "kind": "lake",
+    "region": "Kyiv / Berkovets",
+    "paddleSuitability": "good_when_allowed",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "restricted",
+      "labelUk": "Зона Білогородської / Ірпінської громад — місцеві заборони",
+      "labelEn": "Bilohorodka / Irpin hromada zone — local bans",
+      "notesUk": "Білогородська сільрада заборонила масовий відпочинок на водних об’єктах (купання, водний спорт, навігація тощо) на період воєнного стану.",
+      "sources": [
+        "https://bilohorodka.org.ua/zaborona-na-vidpochynok-na-vodnykh-ob-iektakh-de-mozhna-kupatysia-u-kyivskij-oblasti/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє",
+      "basis": "suburban weekend spots",
+      "peakHintUk": "вихідні",
+      "sources": [
+        "suburban recreation mentions"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "shore"
+    ],
+    "accessUk": "Берковець / вул. Синьоозерна",
+    "tipsUk": "Водойма зони відпочинку Берковець (Синє); не плутати з безіменними ставками біля Коцюбинського.",
+    "matchedOsmId": "way/31165311",
+    "matchedOsmIds": [
+      "way/31165311"
+    ],
+    "osmHint": "Синє"
+  },
+  {
+    "id": "radunka",
+    "nameUk": "Райдужне озеро (Радунка)",
+    "nameEn": "Raiduzhne / Radunka Lake",
+    "lat": 50.479927,
+    "lng": 30.586148,
+    "kind": "lake",
+    "region": "Kyiv city / left bank",
+    "osmHint": "Радунка",
+    "paddleSuitability": "moderate",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Міська водойма — місцеві правила",
+      "labelEn": "City lake — local rules",
+      "notesUk": "Невелике міське озеро Голосіївського напрямку.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке",
+      "basis": "local recreation",
+      "peakHintUk": "районі жителі",
+      "sources": [
+        "local mentions"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "local"
+    ],
+    "accessUk": "Русанівка / лівий берег (Райдужне / Радунка)",
+    "tipsUk": "OSM: Райдужне озеро (Радунка). Не плутати з Китаївськими ставками.",
+    "matchedOsmId": "way/8072297",
+    "matchedOsmIds": [
+      "way/8072297"
+    ]
+  },
+  {
+    "id": "typete",
+    "nameUk": "Озеро Тягле",
+    "nameEn": "Tiahle Lake",
+    "lat": 50.376738,
+    "lng": 30.648943,
+    "kind": "lake",
+    "region": "Kyiv city",
+    "osmHint": "Тягле",
+    "paddleSuitability": "good",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Міська водойма — перевірте статус купання",
+      "labelEn": "City lake — verify swim status",
+      "notesUk": "Популярна водойма Осокорків; якість води та відкриття сезону змінні.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 4,
+      "labelUk": "високе",
+      "basis": "Osokorky beach mentions",
+      "peakHintUk": "спека / вихідні",
+      "sources": [
+        "local beach posts"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "beach"
+    ],
+    "accessUk": "Осокорки",
+    "tipsUk": "Перевіряйте воду КП «Плесо» / локальні повідомлення.",
+    "matchedOsmId": "relation/2002308",
+    "matchedOsmIds": [
+      "relation/2002308"
+    ]
+  },
+  {
+    "id": "nedozadne",
+    "nameUk": "Озеро Заплавне (Бортничі)",
+    "nameEn": "Nevodnytske floodplain lake",
+    "lat": 50.371189,
+    "lng": 30.690216,
+    "kind": "lake",
+    "region": "Kyiv city / Bortnychi",
+    "osmHint": "Заплавне",
+    "paddleSuitability": "moderate",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Міська / заплавна водойма",
+      "labelEn": "City / floodplain water",
+      "notesUk": "Заплавні озера біля Дніпра — перевіряйте доступ і якість води.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке–середнє",
+      "basis": "local fishing/recreation",
+      "peakHintUk": "вечори",
+      "sources": [
+        "local"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "shore"
+    ],
+    "accessUk": "Бортничі / Дарницький р-н",
+    "tipsUk": "Ландшафтний заказник «Озеро Заплавне». Колишня мітка «Неводницьке» була з помилковими координатами.",
+    "matchedOsmId": "way/56684319",
+    "matchedOsmIds": [
+      "way/56684319"
+    ]
+  },
+  {
+    "id": "sobachne",
+    "nameUk": "Вербне озеро (Оболонь)",
+    "nameEn": "Sobache Lake",
+    "lat": 50.489938,
+    "lng": 30.516143,
+    "kind": "lake",
+    "region": "Kyiv city",
+    "osmHint": "Вербне",
+    "paddleSuitability": "good",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Міська водойма Оболоні",
+      "labelEn": "Obolon city lake",
+      "notesUk": "Районна водойма; правила купання можуть змінюватись щосезону.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє",
+      "basis": "Obolon recreation",
+      "peakHintUk": "літні вечори",
+      "sources": [
+        "district mentions"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "shore"
+    ],
+    "accessUk": "Оболонь / вул. Приозерна",
+    "tipsUk": "Популярна водойма Оболоні (Вербне). Затока «Собаче гирло» — окремий об’єкт.",
+    "matchedOsmId": "relation/17502706",
+    "matchedOsmIds": [
+      "relation/17502706"
+    ]
+  },
+  {
+    "id": "redkyne",
+    "nameUk": "Карачун / каскад Редькине (Пуща)",
+    "nameEn": "Karachun / Redkyne cascade",
+    "lat": 50.549166,
+    "lng": 30.334002,
+    "kind": "lake",
+    "region": "Kyiv / Bucha direction",
+    "osmHint": "Редькине",
+    "matchedOsmId": "relation/6453897",
+    "matchedOsmIds": [
+      "relation/6453897",
+      "relation/19010235",
+      "way/62191226"
+    ],
+    "paddleSuitability": "excellent_when_allowed",
+    "swimSuitability": "good",
+    "restriction": {
+      "level": "restricted",
+      "labelUk": "Коцюбинська СТГ / міські заборони купання",
+      "labelEn": "Kotsyubynske STG / city swim restrictions",
+      "notesUk": "Суміжна Коцюбинська СТГ має формальну заборону масового відпочинку на водоймах; у міських оглядах Редькине / Пуща-Водиця часто без дозволеного купання.",
+      "sources": [
+        "https://kotsyubinskarada.gov.ua/news/222029-kupatis-zaboroneno",
+        "https://obolon.kyivcity.gov.ua/news/na-yakikh-plyazhakh-kieva-zaboroneno-ta-mozhna-kupatisya-derzhprodspozhivsluzhba-mkieva"
+      ]
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє",
+      "basis": "forest lake weekends",
+      "peakHintUk": "вихідні",
+      "sources": [
+        "local guides"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "forest",
+      "beach"
+    ],
+    "accessUk": "Пуща-Водиця / Редькине",
+    "tipsUk": "Красиво, але обмеження громад мають пріоритет."
+  },
+  {
+    "id": "kozyn-quarry",
+    "nameUk": "Козинські карʼєри / озера",
+    "nameEn": "Kozyn quarries",
+    "lat": 50.182898,
+    "lng": 30.694151,
+    "kind": "quarry",
+    "region": "Obukhivskyi / Kozyn",
+    "osmHint": "Козинка",
+    "paddleSuitability": "good_when_allowed",
+    "swimSuitability": "variable",
+    "restriction": {
+      "level": "banned_navigation",
+      "labelUk": "Районні заборони + карʼєрна небезпека",
+      "labelEn": "District bans + quarry hazards",
+      "notesUk": "Карʼєри з крутими берегами. Обухівський район і ОВА обмежують вихід на воду. Не заходьте без явного дозволу та безпечного спуску.",
+      "sources": [
+        "https://www.ukr.net/news/details/kyiv/97603342.html"
+      ]
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє (коли «популярні»)",
+      "basis": "suburban quarry swim mentions",
+      "peakHintUk": "спекотні вихідні",
+      "sources": [
+        "local recreation"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "quarry"
+    ],
+    "accessUk": "Козин / Конча-Заспа south",
+    "tipsUk": "Глибина й обриви — ризик для новачків.",
+    "matchedOsmId": "way/174764307",
+    "matchedOsmIds": [
+      "way/174764307",
+      "way/174764309"
+    ]
+  },
+  {
+    "id": "pidhirtsi-quarry",
+    "nameUk": "Підгірцівські карʼєри",
+    "nameEn": "Pidhirtsi quarries",
+    "lat": 50.25,
+    "lng": 30.52,
+    "kind": "quarry",
+    "region": "Obukhivskyi",
+    "osmHint": "Підгірці",
+    "paddleSuitability": "moderate_when_allowed",
+    "swimSuitability": "variable",
+    "restriction": {
+      "level": "likely_ok",
+      "labelUk": "Немає громадівської заборони саме на Підгірці",
+      "labelEn": "No hromada ban specifically for Pidhirtsi",
+      "notesUk": "Окремого рішення громади про заборону Підгірцівських кар’єрів не знайдено. Технічні водойми: приватний доступ і рельєф можуть бути небезпечні навіть без формальної заборони.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке–середнє",
+      "basis": "local quarry visits",
+      "peakHintUk": "літо",
+      "sources": [
+        "local"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "quarry"
+    ],
+    "accessUk": "Підгірці",
+    "tipsUk": "Лише якщо є законний доступ і скасовані заборони."
+  },
+  {
+    "id": "vyshgorod-quarry",
+    "nameUk": "Вишгородські карʼєрні водойми",
+    "nameEn": "Vyshhorod quarry ponds",
+    "lat": 50.62,
+    "lng": 30.48,
+    "kind": "quarry",
+    "region": "Vyshhorod",
+    "osmHint": "Вишгород",
+    "paddleSuitability": "moderate_when_allowed",
+    "swimSuitability": "poor",
+    "restriction": {
+      "level": "banned_navigation",
+      "labelUk": "Біля Київського водосховища / ГЕС — підвищені обмеження",
+      "labelEn": "Near Kyiv Reservoir / HPP — heightened limits",
+      "notesUk": "Не плутати з акваторією водосховища. Підхід до гідроспоруд заборонений.",
+      "sources": [
+        "https://koda.gov.ua/do-uvagy-meshkancziv-kyyivskoyi-oblasti-tryvaye-zaborona-navigacziyi-na-vodojmah-kyyivshhyny/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке",
+      "basis": "proximity to restricted reservoir",
+      "peakHintUk": "не рекомендовано",
+      "sources": [
+        "KODA"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "quarry"
+    ],
+    "accessUk": "Вишгород",
+    "tipsUk": "Уникайте зон біля дамби."
+  },
+  {
+    "id": "stuhna",
+    "nameUk": "Річка Стугна",
+    "nameEn": "Stuhna River",
+    "lat": 50.15,
+    "lng": 30.55,
+    "kind": "river",
+    "region": "Obukhivskyi",
+    "osmHint": "Стугна",
+    "paddleSuitability": "good_when_allowed",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Санітарні застереження (Українка) — не суцільна заборона",
+      "labelEn": "Sanitary advisories (Ukrainka) — not a full-river ban",
+      "notesUk": "Окремої заборони всієї Стугни не знайдено; у м. Українка бувають санітарні «не рекомендується» по рекреаційних зонах. Мала річка, течія на схід до Дніпра.",
+      "sources": [
+        "https://ukrainska-gromada.gov.ua/community/kupannya-v-richczi-stugna-ne-rekomenduyetsya-vysnovky-laboratornyh-doslidzhen.html"
+      ]
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке",
+      "basis": "local paddling interest",
+      "peakHintUk": "весняні сплави (коли дозволено)",
+      "sources": [
+        "kayak clubs"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "nature"
+    ],
+    "accessUk": "Обухів / Українка / Трипілля",
+    "tipsUk": "Дивіться стрілки течії на карті."
+  },
+  {
+    "id": "trubizh",
+    "nameUk": "Річка Трубіж",
+    "nameEn": "Trubizh River",
+    "lat": 50.15,
+    "lng": 31.4,
+    "kind": "river",
+    "region": "Boryspilskyi / east oblast",
+    "osmHint": "Трубіж",
+    "paddleSuitability": "moderate_when_allowed",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "likely_ok",
+      "labelUk": "Немає чіткої локальної заборони на Трубіж",
+      "labelEn": "No clear local Trubizh ban found",
+      "notesUk": "Окремої громадівської/ТЕБ-заборони саме на Трубіж не знайдено. Колір кодує локальну конкретику, не загальну заборону КОДА.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 2,
+      "labelUk": "низьке",
+      "basis": "regional river",
+      "peakHintUk": "локально",
+      "sources": [
+        "OSM / local"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "nature"
+    ],
+    "accessUk": "Переяслав / Бориспільський р-н",
+    "tipsUk": "Течія — до Дніпра (південь/схід залежно від ділянки)."
+  },
+  {
+    "id": "teteriv-edge",
+    "nameUk": "Тетерів (східний край Київщини)",
+    "nameEn": "Teteriv (east edge)",
+    "lat": 50.6,
+    "lng": 29.55,
+    "kind": "river",
+    "region": "Kyiv / Zhytomyr adjacent",
+    "osmHint": "Тетерів",
+    "paddleSuitability": "excellent_when_allowed",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "likely_ok",
+      "labelUk": "Немає локальної заборони на цій ділянці Київщини",
+      "labelEn": "No local ban found on this Kyiv Oblast stretch",
+      "notesUk": "Для східного краю Київщини чіткої громадівської заборони купання/масового відпочинку не знайдено. Класична річка для сплавів — додатково перевіряйте суміжну Житомирщину.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє (історично)",
+      "basis": "classic paddling river",
+      "peakHintUk": "травень–вересень",
+      "sources": [
+        "kayak tourism"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "nature"
+    ],
+    "accessUk": "Радомишль / Іванківський напрямок",
+    "tipsUk": "Стрілки течії орієнтують вниз за течією."
+  },
+  {
+    "id": "dnipro-kyiv-reach",
+    "nameUk": "Дніпро — київська ділянка",
+    "nameEn": "Dnipro — Kyiv reach",
+    "lat": 50.45,
+    "lng": 30.53,
+    "kind": "river",
+    "region": "Kyiv city / oblast",
+    "osmHint": "Дніпро",
+    "paddleSuitability": "excellent_when_allowed",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "banned_navigation",
+      "labelUk": "Повна заборона цивільної навігації (Дніпро / каскад)",
+      "labelEn": "Full civilian navigation ban (Dnipro / cascade)",
+      "notesUk": "Течія загалом з півночі на південь. Будь-який SUP/каяк на судноплавній акваторії під час воєнного стану — під забороною.",
+      "sources": [
+        "https://koda.gov.ua/do-uvagy-meshkancziv-kyyivskoyi-oblasti-tryvaye-zaborona-navigacziyi-na-vodojmah-kyyivshhyny/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 4,
+      "labelUk": "високе (берег), навігація придушена",
+      "basis": "main city waterfront",
+      "peakHintUk": "набережні й пляжі — багато людей",
+      "sources": [
+        "city recreation"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "waterfront"
+    ],
+    "accessUk": "набережні Києва",
+    "tipsUk": "На карті — лінія з стрілками течії ↓."
+  },
+  {
+    "id": "almazne",
+    "nameUk": "Алмазне озеро",
+    "nameEn": "Almazne Lake",
+    "lat": 50.502731,
+    "lng": 30.632891,
+    "kind": "lake",
+    "region": "Kyiv city",
+    "osmHint": "Алмазне",
+    "paddleSuitability": "good",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Міська водойма",
+      "labelEn": "City lake",
+      "notesUk": "Лівобережна водойма; статус купання перевіряйте локально.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє",
+      "basis": "left-bank recreation",
+      "peakHintUk": "літо",
+      "sources": [
+        "local"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "shore"
+    ],
+    "accessUk": "Русанівка / Лівий берег",
+    "tipsUk": "Спокійніша за Дніпро гладь.",
+    "matchedOsmId": "way/5218569",
+    "matchedOsmIds": [
+      "way/5218569"
+    ]
+  },
+  {
+    "id": "basaika",
+    "nameUk": "Паладинські ставки (Феофанія)",
+    "nameEn": "Paladynski ponds (Feofaniia)",
+    "lat": 50.340684,
+    "lng": 30.491473,
+    "kind": "pond",
+    "region": "Kyiv city",
+    "osmHint": "Паладинські",
+    "paddleSuitability": "moderate",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "check_local",
+      "labelUk": "Паркові ставки — місцеві правила",
+      "labelEn": "Park ponds — local rules",
+      "notesUk": "Невеликі ставки; часто не для навігації, лише берег/прогулянки.",
+      "sources": []
+    },
+    "touristLoad": {
+      "grade": 4,
+      "labelUk": "високе (парк)",
+      "basis": "Feofaniia park traffic",
+      "peakHintUk": "вихідні — пік відвідувачів парку",
+      "sources": [
+        "park visitor patterns"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "park"
+    ],
+    "accessUk": "Феофанія",
+    "tipsUk": "Більше прогулянка біля води, ніж SUP.",
+    "matchedOsmId": "relation/1773963",
+    "matchedOsmIds": [
+      "relation/1773963",
+      "relation/9967245"
+    ]
+  },
+  {
+    "id": "zhukiv-island",
+    "nameUk": "Острів Жуків / протоки",
+    "nameEn": "Zhukiv Island channels",
+    "lat": 50.34,
+    "lng": 30.56,
+    "kind": "river_channels",
+    "region": "Kyiv city south",
+    "osmHint": "Жуків",
+    "paddleSuitability": "excellent_when_allowed",
+    "swimSuitability": "moderate",
+    "restriction": {
+      "level": "banned_navigation",
+      "labelUk": "Дніпровські протоки — заборона навігації",
+      "labelEn": "Dnipro channels — navigation ban",
+      "notesUk": "Історично топові маршрути каяків/SUP. Зараз під забороною цивільної навігації.",
+      "sources": [
+        "https://koda.gov.ua/do-uvagy-meshkancziv-kyyivskoyi-oblasti-tryvaye-zaborona-navigacziyi-na-vodojmah-kyyivshhyny/"
+      ]
+    },
+    "touristLoad": {
+      "grade": 3,
+      "labelUk": "середнє (історично вище)",
+      "basis": "paddling routes pre-ban",
+      "peakHintUk": "до заборони — популярні маршрути",
+      "sources": [
+        "kayak clubs"
+      ],
+      "updated": "2026-08"
+    },
+    "amenities": [
+      "nature",
+      "islands_nearby"
+    ],
+    "accessUk": "Корчувате / південь Києва",
+    "tipsUk": "Дивіться контур Дніпра та стрілки течії."
+  }
+]

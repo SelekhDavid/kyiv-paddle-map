@@ -1,0 +1,2630 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-08T21:49:06.587Z",
+  "fetchedAt": null,
+  "bbox": {
+    "south": 49.85,
+    "west": 29.2,
+    "north": 51.28,
+    "east": 32.3
+  },
+  "sources": [
+    {
+      "id": "field",
+      "priority": 1,
+      "nameUk": "Польові / Sentinel-2 spot checks",
+      "role": "local_sparse",
+      "noteUk": "Польові / Sentinel-2 spot checks. Silo: docs/research/river-width/sentinel-field.json Статус merge: empty (0 features) — числових ширин у репо не знайдено.",
+      "status": "empty"
+    },
+    {
+      "id": "osm_polygon",
+      "priority": 2,
+      "nameUk": "OSM river-area ортогоналі",
+      "role": "osm_geometry",
+      "noteUk": "Ортогональна ширина від полігонів natural=water + water=river|canal. Silo: docs/research/river-width/osm-polygon.json Статус merge: 35 features з валідним widthM.",
+      "status": "ok"
+    },
+    {
+      "id": "swot_sword",
+      "priority": 3,
+      "nameUk": "SWOT / SWORD",
+      "role": "radar_reach_node",
+      "noteUk": "Reach/node виміри SWOT L2 River / SWORD. Silo: docs/research/river-width/swot-sword.json Статус merge: 66 reaches; жоден з osmId (усі в samples[]).",
+      "status": "ok_samples_only"
+    },
+    {
+      "id": "grwl_rivwidth",
+      "priority": 4,
+      "nameUk": "GRWL / RivWidth",
+      "role": "landsat_width",
+      "noteUk": "Глобальні ширини GRWL; надійно переважно ≳30 м. Silo: docs/research/river-width/grwl-rivwidth.json Статус merge: 25 samples; 14 з osmId → byOsmId, решта → samples.",
+      "status": "ok"
+    },
+    {
+      "id": "merit_wth",
+      "priority": 5,
+      "nameUk": "MERIT Hydro wth",
+      "role": "coarse_prior",
+      "noteUk": "Грубий raster-prior MERIT Hydro wth. Silo: docs/research/river-width/merit-wth.json Статус merge: awaiting_offline_raster — растр offline, features=[].",
+      "status": "awaiting_offline_raster"
+    },
+    {
+      "id": "osm_width_tag",
+      "priority": 6,
+      "nameUk": "OSM тег width=*",
+      "role": "weak_prior",
+      "noteUk": "Тег OSM width=* на waterway; слабкий prior. Silo: docs/research/river-width/osm-width-tag.json Статус merge: 264 features з валідним widthM.",
+      "status": "ok"
+    }
+  ],
+  "byOsmId": {
+    "relation/1017128": {
+      "widthM": 277,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 3901
+    },
+    "relation/11722374": {
+      "widthM": 730,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 54
+    },
+    "relation/14485762": {
+      "widthM": 122,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 26
+    },
+    "relation/14727256": {
+      "widthM": 200,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 25
+    },
+    "relation/2190497": {
+      "widthM": 517,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 338
+    },
+    "relation/3873646": {
+      "widthM": 115,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 31
+    },
+    "relation/3895011": {
+      "widthM": 99,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 13
+    },
+    "relation/4677744": {
+      "widthM": 89,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 93
+    },
+    "relation/66386": {
+      "widthM": 584,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 467
+    },
+    "relation/7523898": {
+      "widthM": 25,
+      "widthClass": "medium",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 194
+    },
+    "relation/7663079": {
+      "widthM": 30,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 17
+    },
+    "relation/7673606": {
+      "widthM": 48,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 500
+    },
+    "relation/9087319": {
+      "widthM": 532,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 652
+    },
+    "way/1003188459": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1006255956": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1006256043": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1023671983": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1023671984": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1041940448": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/104718741": {
+      "widthM": 15,
+      "widthClass": "medium",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 31
+    },
+    "way/104968731": {
+      "widthM": 171,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "medium",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 54–336 м"
+    },
+    "way/104968777": {
+      "widthM": 258,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "medium",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 84–2911 м"
+    },
+    "way/104969053": {
+      "widthM": 258,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "medium",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 84–2911 м"
+    },
+    "way/107224644": {
+      "widthM": 123,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 9
+    },
+    "way/1087866344": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1087866345": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1087866350": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1095145722": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1095145723": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1097919801": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/110995940": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1111184079": {
+      "widthM": 1.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1111184080": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1134077100": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1137651393": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1137651394": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1152660669": {
+      "widthM": 1.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/116136637": {
+      "widthM": 106,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 24
+    },
+    "way/116136638": {
+      "widthM": 129,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 48
+    },
+    "way/116136646": {
+      "widthM": 22,
+      "widthClass": "medium",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 10
+    },
+    "way/1163463115": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1163463116": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1163463117": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1163463118": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1222615679": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1226165442": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1226165443": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1226165444": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1226165445": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/123067519": {
+      "widthM": 70,
+      "widthClass": "wide",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1246162825": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1252820854": {
+      "widthM": 100,
+      "widthClass": "wide",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1252822058": {
+      "widthM": 100,
+      "widthClass": "wide",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1265177141": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1265177142": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1268336267": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1268336268": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1268336269": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1268336270": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1274486008": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1274486009": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/128397238": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/128400884": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1295810505": {
+      "widthM": 19,
+      "widthClass": "medium",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 3
+    },
+    "way/1306004393": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1306004394": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1306004397": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1306004398": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1323499981": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1323499982": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1340640558": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1360996546": {
+      "widthM": 52,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 6
+    },
+    "way/1360996547": {
+      "widthM": 35,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 4
+    },
+    "way/138575553": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/138600145": {
+      "widthM": 48,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "medium",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–973 м"
+    },
+    "way/138600165": {
+      "widthM": 15,
+      "widthClass": "medium",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1444860663": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1470199670": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/1470199671": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/150487889": {
+      "widthM": 55,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 117
+    },
+    "way/1545161711": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/174764307": {
+      "widthM": 37,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 22
+    },
+    "way/174764309": {
+      "widthM": 31,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 13
+    },
+    "way/180848834": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/180848835": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/180848836": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/183299236": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/186132745": {
+      "widthM": 61,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 11
+    },
+    "way/196849660": {
+      "widthM": 31,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 11
+    },
+    "way/196849670": {
+      "widthM": 27,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 10
+    },
+    "way/200401538": {
+      "widthM": 17,
+      "widthClass": "medium",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 9
+    },
+    "way/215566176": {
+      "widthM": 48,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "medium",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–973 м",
+      "alternates": [
+        {
+          "method": "osm_width_tag",
+          "widthM": 30,
+          "confidence": "low"
+        }
+      ]
+    },
+    "way/215566188": {
+      "widthM": 48,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "medium",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–973 м",
+      "alternates": [
+        {
+          "method": "osm_width_tag",
+          "widthM": 30,
+          "confidence": "low"
+        }
+      ]
+    },
+    "way/218731586": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/218884368": {
+      "widthM": 51,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 8
+    },
+    "way/221980525": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/221980646": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/221980975": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/221981241": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/221981330": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/221981390": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/221986186": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/221986441": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/221986853": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/221987086": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/229081458": {
+      "widthM": 10,
+      "widthClass": "medium",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 21,
+      "alternates": [
+        {
+          "method": "osm_width_tag",
+          "widthM": 10,
+          "confidence": "low"
+        }
+      ]
+    },
+    "way/232505407": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/232505408": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/263385731": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/287979538": {
+      "widthM": 2.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/287979550": {
+      "widthM": 2.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/288629843": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/289515783": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/289515784": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/28951640": {
+      "widthM": 50,
+      "widthClass": "wide",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/292226905": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/292726842": {
+      "widthM": 0.3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/293125223": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/293125227": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/29420754": {
+      "widthM": 48,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "medium",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–973 м"
+    },
+    "way/301722815": {
+      "widthM": 0.85,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/306524021": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/312103810": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/312639724": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/312753257": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/315311041": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/315348392": {
+      "widthM": 20,
+      "widthClass": "medium",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/315500059": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/315500406": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/315501425": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/315502237": {
+      "widthM": 5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/316334688": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/316334798": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/316335113": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/316335372": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/316336123": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/316336319": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/316340231": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/317402647": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/324869533": {
+      "widthM": 1.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/329469546": {
+      "widthM": 1.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/329497309": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/329499174": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/339188402": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/339188460": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/355294564": {
+      "widthM": 5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/357367072": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/357372897": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/357736252": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/358140840": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/358140844": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/365671869": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/365671871": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/365671873": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/366126277": {
+      "widthM": 18,
+      "widthClass": "medium",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 78
+    },
+    "way/368892376": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/368893006": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/368893103": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/369134548": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/369135175": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/369135868": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/369136094": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/370939137": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/370939138": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/370939139": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/370939140": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/371288114": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/382541375": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/382541379": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/402221837": {
+      "widthM": 2.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/403829909": {
+      "widthM": 3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/406417926": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/409873053": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/409873231": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/416518198": {
+      "widthM": 27,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 27
+    },
+    "way/428063628": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/429435589": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/429435676": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/430216580": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/435305781": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/435530819": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/435531336": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/435532610": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/435536114": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/435628268": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/435637034": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/438463402": {
+      "widthM": 258,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "medium",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 84–2911 м"
+    },
+    "way/438874341": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/440247294": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/452560058": {
+      "widthM": 2.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/452560061": {
+      "widthM": 2.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/470146109": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/470146110": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/470146998": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/470147000": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/470147001": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/470147002": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/489247230": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/500526519": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/51556169": {
+      "widthM": 10,
+      "widthClass": "medium",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/524101031": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/531283174": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/534235998": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/534236000": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/534236006": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/534236007": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/534236033": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/534236034": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/53580933": {
+      "widthM": 10,
+      "widthClass": "medium",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/539888565": {
+      "widthM": 2.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/539888566": {
+      "widthM": 2.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/54178278": {
+      "widthM": 10,
+      "widthClass": "medium",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/54178282": {
+      "widthM": 10,
+      "widthClass": "medium",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/54178285": {
+      "widthM": 10,
+      "widthClass": "medium",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/543495446": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/543495447": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/543495448": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/544868501": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/549613584": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/549613592": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/549613596": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/553817594": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/561999417": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/561999418": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/575078906": {
+      "widthM": 5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/577878456": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/577878457": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/577878458": {
+      "widthM": 1.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/577879159": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/603897651": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/603898119": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/616155025": {
+      "widthM": 0.3,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/638272496": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/638272497": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/638272498": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/640476754": {
+      "widthM": 0.1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/640476755": {
+      "widthM": 0.1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/640476756": {
+      "widthM": 0.1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/640476758": {
+      "widthM": 0.1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/643835777": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/643835778": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/653671509": {
+      "widthM": 9440.5,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "low",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 2413–13958 м"
+    },
+    "way/661082982": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/662223080": {
+      "widthM": 73,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "medium",
+      "nSamples": 29
+    },
+    "way/66363779": {
+      "widthM": 26,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 23
+    },
+    "way/685386779": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/689755564": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/695913056": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/709595746": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/709595749": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/709595750": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/729373335": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/729376588": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/729376589": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/766763439": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/766763440": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/784595877": {
+      "widthM": 5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/784595878": {
+      "widthM": 5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/785519543": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/794512725": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/794512726": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/807595254": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/807595255": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/807595256": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/807595257": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/824332076": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/824332077": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/828727718": {
+      "widthM": 0.5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/849657053": {
+      "widthM": 171,
+      "widthClass": "wide",
+      "method": "grwl_rivwidth",
+      "confidence": "medium",
+      "sourceNoteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 54–336 м"
+    },
+    "way/856837166": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/856837167": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/856837168": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/856837169": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/858300076": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/858300077": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/894021489": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/919319146": {
+      "widthM": 32,
+      "widthClass": "wide",
+      "method": "osm_polygon",
+      "confidence": "high",
+      "nSamples": 9
+    },
+    "way/919340591": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/919340592": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/919340593": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/919340594": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/919340595": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/919345258": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/919345259": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/919345260": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/921790417": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/921790418": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/927864577": {
+      "widthM": 5,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/928289926": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/928289927": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/934254326": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/934254327": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/935106053": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/935106054": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/942234168": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/942234169": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/942234181": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/942234182": {
+      "widthM": 2,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/98497268": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/99371638": {
+      "widthM": 4,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    },
+    "way/998128671": {
+      "widthM": 1,
+      "widthClass": "narrow",
+      "method": "osm_width_tag",
+      "confidence": "low"
+    }
+  },
+  "samples": [
+    {
+      "methodId": "swot_sword",
+      "lat": 49.8871,
+      "lng": 31.4913,
+      "widthM": 10449,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000343"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 49.9661,
+      "lng": 31.4755,
+      "widthM": 9608.5,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000353"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 49.9889,
+      "lng": 31.1074,
+      "widthM": 3082,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000493"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 49.9961,
+      "lng": 31.3135,
+      "widthM": 6059,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000363"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.0443,
+      "lng": 30.9752,
+      "widthM": 2076,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000503"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.1083,
+      "lng": 30.9058,
+      "widthM": 1958,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000513"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.1463,
+      "lng": 30.8093,
+      "widthM": 3657,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000523"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.1864,
+      "lng": 30.7497,
+      "widthM": 1122,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000533"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.2078,
+      "lng": 30.7417,
+      "widthM": 1454,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000543"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.2149,
+      "lng": 30.7288,
+      "widthM": 1208,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000561"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.2279,
+      "lng": 30.7151,
+      "widthM": 1320,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000573"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.2432,
+      "lng": 30.7089,
+      "widthM": 2285,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000583"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.2538,
+      "lng": 30.6999,
+      "widthM": 152.62,
+      "confidence": "high",
+      "riverUk": "Дніпро",
+      "reachId": "22519000591"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.262,
+      "lng": 30.6864,
+      "widthM": 2257.5,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000603"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.2688,
+      "lng": 30.6749,
+      "widthM": 1272,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000611"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.2806,
+      "lng": 30.6588,
+      "widthM": 87.24,
+      "confidence": "high",
+      "riverUk": "Дніпро",
+      "reachId": "22519000621"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.2948,
+      "lng": 30.6469,
+      "widthM": 1149,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000633"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.3099,
+      "lng": 30.6241,
+      "widthM": 822,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000271"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.3173,
+      "lng": 30.6114,
+      "widthM": 2247,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000746"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.3216,
+      "lng": 30.6138,
+      "widthM": 1365,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000303"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.3307,
+      "lng": 30.6106,
+      "widthM": 1362,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000311"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.3401,
+      "lng": 30.6068,
+      "widthM": 742,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22519000323"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.3897,
+      "lng": 30.5862,
+      "widthM": 1032,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22519000331"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.4231,
+      "lng": 29.2234,
+      "widthM": 42,
+      "confidence": "medium",
+      "riverUk": "Тетерів",
+      "reachId": "22530000261"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.4881,
+      "lng": 30.55,
+      "widthM": 0.69,
+      "confidence": "high",
+      "riverUk": "Дніпро",
+      "reachId": "22519000551"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.5289,
+      "lng": 29.3241,
+      "widthM": 42,
+      "confidence": "medium",
+      "riverUk": "Тетерів",
+      "reachId": "22530000251"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.5593,
+      "lng": 30.5354,
+      "widthM": 301.85,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22530000011"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.5625,
+      "lng": 30.5723,
+      "widthM": 231.32,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100011"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.5826,
+      "lng": 30.5266,
+      "widthM": 201.33,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22530000024"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.5996,
+      "lng": 30.6317,
+      "widthM": 205.21,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100021"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.6268,
+      "lng": 29.4343,
+      "widthM": 45,
+      "confidence": "medium",
+      "riverUk": "Тетерів",
+      "reachId": "22530000241"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.6326,
+      "lng": 30.495,
+      "widthM": 4208,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22530000033"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.6453,
+      "lng": 30.7029,
+      "widthM": 200.79,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100031"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.685,
+      "lng": 29.5472,
+      "widthM": 42,
+      "confidence": "medium",
+      "riverUk": "Тетерів",
+      "reachId": "22530000231"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.7188,
+      "lng": 30.6982,
+      "widthM": 155,
+      "confidence": "medium",
+      "riverUk": "Ljubych",
+      "reachId": "22520100061"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.7353,
+      "lng": 30.7449,
+      "widthM": 177.36,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100041"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.7631,
+      "lng": 30.4667,
+      "widthM": 11210,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22530000133"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.7674,
+      "lng": 30.7092,
+      "widthM": 258.85,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100071"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.7716,
+      "lng": 29.5874,
+      "widthM": 48,
+      "confidence": "medium",
+      "riverUk": "Тетерів",
+      "reachId": "22530000221"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.7882,
+      "lng": 30.7647,
+      "widthM": 45,
+      "confidence": "medium",
+      "riverUk": "Ljubych",
+      "reachId": "22520100091"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.8196,
+      "lng": 30.7399,
+      "widthM": 312.96,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100081"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.8386,
+      "lng": 29.7323,
+      "widthM": 48,
+      "confidence": "medium",
+      "riverUk": "Тетерів",
+      "reachId": "22530000211"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.8524,
+      "lng": 30.7906,
+      "widthM": 184,
+      "confidence": "medium",
+      "riverUk": "Ljubych",
+      "reachId": "22520100101"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.8701,
+      "lng": 29.8496,
+      "widthM": 45,
+      "confidence": "medium",
+      "riverUk": "Тетерів",
+      "reachId": "22530000201"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.8954,
+      "lng": 30.8203,
+      "widthM": 387.85,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100111"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.9348,
+      "lng": 30.5016,
+      "widthM": 9306.5,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22530000143"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.9367,
+      "lng": 29.9377,
+      "widthM": 42,
+      "confidence": "medium",
+      "riverUk": "Тетерів",
+      "reachId": "22530000191"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.9388,
+      "lng": 30.8465,
+      "widthM": 217.74,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100121"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 50.9979,
+      "lng": 30.0324,
+      "widthM": 48,
+      "confidence": "medium",
+      "riverUk": "Тетерів",
+      "reachId": "22530000091"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.0051,
+      "lng": 30.8793,
+      "widthM": 196.19,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100131"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.033,
+      "lng": 30.1079,
+      "widthM": 4258.08,
+      "confidence": "high",
+      "riverUk": "Тетерів",
+      "reachId": "22530000081"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.0332,
+      "lng": 30.3844,
+      "widthM": 899.5,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22530000043"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.0367,
+      "lng": 30.2787,
+      "widthM": 275,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22530000051"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.0371,
+      "lng": 30.2065,
+      "widthM": 63,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22530000071"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.0373,
+      "lng": 30.2648,
+      "widthM": 108,
+      "confidence": "medium",
+      "riverUk": "невідомо",
+      "reachId": "22530000063"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.0694,
+      "lng": 30.5029,
+      "widthM": 9637,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22530000113"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.0876,
+      "lng": 30.8921,
+      "widthM": 173.37,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100141"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.132,
+      "lng": 30.5226,
+      "widthM": 5610,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22530000123"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.1433,
+      "lng": 30.5098,
+      "widthM": 42.39,
+      "confidence": "high",
+      "riverUk": "Дніпро",
+      "reachId": "22530000171"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.1487,
+      "lng": 30.5008,
+      "widthM": 3054,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "reachId": "22530000183"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.1626,
+      "lng": 30.4926,
+      "widthM": 34.47,
+      "confidence": "high",
+      "riverUk": "Дніпро",
+      "reachId": "22530000151"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.1738,
+      "lng": 30.9478,
+      "widthM": 160.83,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100151"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.1935,
+      "lng": 30.5211,
+      "widthM": 934.21,
+      "confidence": "high",
+      "riverUk": "Дніпро",
+      "reachId": "22550000011"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.2194,
+      "lng": 31.0354,
+      "widthM": 147.84,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100161"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.2535,
+      "lng": 31.0513,
+      "widthM": 135.32,
+      "confidence": "high",
+      "riverUk": "Десна",
+      "reachId": "22520100171"
+    },
+    {
+      "methodId": "swot_sword",
+      "lat": 51.2573,
+      "lng": 30.5635,
+      "widthM": 955.22,
+      "confidence": "high",
+      "riverUk": "Дніпро",
+      "reachId": "22550000021"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 49.86578,
+      "lng": 31.49043,
+      "widthM": 2891.5,
+      "confidence": "low",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~3423 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 49.97252,
+      "lng": 31.24296,
+      "widthM": 2891.5,
+      "confidence": "low",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~3240 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 50.01529,
+      "lng": 31.38169,
+      "widthM": 2891.5,
+      "confidence": "low",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~1882 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 50.03792,
+      "lng": 30.97579,
+      "widthM": 2891.5,
+      "confidence": "low",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~581 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 50.1162,
+      "lng": 30.90115,
+      "widthM": 2891.5,
+      "confidence": "low",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~1339 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 50.23492,
+      "lng": 30.7144,
+      "widthM": 2891.5,
+      "confidence": "low",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~793 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 50.31553,
+      "lng": 30.61677,
+      "widthM": 2891.5,
+      "confidence": "low",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~785 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 50.50039,
+      "lng": 30.53957,
+      "widthM": 258,
+      "confidence": "medium",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 84–2911 м; osmId не привʼязано (найближчий OSM ~704 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 50.70733,
+      "lng": 30.46288,
+      "widthM": 9440.5,
+      "confidence": "low",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 2413–13958 м; osmId не привʼязано (найближчий OSM ~912 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 50.70807,
+      "lng": 30.73438,
+      "widthM": 51,
+      "confidence": "medium",
+      "riverUk": "Десна",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–169 м; osmId не привʼязано (найближчий OSM ~710 м)"
+    },
+    {
+      "methodId": "grwl_rivwidth",
+      "lat": 50.82562,
+      "lng": 30.4799,
+      "widthM": 9440.5,
+      "confidence": "low",
+      "riverUk": "Дніпро",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 2413–13958 м; osmId не привʼязано (найближчий OSM ~1759 м)"
+    }
+  ]
+}

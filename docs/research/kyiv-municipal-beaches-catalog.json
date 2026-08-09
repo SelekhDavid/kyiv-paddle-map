@@ -1,0 +1,304 @@
+[
+  {
+    "id": "beach-venetsiia",
+    "objectid": 16,
+    "globalid": "F143A769-A6DB-4D3D-A18F-6667A620A8DA",
+    "nameUk": "Венеція",
+    "districtUk": "Дніпровський",
+    "waterBodyUk": "Венеціанська протока, острів Долобецький",
+    "beachstatus": 1,
+    "lat": 50.44949106,
+    "lng": 30.576652749999997,
+    "web": "https://pleso.kyiv.ua/",
+    "lastEditedMs": 1750396311000,
+    "linkedSpotIds": [
+      "hydropark"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-verbnyi",
+    "objectid": 30,
+    "globalid": "774BED46-CF9C-4897-A97E-FE7DAB6973E6",
+    "nameUk": "Вербний",
+    "districtUk": "Оболонський",
+    "waterBodyUk": "озеро Вербне",
+    "beachstatus": 1,
+    "lat": 50.49106324,
+    "lng": 30.51431786,
+    "web": null,
+    "lastEditedMs": null,
+    "linkedSpotIds": [
+      "sobachne"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-veselka",
+    "objectid": 29,
+    "globalid": "BE1F0D9A-EE32-4A77-8C64-E873873E333A",
+    "nameUk": "Веселка",
+    "districtUk": "Дніпровський",
+    "waterBodyUk": "Русанівська протока",
+    "beachstatus": 1,
+    "lat": 50.45507531,
+    "lng": 30.584336049999997,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750396183000,
+    "linkedSpotIds": [
+      "hydropark"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-halernyi",
+    "objectid": 830,
+    "globalid": "37414027-755F-4B5A-A22B-1FD3ED99FC87",
+    "nameUk": "Галерний",
+    "districtUk": "Голосіївський",
+    "waterBodyUk": "затока Галерна",
+    "beachstatus": 1,
+    "lat": 50.370239649999995,
+    "lng": 30.550903119999997,
+    "web": null,
+    "lastEditedMs": null,
+    "linkedSpotIds": [
+      "koncha-zaspa"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-dytiachyi",
+    "objectid": 18,
+    "globalid": "4C4FCAD2-2BD8-4FD5-A5F8-61A38650E51A",
+    "nameUk": "Дитячий",
+    "districtUk": "Дніпровський",
+    "waterBodyUk": "Венеціанська протока, острів Венеціанський",
+    "beachstatus": 1,
+    "lat": 50.44730619,
+    "lng": 30.573698439999998,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750395088000,
+    "linkedSpotIds": [
+      "hydropark"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-zolotyi",
+    "objectid": 25,
+    "globalid": "F0186337-241C-4575-83D6-1BFE77E7334A",
+    "nameUk": "Золотий",
+    "districtUk": "Дніпровський",
+    "waterBodyUk": "р. Дніпро, острів Венеціанський",
+    "beachstatus": 1,
+    "lat": 50.43060154,
+    "lng": 30.58277514,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750395088000,
+    "linkedSpotIds": [
+      "hydropark"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-molodizhnyi",
+    "objectid": 19,
+    "globalid": "65C9B2A3-8DC3-43E9-9B88-EAD20F25B806",
+    "nameUk": "Молодіжний",
+    "districtUk": "Дніпровський",
+    "waterBodyUk": "р. Десенка, острів Долобецький",
+    "beachstatus": 1,
+    "lat": 50.451755080000005,
+    "lng": 30.57343483,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750395088000,
+    "linkedSpotIds": [
+      "hydropark"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-ostriv-obolonskyi",
+    "objectid": 22,
+    "globalid": "7E2FF3EE-28D0-4BBB-961C-68760356F913",
+    "nameUk": "Острів Оболонський",
+    "districtUk": "Оболонський",
+    "waterBodyUk": "затока Наталка та р. Дніпро",
+    "beachstatus": 1,
+    "lat": 50.51245539,
+    "lng": 30.52187615,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750395088000,
+    "linkedSpotIds": [
+      "dnipro-kyiv-reach"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-peredmistna-slobidka",
+    "objectid": 24,
+    "globalid": "C352CED4-1DF9-435C-8B35-011493345211",
+    "nameUk": "Передмістна Слобідка",
+    "districtUk": "Дніпровський",
+    "waterBodyUk": "р. Дніпро, острів Венеціанський",
+    "beachstatus": 1,
+    "lat": 50.43834426,
+    "lng": 30.57322388,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750395088000,
+    "linkedSpotIds": [
+      "dnipro-kyiv-reach"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-pushcha-vodytsia",
+    "objectid": 23,
+    "globalid": "BEF16D50-C18D-4D61-84D5-C95C030A1451",
+    "nameUk": "Пуща-Водиця",
+    "districtUk": "Оболонський",
+    "waterBodyUk": "ставок Горащиха на р. Котурка у Пущі-Водиці (8 лінія)",
+    "beachstatus": 1,
+    "lat": 50.54018338,
+    "lng": 30.34721064,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750396183000,
+    "linkedSpotIds": [
+      "blakytne",
+      "redkyne"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-raiduha",
+    "objectid": 27,
+    "globalid": "DA160D05-B1FE-4442-A178-ECE47E4D9ABB",
+    "nameUk": "Райдуга",
+    "districtUk": "Дніпровський",
+    "waterBodyUk": "озеро Райдуга",
+    "beachstatus": 1,
+    "lat": 50.48641758,
+    "lng": 30.58195792,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750396183000,
+    "linkedSpotIds": [
+      "radunka"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-telbin",
+    "objectid": 430,
+    "globalid": "15E77E07-6717-45E5-96AF-E79C2C8B62C3",
+    "nameUk": "Тельбін",
+    "districtUk": "Дніпровський",
+    "waterBodyUk": "озеро Тельбін",
+    "beachstatus": 1,
+    "lat": 50.427383500000005,
+    "lng": 30.60378265,
+    "web": null,
+    "lastEditedMs": null,
+    "linkedSpotIds": [
+      "telbin"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-troieshchyna",
+    "objectid": 20,
+    "globalid": "90CE4146-EC65-4237-89FE-682D11E35D4B",
+    "nameUk": "Троєщина",
+    "districtUk": "Деснянський",
+    "waterBodyUk": "затока р. Десенка",
+    "beachstatus": 1,
+    "lat": 50.50503735,
+    "lng": 30.56884989,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750395088000,
+    "linkedSpotIds": [
+      "sonyachne"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-tsentralnyi",
+    "objectid": 28,
+    "globalid": "24AA0B59-0A25-41A9-8D8C-8C8AB769808A",
+    "nameUk": "Центральний",
+    "districtUk": "Дніпровський",
+    "waterBodyUk": "річка Дніпро",
+    "beachstatus": 1,
+    "lat": 50.45847525,
+    "lng": 30.535475769999998,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750395088000,
+    "linkedSpotIds": [
+      "trukhaniv",
+      "dnipro-kyiv-reach"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  },
+  {
+    "id": "beach-chortoryi",
+    "objectid": 26,
+    "globalid": "F917E77B-4CBE-4215-AF96-54E0621603A1",
+    "nameUk": "Чорторий",
+    "districtUk": "Деснянський",
+    "waterBodyUk": "р. Дніпро",
+    "beachstatus": 1,
+    "lat": 50.49641688,
+    "lng": 30.536220760000003,
+    "web": "pleso.kyiv.ua",
+    "lastEditedMs": 1750395088000,
+    "linkedSpotIds": [
+      "desna-mouth"
+    ],
+    "sourceDataset": "perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+    "sourceUrl": "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva",
+    "geojsonQueryUrl": "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+    "noteUk": "GIS beachstatus is infrastructure/status flag, not water-lab pass/fail."
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "methodId": "merit_wth",
+  "priority": 5,
+  "collectedAt": "2026-08-08T21:28:00.000Z",
+  "status": "awaiting_offline_raster",
+  "dataset": {
+    "name": "MERIT Hydro",
+    "version": "v1.0.1",
+    "url": "https://global-hydrodynamics.github.io/MERIT_Hydro/",
+    "variable": "wth",
+    "variableUnit": "m",
+    "pixelSizeMApprox": 90,
+    "citation": "Yamazaki, D., Ikeshima, D., Sosa, J., Bates, P. D., Allen, G. H., & Pavelsky, T. M. (2019). MERIT Hydro: A high-resolution global hydrography map based on latest topography datasets. Water Resources Research, 55, 5053–5073. https://doi.org/10.1029/2019WR024873",
+    "doi": "https://doi.org/10.1029/2019WR024873",
+    "license": "CC BY-NC 4.0 or ODbL 1.0 (dual; choose one)",
+    "geeImageId": "MERIT/Hydro/v1_0_1",
+    "geeCatalogUrl": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_Hydro_v1_0_1"
+  },
+  "bbox": {
+    "south": 49.85,
+    "west": 29.2,
+    "north": 51.28,
+    "east": 32.3,
+    "source": "MAP_EXTENT (src/lib/mapExtent.ts)"
+  },
+  "tilesNeeded": {
+    "packages30deg": ["wth_n30e000.tar", "wth_n30e030.tar"],
+    "tiles5deg": ["n45e025_wth.tif", "n45e030_wth.tif", "n50e025_wth.tif", "n50e030_wth.tif"],
+    "noteUk": "Іменування: 5°×5° GeoTIFF; ім'я = нижній лівий кут домену (як у n30w120 → 30–35N, 120–115W). Для Київщини: 45–55N × 25–35E."
+  },
+  "targetRiversUk": [
+    "Ірпінь",
+    "Здвиж",
+    "Стугна",
+    "Трубіж",
+    "Козинка",
+    "Тетерів",
+    "Рось"
+  ],
+  "features": [],
+  "skipReasonUk": "Локального растра MERIT Hydro `wth` у репозиторії немає. Офіційне завантаження — через Google Form + пароль Dropbox (без публічного прямого URL без реєстрації). Без завантаженого GeoTIFF (або автентифікованого GEE sample) ширини не вимірювались; вигадані метри не додавались.",
+  "nodataSemantics": {
+    "centerlineWidthGt0": "ширина русла, м",
+    "minus1": "водний піксель не на осьовій лінії",
+    "zero": "не вода",
+    "minus9999": "ocean / undefined"
+  },
+  "playbookUk": [
+    "1. Відкрити https://global-hydrodynamics.github.io/MERIT_Hydro/ → Registration Google Form (ліцензія) → отримати пароль email.",
+    "2. На сторінці Download відкрити MERIT Hydro Dropbox (username не потрібен; лише пароль з листа). Версія: v1.0.1 (2019-06-10).",
+    "3. Завантажити пакети `wth_n30e000.tar` та `wth_n30e030.tar` (шар river channel width).",
+    "4. Розпакувати й залишити тайли: n45e025_wth.tif, n45e030_wth.tif, n50e025_wth.tif, n50e030_wth.tif.",
+    "5. Злити (gdalbuildvrt / gdalwarp) у один VRT/GeoTIFF і обрізати до MAP_EXTENT: -te 29.2 49.85 32.3 51.28 -t_srs EPSG:4326. Приклад: gdalwarp -te 29.2 49.85 32.3 51.28 -dstnodata -9999 n45e025_wth.tif n45e030_wth.tif n50e025_wth.tif n50e030_wth.tif merit_wth_kyiv_clip.tif",
+    "6. Взяти осьові лінії малих річок з public/data/shapes (або spots з ім'ям Ірпінь/Здвиж/Стугна/Трубіж/…): семплувати `wth` лише де value > 0 (centerline).",
+    "7. Для кожної річки: медіана валідних семплів уздовж LineString (крок ~90–180 м); відкинути -1/0/-9999. Записати feature: osmId якщо є, riverUk, widthM=медіана, lat/lng семпла-медіани або centroid сегмента, confidence=\"low\", noteUk=\"MERIT Hydro wth coarse prior (~90 m)\".",
+    "8. Альтернатива без Dropbox: Google Earth Engine Image(\"MERIT/Hydro/v1_0_1\").select(\"wth\") — reduceRegion/sampleRegions по тих самих лініях у bbox; той самий nodata-фільтр. Не підставляти значення з візуалізації Viswth «на око».",
+    "9. Ліцензія: для публічного JSON у product prefer ODbL share-alike або CC BY-NC залежно від комерційного використання мапи; цитувати Yamazaki et al. 2019; не редистриб'ювати raw GeoTIFF.",
+    "10. Після семплінгу оновити цей файл: features[] + collectedAt; status → \"sampled\"."
+  ],
+  "mirrors": [
+    {
+      "kind": "official_product",
+      "url": "https://global-hydrodynamics.github.io/MERIT_Hydro/",
+      "access": "Google Form → email password → Dropbox"
+    },
+    {
+      "kind": "paper",
+      "url": "https://doi.org/10.1029/2019WR024873"
+    },
+    {
+      "kind": "gee",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/MERIT_Hydro_v1_0_1",
+      "imageId": "MERIT/Hydro/v1_0_1",
+      "band": "wth"
+    },
+    {
+      "kind": "usgs_catalog_entry",
+      "url": "https://water.usgs.gov/catalog/datasets/05199160-2947-404d-bac7-ba6aed53a96e/"
+    }
+  ]
+}

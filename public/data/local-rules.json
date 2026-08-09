@@ -1,0 +1,145 @@
+{
+  "checkedAt": "2026-08-08",
+  "generatedAt": "2026-08-08T12:50:00.000Z",
+  "method": "manual_research+gov_sources",
+  "disclaimerUk": "Колір на карті показує місцеві правила громад. Загальна заборона області на навігацію може діяти всюди, але сама по собі не фарбує водойму жовтим. Довгі річки (Десна, Ірпінь тощо) підсвічені жовтим лише в зонах громад із відомою забороною або біля підтверджених точок — не по всій назві річки.",
+  "byCommunity": {
+    "kotsyubynske": {
+      "level": "restricted",
+      "evidenceUk": "Коцюбинська СТГ — протокол місцевої комісії ТЕБ і НС від 28.03.2025 №2: заборона масового відпочинку на водоймах громади (купання, риболовля, водний спорт) на період воєнного стану.",
+      "sources": ["https://kotsyubinskarada.gov.ua/news/222029-kupatis-zaboroneno"],
+      "bbox": { "south": 50.48, "west": 30.28, "north": 50.52, "east": 30.36 }
+    },
+    "irpin": {
+      "level": "restricted",
+      "evidenceUk": "Ірпінська МТГ — комісія ТЕБ і НС (протоколи 2024–2025): заборона масового відпочинку / купання на водоймах громади на період воєнного стану.",
+      "sources": [
+        "https://imr.gov.ua/uvaga-kupannya-zaboroneno-mistsevi-vodojmy-mozhut-nesty-nebezpeku/",
+        "https://visnyk-irpin.com.ua/na-terytoriyi-irpinskoyi-gromady-kupannya-u-vodojmah-zaboroneno/"
+      ],
+      "bbox": { "south": 50.48, "west": 30.2, "north": 50.56, "east": 30.4 }
+    },
+    "bucha": {
+      "level": "restricted",
+      "evidenceUk": "Бучанська громада / районна комісія ТЕБ і НС — публічні повідомлення про продовження заборони купання у водоймах на період воєнного стану (протокол №10 від 28.05.2024).",
+      "sources": [
+        "https://kyivschina24.com/news/na-terytoriyi-buchanskoyi-gromady-prodovzhyly-zaboronu-na-kupannya-u-vodojmah/",
+        "https://kyiv.comments.ua/ua/news/society/human-rights/24776-kilkist-gromad-na-kiivschini-de-vvodyat-dodatkovi-zaboroni-zbilshuetsya.html"
+      ],
+      "bbox": { "south": 50.48, "west": 30.1, "north": 50.6, "east": 30.32 }
+    },
+    "bilogorodka": {
+      "level": "restricted",
+      "evidenceUk": "Білогородська сільрада — рішення комісії ТЕБ і НС: заборона масового відпочинку на водних об’єктах (купання, водний спорт, навігація тощо) на період воєнного стану.",
+      "sources": [
+        "https://bilohorodka.org.ua/zaborona-na-vidpochynok-na-vodnykh-ob-iektakh-de-mozhna-kupatysia-u-kyivskij-oblasti/"
+      ],
+      "bbox": { "south": 50.35, "west": 30.15, "north": 50.45, "east": 30.35 }
+    },
+    "boryspil": {
+      "level": "restricted",
+      "evidenceUk": "Бориспільська МТГ — протокол №5 комісії ТЕБ і НС від 21.05.2024: заборона купання на водних об’єктах громади та під’їзду до них.",
+      "sources": [
+        "https://borispol-rada.gov.ua/item/59155-u-hromadi-diie-zaborona-na-kupannia-na-vodnykh-obiektakh.html"
+      ],
+      "bbox": { "south": 50.3, "west": 30.85, "north": 50.42, "east": 31.05 }
+    },
+    "borodyanka": {
+      "level": "restricted",
+      "evidenceUk": "Бородянська СТГ — публічні повідомлення ради: купання у водоймах громади заборонено / немає обладнаних місць купання (зона Здвижу).",
+      "sources": [
+        "https://bsr.gov.ua/kupannya-u-vodojmah-borodyanskoyi-gromady-zaboroneno/",
+        "https://bsr.gov.ua/na-terytoriyi-borodyanskoyi-gromady-zaboroneno-kupannya-u-vodojmah/"
+      ],
+      "bbox": { "south": 50.5, "west": 29.7, "north": 50.7, "east": 30.1 }
+    },
+    "borshchagivka": {
+      "level": "restricted",
+      "evidenceUk": "Борщагівська сільрада — протокол місцевої комісії ТЕБ і НС від 08.04.2026: заборона масового відпочинку на водних об’єктах у 2026 на період воєнного стану.",
+      "sources": ["https://brada.gov.ua/society/kupannia-zaboroneno/"],
+      "bbox": { "south": 50.38, "west": 30.3, "north": 50.45, "east": 30.42 }
+    },
+    "zazymya": {
+      "level": "restricted",
+      "evidenceUk": "Зазимська громада — заборона купання в Десні (посилання на рішення обласної комісії ТЕБ і НС / якість води).",
+      "sources": [
+        "https://zotg.gov.ua/provodymo-svoye-dozvillya-bez-desny/",
+        "https://koda.gov.ua/roz%CA%BCyasnennya-shhodo-yakosti-vody-v-richczi-desna/"
+      ],
+      "bbox": { "south": 50.55, "west": 30.55, "north": 50.7, "east": 30.85 }
+    }
+  },
+  "byRiverNameToken": {},
+  "_byRiverNameTokenNoteUk": "Токени імені річки вимкнено: вони фарбували всю назву (напр. увесь Здвиж), тоді як джерела — лише в межах громад. Статус іде з byCommunity.bbox + curated spots (≤25 км).",
+  "bySpotId": {
+    "blakytne": {
+      "level": "restricted",
+      "evidenceUk": "Блакитні озера / Пуща-Водиця межують із Коцюбинською СТГ, де діє заборона масового відпочинку на водоймах.",
+      "sources": ["https://kotsyubinskarada.gov.ua/news/222029-kupatis-zaboroneno"]
+    },
+    "desna-mouth": {
+      "level": "restricted",
+      "evidenceUk": "Гирло Десни / Зазимська громада — локальна заборона купання в Десні та роз’яснення якості води.",
+      "sources": [
+        "https://zotg.gov.ua/provodymo-svoye-dozvillya-bez-desny/",
+        "https://koda.gov.ua/roz%CA%BCyasnennya-shhodo-yakosti-vody-v-richczi-desna/"
+      ]
+    },
+    "irpin-river": {
+      "level": "restricted",
+      "evidenceUk": "Нижня Ірпінь у Ірпінській громаді — офіційна заборона купання / масового відпочинку на водоймах.",
+      "sources": [
+        "https://imr.gov.ua/uvaga-kupannya-zaboroneno-mistsevi-vodojmy-mozhut-nesty-nebezpeku/"
+      ]
+    },
+    "bila-tserkva-ros": {
+      "level": "likely_ok",
+      "evidenceUk": "Окремої громадівської заборони на всю Рось у Білій Церкві не знайдено (купальний сезон/пляж «Центральний» існують; можливі санітарні обмеження по пробах — перевіряйте перед виходом).",
+      "sources": [
+        "https://new.bc-rada.gov.ua/zhyteliam/bezpeka/tsyvilnyi_zakhyst_ta_bezpeka_zhyttiediialnosti/tsyvilnyi_zakhyst_ta_bezpeka_zhyttiediialnosti_informuie/pravyla_povedinky_na_vodi.html"
+      ]
+    },
+    "fastiv-lakes": {
+      "level": "check_local",
+      "evidenceUk": "Суцільної громадівської заборони всіх фастівських ставків не підтверджено; є окремі санітарні «не рекомендується» / загальні правила безпеки на воді.",
+      "sources": ["http://fastiv-rada.gov.ua/dsns-informuie-pravyla-bezpechnoi-povedinky-na-vodi/"]
+    },
+    "berkovetske": {
+      "level": "restricted",
+      "evidenceUk": "Берковецьке озеро в зоні впливу Білогородської / Ірпінської громад із місцевими заборонами масового відпочинку на водоймах.",
+      "sources": [
+        "https://bilohorodka.org.ua/zaborona-na-vidpochynok-na-vodnykh-ob-iektakh-de-mozhna-kupatysia-u-kyivskij-oblasti/"
+      ]
+    },
+    "redkyne": {
+      "level": "restricted",
+      "evidenceUk": "Редькине / Пуща-Водиця — у міських оглядах часто «купатися не можна»; суміжна Коцюбинська СТГ має формальну заборону масового відпочинку на водоймах.",
+      "sources": [
+        "https://kotsyubinskarada.gov.ua/news/222029-kupatis-zaboroneno",
+        "https://obolon.kyivcity.gov.ua/news/na-yakikh-plyazhakh-kieva-zaboroneno-ta-mozhna-kupatisya-derzhprodspozhivsluzhba-mkieva"
+      ]
+    },
+    "pidhirtsi-quarry": {
+      "level": "likely_ok",
+      "evidenceUk": "Окремого рішення громади про заборону саме Підгірцівських кар’єрів не знайдено. Технічні водойми: приватний доступ і рельєф можуть бути небезпечні навіть без формальної заборони.",
+      "sources": []
+    },
+    "stuhna": {
+      "level": "check_local",
+      "evidenceUk": "Окремої заборони всієї Стугни не знайдено; у м. Українка бувають санітарні «не рекомендується» по рекреаційних зонах.",
+      "sources": [
+        "https://ukrainska-gromada.gov.ua/community/kupannya-v-richczi-stugna-ne-rekomenduyetsya-vysnovky-laboratornyh-doslidzhen.html"
+      ]
+    },
+    "trubizh": {
+      "level": "likely_ok",
+      "evidenceUk": "Окремої громадівської/ТЕБ-заборони саме на Трубіж не знайдено.",
+      "sources": []
+    },
+    "teteriv-edge": {
+      "level": "likely_ok",
+      "evidenceUk": "Для ділянки Тетерева на східному краї Київщини не знайдено рішення про локальну заборону купання чи масового відпочинку; перевіряйте також суміжну Житомирщину.",
+      "sources": []
+    }
+  }
+}

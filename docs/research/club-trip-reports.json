@@ -1,0 +1,412 @@
+{
+  "checkedAt": "2026-08-08",
+  "minReportYear": 2023,
+  "methodUk": "Скрейпінг/перегляд комерційних і прокатних сайтів + каталоги звітів; лише джерела з датою ≥2023. Threads: публічний пошук без логіну не дав релевантних постів (Тельбін SUP / SUP Київ — No results).",
+  "hubs": [
+    { "id": "kuluar", "title": "Kuluar Splav", "url": "https://kuluarpohod.com/", "type": "commercial" },
+    { "id": "active-rest", "title": "Active Rest", "url": "https://active-rest.ua/uk/splavy", "type": "commercial" },
+    { "id": "lostworld", "title": "Загублений світ", "url": "http://lostworld.com.ua/", "type": "commercial" },
+    { "id": "sapaequip", "title": "Sapaequip", "url": "https://sapaequip.com/", "type": "commercial" },
+    { "id": "support", "title": "SUP PORT Kyiv", "url": "https://sup-port.kyiv.ua/", "type": "rental" },
+    { "id": "kayakcenter", "title": "Kayak Center", "url": "https://kayakcenter.kyiv.ua/", "type": "rental" },
+    { "id": "pohod-4storony", "title": "4 сторони", "url": "https://pohod.org.ua/", "type": "commercial" },
+    { "id": "wildtour", "title": "Дикий Тур", "url": "https://wildtour.com.ua/", "type": "commercial" },
+    { "id": "watergid", "title": "Шалений ОКУНЬ / watergid", "url": "https://www.watergid.club/", "type": "commercial" },
+    { "id": "poezdnik", "title": "Водний туризм України", "url": "https://poezdnik.kiev.ua/riky_ua.html", "type": "index" },
+    { "id": "threads", "title": "Threads search (публічно)", "url": "https://www.threads.net/", "type": "social" }
+  ],
+  "bySpotId": {
+    "telbin": {
+      "coverage": "rental",
+      "reports": [
+        {
+          "title": "SUP PORT — прокат на озері Тельбін (сторінка оновлена 2025)",
+          "url": "https://sup-port.kyiv.ua/sup-port-telbin/",
+          "year": 2025,
+          "type": "rental",
+          "hazardsUk": ["спокійна гладь", "людно у вихідні"]
+        },
+        {
+          "title": "Active Rest — SUP-прогулянка на Тельбіні (календар серпень 2026)",
+          "url": "https://active-rest.ua/uk/module/eventsmanager/events?show=calendar",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["регулярні комерційні прогулянки"]
+        }
+      ],
+      "notesUk": "Активний прокат + дати турів 2026 — опосередковане підтвердження, що на Тельбіні зараз плавають."
+    },
+    "blakytne": {
+      "coverage": "rental",
+      "reports": [
+        {
+          "title": "SUP PORT — Пуща-Водиця / Горащиха (оновлено 2025)",
+          "url": "https://sup-port.kyiv.ua/sup-port-pushcha-vodytsia/",
+          "year": 2025,
+          "type": "rental",
+          "hazardsUk": ["лісовий каскад ставків", "перевіряти локальні заборони громади"]
+        }
+      ],
+      "notesUk": "Пункт прокату працює; жовтий статус на карті = локальні обмеження громади."
+    },
+    "redkyne": {
+      "coverage": "rental",
+      "reports": [
+        {
+          "title": "SUP PORT — локації Пущі (Горащиха / каскад, оновлено 2025)",
+          "url": "https://sup-port.kyiv.ua/sup-port-pushcha-vodytsia/",
+          "year": 2025,
+          "type": "rental",
+          "hazardsUk": ["той самий каскад Пущі, що й Блакитні"]
+        }
+      ],
+      "notesUk": "Рекреаційний прокат поруч; не класичний club trip report."
+    },
+    "typete": {
+      "coverage": "rental",
+      "reports": [
+        {
+          "title": "Kayak Center — станція «Тягле» (прокат; тимчасово закрито через гніздування)",
+          "url": "https://kayakcenter.kyiv.ua/place/kayak-kanoe-czentr-tyagle-2/",
+          "year": 2026,
+          "type": "rental",
+          "hazardsUk": ["сезон відкривають пізніше через заказник", "на сторінці — тимчасово закрито"]
+        },
+        {
+          "title": "Телеграф — озеро Тягле: згадка каяків і SUP (2025)",
+          "url": "https://news.telegraf.com.ua/ukr/kiev/2025-06-19/5912396-nayglibshe-ozero-kieva-zyavilosya-vipadkovo-de-znakhoditsya-tsya-divo-vodoyma",
+          "year": 2025,
+          "type": "guide",
+          "hazardsUk": ["спокійна вода для новачків"]
+        }
+      ],
+      "notesUk": "Є інфраструктура прокату й публічні згадки; станція інколи закрита сезонно."
+    },
+    "pidhirtsi-quarry": {
+      "coverage": "guide",
+      "reports": [
+        {
+          "title": "Підгірцівські карʼєри — гіди/оренда на водоймі (індекс 2025)",
+          "url": "https://sup-port.kyiv.ua/",
+          "year": 2025,
+          "type": "guide",
+          "hazardsUk": ["карʼєр, людно", "перевіряти доступ"]
+        }
+      ],
+      "notesUk": "Опосередковане рекреаційне покриття; не маршрутний клубний звіт."
+    },
+    "desna-mouth": {
+      "coverage": "rich",
+      "reports": [
+        {
+          "title": "Kuluar — сплав по Десні, дати 2026",
+          "url": "https://kuluarpohod.com/routes/splav-po-desne/",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["маршрут Остер–Боденьки–Пірнове", "новачки ок"]
+        },
+        {
+          "title": "Active Rest — дводенний сплав Десною (календар 2026)",
+          "url": "https://active-rest.ua/uk/splavy?event_id=7",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["~30 км", "байдарки й SUP"]
+        },
+        {
+          "title": "Lost World — одноденні тури Десною (сезон 2026)",
+          "url": "http://lostworld.com.ua/",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["активні дати серпня 2026 на головній"]
+        },
+        {
+          "title": "4 сторони — сплав Десною 1 день",
+          "url": "https://pohod.org.ua/uk/activities/activity-splav-po-desne-1den",
+          "year": 2025,
+          "type": "commercial",
+          "hazardsUk": ["рафт/байдарка/каяк/SUP"]
+        }
+      ],
+      "notesUk": "Найсильніше актуальне покриття: кілька туроператорів з відкритими датами 2025–2026."
+    },
+    "teteriv-edge": {
+      "coverage": "rich",
+      "reports": [
+        {
+          "title": "Active Rest — сплав по Тетереву 1 день",
+          "url": "https://active-rest.ua/ru/splavy?event_id=41",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["18–20 км", "вихід з Києва"]
+        },
+        {
+          "title": "Kuluar — Ірша + Тетерів (байдарки/SUP)",
+          "url": "https://kuluarpohod.com/ua/routes/splav-teterev-irsha/",
+          "year": 2025,
+          "type": "commercial",
+          "hazardsUk": ["перекати на Ірші", "обноси", "фініш у Київській області"]
+        },
+        {
+          "title": "4 сторони — сплави Тетеревим",
+          "url": "https://pohod.org.ua/uk/activities/splav-po-teterevu",
+          "year": 2025,
+          "type": "commercial",
+          "hazardsUk": ["шивери/дамби", "краще на високій воді"]
+        },
+        {
+          "title": "Poєзднік — Тетерів 2024 (Коростишів–Пісківка), С. Заставський",
+          "url": "https://poezdnik.kiev.ua/riky_ua.html",
+          "year": 2024,
+          "type": "club",
+          "hazardsUk": ["радіаційна примітка після з. мосту біля Пісківки"]
+        }
+      ],
+      "notesUk": "Комерція 2025–2026 + клубний опис 2024. Spot «східний край» — гирлові/нижні ділянки."
+    },
+    "bila-tserkva-ros": {
+      "coverage": "rich",
+      "reports": [
+        {
+          "title": "Kuluar — 2 дні на Росі, дати 2026",
+          "url": "https://kuluarpohod.com/ua/routes/splav-po-reke-ros/",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["Тептіївка–Стеблів", "ГЕС Стеблів"]
+        },
+        {
+          "title": "Active Rest — сплав по Росі 2026",
+          "url": "https://active-rest.ua/ru/splavy?event_id=17",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["старт Богуслав", "байдарки/SUP"]
+        },
+        {
+          "title": "Дикий Тур — сплав по Росі 1 день",
+          "url": "https://wildtour.com.ua/ru/tour/splav-po-rosi/",
+          "year": 2025,
+          "type": "commercial",
+          "hazardsUk": ["пороги біля Богуслава", "сезонна повноводність"]
+        },
+        {
+          "title": "Шалений ОКУНЬ — розклад сплавів по Росі 2024+",
+          "url": "https://www.watergid.club/splavy-po-richkah-ukrayiny/splav-po-rosi/",
+          "year": 2024,
+          "type": "commercial",
+          "hazardsUk": ["Москаленки–Стеблів тощо"]
+        }
+      ],
+      "notesUk": "Активні комерційні дати; ділянки часто нижче Білої Церкви (Богуслав/Стеблів)."
+    },
+    "irpin-river": {
+      "coverage": "rich",
+      "reports": [
+        {
+          "title": "Sapaequip — «Високий берег» р. Ірпінь (сезон 2026)",
+          "url": "https://sapaequip.com/vysokyybereh",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["~10 км", "повалені дерева", "вузьке русло"]
+        },
+        {
+          "title": "Lost World — лісова річка Ірпінь на SUP",
+          "url": "http://lostworld.com.ua/irpin",
+          "year": 2025,
+          "type": "commercial",
+          "hazardsUk": ["лише SUP", "перешкоди в хащах"]
+        },
+        {
+          "title": "Дикий Тур — сплав по Ірпеню 1 день",
+          "url": "https://wildtour.com.ua/ru/tour/splav-po-reke-irpen/",
+          "year": 2025,
+          "type": "commercial",
+          "hazardsUk": ["Новосілки–Білогородка", "наслідок підриву дамби в гирлі"]
+        }
+      ],
+      "notesUk": "Актуальні комерційні тури 2025–2026; вимагає спритності на перешкодах."
+    },
+    "stuhna": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "Після 2022 окремих відкритих турів/прокату по Стугні не знайдено."
+    },
+    "trubizh": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "NO_REPORTS ≥2023."
+    },
+    "vyrlytsia": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023 для падл." },
+    "sonyachne": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "fastiv-lakes": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "yazinkove": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "berkovetske": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "radunka": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "nedozadne": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "sobachne": { "coverage": "none", "reports": [], "notesUk": "Прокати на близькій затоці Наталка — акваторія Дніпра (червона зона); не враховуємо." },
+    "almazne": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "basaika": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "koncha-zaspa": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "Є прокат/тури, але акваторія в banned_navigation — не в режимі «де поплавати»."
+    },
+    "dnipro-kyiv-reach": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "Червона зона каскаду; свідомі тури не використовуються як «можна плавати»."
+    },
+    "zhukiv-island": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "Тури 2026 є (Lost World / Kayak Center), але протоки Дніпра = banned_navigation."
+    },
+    "hydropark": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "Прокат активний, але banned_navigation."
+    },
+    "kozyn-quarry": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "Сплави по р. Козинка — окремий токен; карʼєри в червоній зоні."
+    }
+  },
+  "byRiverNameToken": {
+    "десна": {
+      "spotRefs": ["desna-mouth"],
+      "coverage": "rich",
+      "reports": [
+        {
+          "title": "Kuluar — Десна 2026",
+          "url": "https://kuluarpohod.com/routes/splav-po-desne/",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": []
+        },
+        {
+          "title": "Active Rest — Десна 2026",
+          "url": "https://active-rest.ua/uk/splavy?event_id=7",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": []
+        }
+      ],
+      "notesUk": "Активні дати 2026."
+    },
+    "тетерів": {
+      "spotRefs": ["teteriv-edge"],
+      "coverage": "rich",
+      "reports": [
+        {
+          "title": "Active Rest — Тетерів",
+          "url": "https://active-rest.ua/ru/splavy?event_id=41",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": []
+        },
+        {
+          "title": "Тетерів 2024 — Заставський (Poєзднік)",
+          "url": "https://poezdnik.kiev.ua/riky_ua.html",
+          "year": 2024,
+          "type": "club",
+          "hazardsUk": ["радіаційна примітка після Пісківки"]
+        }
+      ],
+      "notesUk": "Комерція + клубний опис 2024."
+    },
+    "рось": {
+      "spotRefs": ["bila-tserkva-ros"],
+      "coverage": "rich",
+      "reports": [
+        {
+          "title": "Kuluar — Рось 2026",
+          "url": "https://kuluarpohod.com/ua/routes/splav-po-reke-ros/",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": []
+        }
+      ],
+      "notesUk": "Активні дати 2026."
+    },
+    "ірпінь": {
+      "spotRefs": ["irpin-river"],
+      "coverage": "rich",
+      "reports": [
+        {
+          "title": "Sapaequip — Високий берег Ірпінь 2026",
+          "url": "https://sapaequip.com/vysokyybereh",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["завали"]
+        },
+        {
+          "title": "Lost World — Ірпінь SUP",
+          "url": "http://lostworld.com.ua/irpin",
+          "year": 2025,
+          "type": "commercial",
+          "hazardsUk": []
+        }
+      ],
+      "notesUk": "Активні тури 2025–2026."
+    },
+    "любич": {
+      "coverage": "commercial",
+      "reports": [
+        {
+          "title": "Active Rest — сплав по Любичу (календар 2026)",
+          "url": "https://active-rest.ua/uk/splavy?event_id=16",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["~18–20 км", "вихід з Києва"]
+        },
+        {
+          "title": "Lost World — Сонячна річка Любич (дати 2026)",
+          "url": "http://lostworld.com.ua/",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": []
+        }
+      ],
+      "notesUk": "Регулярні комерційні сплави 2026."
+    },
+    "козинка": {
+      "coverage": "commercial",
+      "reports": [
+        {
+          "title": "Active Rest — Козинка байдарки/SUP (2026)",
+          "url": "https://active-rest.ua/uk/splavy?event_id=20",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["7–10 км біля с. Козин", "латаття"]
+        },
+        {
+          "title": "Lost World — лабіринтами Козинки (2026)",
+          "url": "http://lostworld.com.ua/kozinka",
+          "year": 2026,
+          "type": "commercial",
+          "hazardsUk": ["короткий релакс-маршрут"]
+        }
+      ],
+      "notesUk": "Популярний короткий маршрут під Києвом, дати 2026."
+    },
+    "унава": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "Негативний паспорт 2018 — старше 2022; без нових звітів не показуємо."
+    },
+    "остер": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "Тур 2021 застарілий; окремих відкритих ≥2023 не знайдено (окрім як проміжна точка на Десні)."
+    },
+    "стугна": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "трубіж": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "здвиж": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "супій": { "coverage": "none", "reports": [], "notesUk": "NO_REPORTS ≥2023." },
+    "дніпро": {
+      "coverage": "none",
+      "reports": [],
+      "notesUk": "Червона зона; не в режимі «де поплавати»."
+    }
+  },
+  "threadsNoteUk": "Публічний пошук Threads без логіну: «Тельбін SUP», «SUP Київ» — No results. Скрейпінг тредів обмежений логінволлом."
+}

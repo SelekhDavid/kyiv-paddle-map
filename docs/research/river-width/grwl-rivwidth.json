@@ -1,0 +1,278 @@
+{
+  "methodId": "grwl_rivwidth",
+  "priority": 4,
+  "collectedAt": "2026-08-08T21:33:24Z",
+  "dataset": {
+    "name": "Global River Widths from Landsat (GRWL) Database — Simplified Vector Product (summaryStats)",
+    "url": "https://doi.org/10.5281/zenodo.1297434",
+    "version": "V01.01",
+    "license": "CC-BY-4.0"
+  },
+  "bbox": {
+    "south": 49.85,
+    "west": 29.2,
+    "north": 51.28,
+    "east": 32.3
+  },
+  "sourceDetails": {
+    "zenodoRecord": "https://zenodo.org/records/1297434",
+    "downloadUrls": {
+      "summaryStats": "https://zenodo.org/api/records/1297434/files/GRWL_summaryStats_V01.01.zip/content",
+      "vectorFull": "https://zenodo.org/api/records/1297434/files/GRWL_vector_V01.01.zip/content",
+      "mask": "https://zenodo.org/api/records/1297434/files/GRWL_mask_V01.01.zip/content",
+      "tileIndexDrive": "https://drive.google.com/file/d/1K6x1E0mmLc0k7er4NCIeaZsTfHi2wxxI/view?usp=sharing"
+    },
+    "productUsed": "GRWL_summaryStats_V01.01.zip (~43 MB) — segment-level width_min_/width_med_/width_mean/width_max_",
+    "productSkipped": "GRWL_vector_V01.01.zip (~3.1 GB full centerline points); individual tiles not separately hosted on Zenodo",
+    "gee": {
+      "summary": "projects/sat-io/open-datasets/GRWL/grwl_SummaryStats_v01_01",
+      "vector": "projects/sat-io/open-datasets/GRWL/water_vector_v01_01",
+      "mask": "projects/sat-io/open-datasets/GRWL/water_mask_v01_01",
+      "tiles": "projects/sat-io/open-datasets/GRWL/grwl_tiles",
+      "catalog": "https://gee-community-catalog.org/projects/grwl/"
+    },
+    "rivWidthCloud": {
+      "note": "Algorithm (not a static width DB); uses GRWL centerlines as reference",
+      "github": "https://github.com/seanyx/RivWidthCloudPaper",
+      "paper": "https://doi.org/10.1109/LGRS.2019.2921445"
+    },
+    "citation": "Allen, G.H. & Pavelsky, T.M. (2018). Global extent of rivers and streams. Science. https://doi.org/10.1126/science.aat0636",
+    "reliabilityUk": "Надійно приблизно для річок ≳30 м (Дніпро, Десна; вужчі притоки часто відсутні).",
+    "segmentsIntersectingBbox": 13,
+    "riversPresent": [
+      "Десна",
+      "Дніпро",
+      "Тетерів"
+    ],
+    "riversAbsentOrUnmatched": [
+      "Рось"
+    ]
+  },
+  "features": [
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 2891.5,
+      "lat": 49.86578,
+      "lng": 31.49043,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~3423 м)"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 2891.5,
+      "lat": 49.97252,
+      "lng": 31.24296,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~3240 м)"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 2891.5,
+      "lat": 50.01529,
+      "lng": 31.38169,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~1882 м)"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 2891.5,
+      "lat": 50.03792,
+      "lng": 30.97579,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~581 м)"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 2891.5,
+      "lat": 50.1162,
+      "lng": 30.90115,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~1339 м)"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 2891.5,
+      "lat": 50.23492,
+      "lng": 30.7144,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~793 м)"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 2891.5,
+      "lat": 50.31553,
+      "lng": 30.61677,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 510–11947 м; osmId не привʼязано (найближчий OSM ~785 м)"
+    },
+    {
+      "osmId": "way/438463402",
+      "riverUk": "Дніпро",
+      "widthM": 258.0,
+      "lat": 50.40888,
+      "lng": 30.58991,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 84–2911 м"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 258.0,
+      "lat": 50.50039,
+      "lng": 30.53957,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 84–2911 м; osmId не привʼязано (найближчий OSM ~704 м)"
+    },
+    {
+      "osmId": "way/653671509",
+      "riverUk": "Дніпро",
+      "widthM": 9440.5,
+      "lat": 50.59689,
+      "lng": 30.52224,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 2413–13958 м"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 9440.5,
+      "lat": 50.70733,
+      "lng": 30.46288,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 2413–13958 м; osmId не привʼязано (найближчий OSM ~912 м)"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Дніпро",
+      "widthM": 9440.5,
+      "lat": 50.82562,
+      "lng": 30.4799,
+      "confidence": "low",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); lakeFlag=1 (водосховище/озеро у продукті; у басейні Дніпра — Київське/Канівське); діапазон сегмента 2413–13958 м; osmId не привʼязано (найближчий OSM ~1759 м)"
+    },
+    {
+      "osmId": "way/104968777",
+      "riverUk": "Десна",
+      "widthM": 258.0,
+      "lat": 50.55937,
+      "lng": 30.57907,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 84–2911 м"
+    },
+    {
+      "osmId": "way/104969053",
+      "riverUk": "Десна",
+      "widthM": 258.0,
+      "lat": 50.62285,
+      "lng": 30.68206,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 84–2911 м"
+    },
+    {
+      "osmId": null,
+      "riverUk": "Десна",
+      "widthM": 51.0,
+      "lat": 50.70807,
+      "lng": 30.73438,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–169 м; osmId не привʼязано (найближчий OSM ~710 м)"
+    },
+    {
+      "osmId": "way/849657053",
+      "riverUk": "Десна",
+      "widthM": 171.0,
+      "lat": 50.81393,
+      "lng": 30.73884,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 54–336 м"
+    },
+    {
+      "osmId": "way/849657053",
+      "riverUk": "Десна",
+      "widthM": 171.0,
+      "lat": 50.91316,
+      "lng": 30.82068,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 54–336 м"
+    },
+    {
+      "osmId": "way/104968731",
+      "riverUk": "Десна",
+      "widthM": 171.0,
+      "lat": 51.01533,
+      "lng": 30.88903,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 54–336 м"
+    },
+    {
+      "osmId": "way/104968731",
+      "riverUk": "Десна",
+      "widthM": 171.0,
+      "lat": 51.13461,
+      "lng": 30.93591,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 54–336 м"
+    },
+    {
+      "osmId": "way/104968731",
+      "riverUk": "Десна",
+      "widthM": 171.0,
+      "lat": 51.21364,
+      "lng": 31.0445,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 54–336 м"
+    },
+    {
+      "osmId": "way/215566176",
+      "riverUk": "Тетерів",
+      "widthM": 48.0,
+      "lat": 50.52616,
+      "lng": 29.32258,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–973 м"
+    },
+    {
+      "osmId": "way/215566188",
+      "riverUk": "Тетерів",
+      "widthM": 48.0,
+      "lat": 50.64131,
+      "lng": 29.44452,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–973 м"
+    },
+    {
+      "osmId": "way/138600145",
+      "riverUk": "Тетерів",
+      "widthM": 48.0,
+      "lat": 50.73206,
+      "lng": 29.59061,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–973 м"
+    },
+    {
+      "osmId": "way/29420754",
+      "riverUk": "Тетерів",
+      "widthM": 48.0,
+      "lat": 50.83177,
+      "lng": 29.69136,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–973 м"
+    },
+    {
+      "osmId": "way/29420754",
+      "riverUk": "Тетерів",
+      "widthM": 48.0,
+      "lat": 50.8745,
+      "lng": 29.85205,
+      "confidence": "medium",
+      "noteUk": "GRWL V01.01 summaryStats width_med_ (≳30 m Landsat product); діапазон сегмента 30–973 м"
+    }
+  ]
+}

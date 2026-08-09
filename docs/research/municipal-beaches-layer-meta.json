@@ -1,0 +1,1173 @@
+{
+ "currentVersion": 11.4,
+ "cimVersion": "3.4.0",
+ "id": 0,
+ "name": "Пляжі",
+ "type": "Feature Layer",
+ "description": "",
+ "geometryType": "esriGeometryPoint",
+ "sourceSpatialReference": {
+  "wkt2": "PROJCRS[\"MCK-80P\",BASEGEOGCRS[\"GCS_Pulkovo_1942\",DATUM[\"D_Pulkovo_1942\",ELLIPSOID[\"Krasovsky_1940\",6378245.0,298.3,LENGTHUNIT[\"Meter\",1.0]]],PRIMEM[\"Greenwich\",0.0,ANGLEUNIT[\"Degree\",0.0174532925199433]],CS[ellipsoidal,2],AXIS[\"Latitude (lat)\",north,ORDER[1]],AXIS[\"Longitude (lon)\",east,ORDER[2]],ANGLEUNIT[\"Degree\",0.0174532925199433]],CONVERSION[\"Gauss_Kruger\",METHOD[\"Gauss_Kruger\"],PARAMETER[\"False_Easting\",300000.0,LENGTHUNIT[\"Meter\",1.0]],PARAMETER[\"False_Northing\",0.0,LENGTHUNIT[\"Meter\",1.0]],PARAMETER[\"Central_Meridian\",30.5,ANGLEUNIT[\"Degree\",0.0174532925199433]],PARAMETER[\"Scale_Factor\",1.0,SCALEUNIT[\"Unity\",1.0]],PARAMETER[\"Latitude_Of_Origin\",0.0,ANGLEUNIT[\"Degree\",0.0174532925199433]]],CS[Cartesian,2],AXIS[\"Easting (X)\",east,ORDER[1]],AXIS[\"Northing (Y)\",north,ORDER[2]],LENGTHUNIT[\"Meter\",1.0]]",
+  "wkt": "PROJCS[\"MCK-80P\",GEOGCS[\"GCS_Pulkovo_1942\",DATUM[\"D_Pulkovo_1942\",SPHEROID[\"Krasovsky_1940\",6378245.0,298.3]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Gauss_Kruger\"],PARAMETER[\"False_Easting\",300000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",30.5],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+  "xyTolerance": 0.001,
+  "zTolerance": 0.001,
+  "mTolerance": 0.001,
+  "falseX": -5323300,
+  "falseY": -10002300,
+  "xyUnits": 10000,
+  "falseZ": -100000,
+  "zUnits": 10000,
+  "falseM": -100000,
+  "mUnits": 10000
+ },
+ "copyrightText": "",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "referenceScale": 0.0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSMS",
+    "style": "esriSMSCircle",
+    "color": [
+     74,
+     55,
+     158,
+     255
+    ],
+    "size": 4,
+    "angle": 0,
+    "xoffset": 0,
+    "yoffset": 0,
+    "outline": {
+     "color": [
+      0,
+      0,
+      0,
+      255
+     ],
+     "width": 0.7
+    }
+   }
+  },
+  "scaleSymbols": true,
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": 289134.3239000002,
+  "ymin": 5582127.766899999,
+  "xmax": 307596.27520000003,
+  "ymax": 5601052.2586,
+  "zmin": 0,
+  "zmax": 0,
+  "spatialReference": {
+   "wkt2": "PROJCRS[\"MCK-80P\",BASEGEOGCRS[\"GCS_Pulkovo_1942\",DATUM[\"D_Pulkovo_1942\",ELLIPSOID[\"Krasovsky_1940\",6378245.0,298.3,LENGTHUNIT[\"Meter\",1.0]]],PRIMEM[\"Greenwich\",0.0,ANGLEUNIT[\"Degree\",0.0174532925199433]],CS[ellipsoidal,2],AXIS[\"Latitude (lat)\",north,ORDER[1]],AXIS[\"Longitude (lon)\",east,ORDER[2]],ANGLEUNIT[\"Degree\",0.0174532925199433]],CONVERSION[\"Gauss_Kruger\",METHOD[\"Gauss_Kruger\"],PARAMETER[\"False_Easting\",300000.0,LENGTHUNIT[\"Meter\",1.0]],PARAMETER[\"False_Northing\",0.0,LENGTHUNIT[\"Meter\",1.0]],PARAMETER[\"Central_Meridian\",30.5,ANGLEUNIT[\"Degree\",0.0174532925199433]],PARAMETER[\"Scale_Factor\",1.0,SCALEUNIT[\"Unity\",1.0]],PARAMETER[\"Latitude_Of_Origin\",0.0,ANGLEUNIT[\"Degree\",0.0174532925199433]]],CS[Cartesian,2],AXIS[\"Easting (X)\",east,ORDER[1]],AXIS[\"Northing (Y)\",north,ORDER[2]],LENGTHUNIT[\"Meter\",1.0]]",
+   "wkt": "PROJCS[\"MCK-80P\",GEOGCS[\"GCS_Pulkovo_1942\",DATUM[\"D_Pulkovo_1942\",SPHEROID[\"Krasovsky_1940\",6378245.0,298.3]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Gauss_Kruger\"],PARAMETER[\"False_Easting\",300000.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",30.5],PARAMETER[\"Scale_Factor\",1.0],PARAMETER[\"Latitude_Of_Origin\",0.0],UNIT[\"Meter\",1.0]]",
+   "xyTolerance": 0.001,
+   "zTolerance": 0.001,
+   "mTolerance": 0.001,
+   "falseX": -5323300,
+   "falseY": -10002300,
+   "xyUnits": 10000,
+   "falseZ": -100000,
+   "zUnits": 10000,
+   "falseM": -100000,
+   "mUnits": 10000
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "name",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "objectid",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "name",
+   "type": "esriFieldTypeString",
+   "alias": "Повна назва закладу, пляжу тощо",
+   "length": 255,
+   "domain": null
+  },
+  {
+   "name": "worktime",
+   "type": "esriFieldTypeString",
+   "alias": "Режим роботи закладу",
+   "length": 255,
+   "domain": null
+  },
+  {
+   "name": "district",
+   "type": "esriFieldTypeString",
+   "alias": "Район",
+   "length": 32,
+   "domain": {
+    "type": "codedValue",
+    "name": "District",
+    "description": "Райони",
+    "codedValues": [
+     {
+      "name": "Голосіївський",
+      "code": "Голосіївський"
+     },
+     {
+      "name": "Печерський",
+      "code": "Печерський"
+     },
+     {
+      "name": "Оболонський",
+      "code": "Оболонський"
+     },
+     {
+      "name": "Подільський",
+      "code": "Подільський"
+     },
+     {
+      "name": "Святошинський",
+      "code": "Святошинський"
+     },
+     {
+      "name": "Солом'янський",
+      "code": "Солом'янський"
+     },
+     {
+      "name": "Шевченківський",
+      "code": "Шевченківський"
+     },
+     {
+      "name": "Дарницький",
+      "code": "Дарницький"
+     },
+     {
+      "name": "Деснянський",
+      "code": "Деснянський"
+     },
+     {
+      "name": "Дніпровський",
+      "code": "Дніпровський"
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "point_x",
+   "type": "esriFieldTypeDouble",
+   "alias": "lat",
+   "domain": null
+  },
+  {
+   "name": "point_y",
+   "type": "esriFieldTypeDouble",
+   "alias": "lon",
+   "domain": null
+  },
+  {
+   "name": "waterobject",
+   "type": "esriFieldTypeString",
+   "alias": "Назва водойми",
+   "length": 128,
+   "domain": null
+  },
+  {
+   "name": "beachstatus",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Чи можна купатись",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "shower",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Пляжний душ",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "safeguard",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Рятувальний пост",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "drinkingfountain",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Питний фонтанчик",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "flatenter",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Пологий захід в воду",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "busstop",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Зупинка громадського транспорту",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "sport",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Спортивні майданчики",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "child",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Дитячі майданчики",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "dresing",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Кабіни для переодягання",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "shadowcanopies",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Тіньові навіси",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "specialparking",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Спеціальні місця для паркування ",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "notresholdenter",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Безпороговий вхід",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "availability",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Інфраструктура для маломобільних груп населення",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "rampant",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Пандус",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "lift",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Підйомник",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "audio",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Аудіопоказчик",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "haptic",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Тактильні елементи",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "hpticview",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Тактильні інформаційні показчики",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "noview",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Немає невізуальних засобів",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "visualelement",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Візуальні елементи",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "markedcolor",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Позначення кольором",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "lightsignal",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Світлові сигнали",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "infoboard",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Інформаційне табло",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "infopointer",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Інформатори та покажчики",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "noacustic",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Немає неакустичного орієнтування",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "liftinternal",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Ліфт",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "stair",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Сходи",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "stairelevator",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Сходові підйомники",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "mobileelevator",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Мобільні підйомники",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "elevatorplatform",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Підйомна платформа",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "escalator",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Ескалатор",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "rampantinternal",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Внутрішій пандус",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "nofloor",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Доступності поверхів немає",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "wc",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Санітарно-гігієнічне приміщення",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "wifi",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "WiFi",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "childtable",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Пеленальний столтк",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "childroom",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Дитяча кімната",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "siglang",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Переклад с жестової мови",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "dispersonsup",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "Супровід людини з інвалідністю",
+   "domain": {
+    "type": "codedValue",
+    "name": "Logica",
+    "description": "Логічні значення (Так/Ні)",
+    "codedValues": [
+     {
+      "name": "Ні",
+      "code": 0
+     },
+     {
+      "name": "Так",
+      "code": 1
+     }
+    ],
+    "mergePolicy": "esriMPTDefaultValue",
+    "splitPolicy": "esriSPTDefaultValue"
+   }
+  },
+  {
+   "name": "last_editeddate",
+   "type": "esriFieldTypeDate",
+   "alias": "last_edited_date",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "tel",
+   "type": "esriFieldTypeString",
+   "alias": "Контактний номер телефону закладу",
+   "length": 128,
+   "domain": null
+  },
+  {
+   "name": "web",
+   "type": "esriFieldTypeString",
+   "alias": "Сайт закладу",
+   "length": 255,
+   "domain": null
+  },
+  {
+   "name": "shape",
+   "type": "esriFieldTypeGeometry",
+   "alias": "shape",
+   "domain": null
+  },
+  {
+   "name": "globalid",
+   "type": "esriFieldTypeGlobalID",
+   "alias": "globalid",
+   "length": 38,
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "shape",
+  "type": "esriFieldTypeGeometry",
+  "alias": "shape"
+ },
+ "indexes": [
+  {
+   "name": "r38_sde_rowid_uk",
+   "fields": "objectid",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "uuid_38",
+   "fields": "globalid",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "a19_ix1",
+   "fields": "shape",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 2000,
+ "maxSelectionCount": 2000,
+ "supportsStatistics": true,
+ "supportsExceedsLimitStatistics": true,
+ "supportsAdvancedQueries": true,
+ "hasZ": true,
+ "supportedQueryFormats": "JSON, geoJSON, PBF",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "supportedSpatialRelationships": [
+  "esriSpatialRelIntersects",
+  "esriSpatialRelContains",
+  "esriSpatialRelCrosses",
+  "esriSpatialRelEnvelopeIntersects",
+  "esriSpatialRelIndexIntersects",
+  "esriSpatialRelOverlaps",
+  "esriSpatialRelTouches",
+  "esriSpatialRelWithin",
+  "esriSpatialRelRelation"
+ ],
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsPercentileStatistics": true,
+  "supportsHavingClause": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsCountDistinct": true,
+  "supportsAdvancedQueryRelated": true,
+  "supportsQueryRelatedPagination": true,
+  "supportsPagination": true,
+  "supportsLod": false,
+  "supportsQueryWithLodSR": false,
+  "supportsTrueCurve": true,
+  "supportsQueryWithDatumTransformation": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true,
+  "supportsTimeRelation": true,
+  "supportsSqlFormat": false,
+  "supportsQueryAnalytic": true,
+  "supportsCurrentUserQueries": true
+ },
+ "supportsDatumTransformation": true,
+ "advancedQueryAnalyticCapabilities": {
+  "supportsLinearRegression": true,
+  "supportsAsync": false,
+  "supportsPercentileAnalytic": false
+ },
+ "dateFieldsTimeReference": null,
+ "preferredTimeReference": null,
+ "datesInUnknownTimezone": false,
+ "hasMetadata": true,
+ "isDataArchived": false,
+ "archivingInfo": {
+  "supportsQueryWithHistoricMoment": false,
+  "startArchivingMoment": -1
+ },
+ "supportsCoordinatesQuantization": true,
+ "supportsDynamicLegends": true
+}

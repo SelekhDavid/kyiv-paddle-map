@@ -1,0 +1,2648 @@
+{
+  "methodId": "osm_width_tag",
+  "priority": 6,
+  "collectedAt": "2026-08-08T21:29:41.095Z",
+  "coverageNoteUk": "Знайдено 264 OSM way/relation з тегом width=* (waterway або річковий полігон) у bbox Київської карти (49.85–51.28N, 29.2–32.3E). Тег рідкісний і часто субʼєктивний; confidence=low. water-shapes.geojson width не містить — дані з Overpass.",
+  "features": [
+    {
+      "osmId": "way/1003188459",
+      "nameUk": "Усть Глухівка",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.5615781,
+      "lng": 29.3713577,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1003188459"
+    },
+    {
+      "osmId": "way/1006255956",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2075446,
+      "lng": 30.3497572,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1006255956"
+    },
+    {
+      "osmId": "way/1006256043",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2207073,
+      "lng": 30.3404297,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1006256043"
+    },
+    {
+      "osmId": "way/1023671983",
+      "nameUk": null,
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.2862416,
+      "lng": 30.5606887,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1023671983"
+    },
+    {
+      "osmId": "way/1023671984",
+      "nameUk": null,
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.2885593,
+      "lng": 30.5606972,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1023671984"
+    },
+    {
+      "osmId": "way/1041940448",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1968275,
+      "lng": 30.3033402,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1041940448"
+    },
+    {
+      "osmId": "way/1087866344",
+      "nameUk": "Стугна",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1451984,
+      "lng": 30.0538878,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1087866344"
+    },
+    {
+      "osmId": "way/1087866345",
+      "nameUk": "Стугна",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1431643,
+      "lng": 30.0525612,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1087866345"
+    },
+    {
+      "osmId": "way/1087866350",
+      "nameUk": "Стугна",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1471603,
+      "lng": 30.0553061,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1087866350"
+    },
+    {
+      "osmId": "way/1095145722",
+      "nameUk": "Петіль",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.2689555,
+      "lng": 30.4722499,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1095145722"
+    },
+    {
+      "osmId": "way/1095145723",
+      "nameUk": "Петіль",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.2697507,
+      "lng": 30.4777052,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1095145723"
+    },
+    {
+      "osmId": "way/1097919801",
+      "nameUk": "Сіверка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.3417596,
+      "lng": 30.3536329,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1097919801"
+    },
+    {
+      "osmId": "way/110995940",
+      "nameUk": "Стугна",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1485334,
+      "lng": 30.0680419,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/110995940"
+    },
+    {
+      "osmId": "way/1111184079",
+      "nameUk": null,
+      "widthM": 1.5,
+      "rawWidth": "1.5",
+      "lat": 50.4976811,
+      "lng": 30.4987865,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1111184079"
+    },
+    {
+      "osmId": "way/1111184080",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.4922684,
+      "lng": 30.4997453,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1111184080"
+    },
+    {
+      "osmId": "way/1134077100",
+      "nameUk": "Устя (Бугаївка)",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2121554,
+      "lng": 30.3470505,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1134077100"
+    },
+    {
+      "osmId": "way/1137651393",
+      "nameUk": "Унава",
+      "widthM": 2,
+      "rawWidth": "2 m",
+      "lat": 50.1594578,
+      "lng": 29.9657338,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1137651393"
+    },
+    {
+      "osmId": "way/1137651394",
+      "nameUk": "Унава",
+      "widthM": 2,
+      "rawWidth": "2 m",
+      "lat": 50.1755918,
+      "lng": 29.9782557,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1137651394"
+    },
+    {
+      "osmId": "way/1152660669",
+      "nameUk": null,
+      "widthM": 1.5,
+      "rawWidth": "1.5",
+      "lat": 50.2645769,
+      "lng": 30.46162,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1152660669"
+    },
+    {
+      "osmId": "way/1163463115",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.21196,
+      "lng": 30.347099,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1163463115"
+    },
+    {
+      "osmId": "way/1163463116",
+      "nameUk": "Устя (Бугаївка)",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2117896,
+      "lng": 30.3471688,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1163463116"
+    },
+    {
+      "osmId": "way/1163463117",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2114924,
+      "lng": 30.3473586,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1163463117"
+    },
+    {
+      "osmId": "way/1163463118",
+      "nameUk": "Устя (Бугаївка)",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2111863,
+      "lng": 30.3475285,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1163463118"
+    },
+    {
+      "osmId": "way/1222615679",
+      "nameUk": "Кодра",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.5947704,
+      "lng": 29.5524177,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1222615679"
+    },
+    {
+      "osmId": "way/1226165442",
+      "nameUk": "Вирва",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6904909,
+      "lng": 29.5399267,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1226165442"
+    },
+    {
+      "osmId": "way/1226165443",
+      "nameUk": "Вирва",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6912054,
+      "lng": 29.5376713,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1226165443"
+    },
+    {
+      "osmId": "way/1226165444",
+      "nameUk": "Вирва",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6940633,
+      "lng": 29.5297426,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1226165444"
+    },
+    {
+      "osmId": "way/1226165445",
+      "nameUk": "Вирва",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6941512,
+      "lng": 29.5296122,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1226165445"
+    },
+    {
+      "osmId": "way/123067519",
+      "nameUk": "Дренажний канал",
+      "widthM": 70,
+      "rawWidth": "70",
+      "lat": 50.0376376,
+      "lng": 31.3903853,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/123067519"
+    },
+    {
+      "osmId": "way/1246162825",
+      "nameUk": null,
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.5139654,
+      "lng": 30.5234683,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1246162825"
+    },
+    {
+      "osmId": "way/1252820854",
+      "nameUk": "Канал",
+      "widthM": 100,
+      "rawWidth": "100",
+      "lat": 50.5605793,
+      "lng": 30.5521509,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1252820854"
+    },
+    {
+      "osmId": "way/1252822058",
+      "nameUk": "Канал",
+      "widthM": 100,
+      "rawWidth": "100",
+      "lat": 50.566179,
+      "lng": 30.545861,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1252822058"
+    },
+    {
+      "osmId": "way/1265177141",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.468886,
+      "lng": 30.4267522,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1265177141"
+    },
+    {
+      "osmId": "way/1265177142",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4678582,
+      "lng": 30.425855,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1265177142"
+    },
+    {
+      "osmId": "way/1268336267",
+      "nameUk": "Гульва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.5341385,
+      "lng": 29.6488055,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1268336267"
+    },
+    {
+      "osmId": "way/1268336268",
+      "nameUk": "Гульва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.5262439,
+      "lng": 29.6423437,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1268336268"
+    },
+    {
+      "osmId": "way/1268336269",
+      "nameUk": "Гульва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.5235093,
+      "lng": 29.6485404,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1268336269"
+    },
+    {
+      "osmId": "way/1268336270",
+      "nameUk": "Гульва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.5208043,
+      "lng": 29.654702,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1268336270"
+    },
+    {
+      "osmId": "way/1274486008",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1552007,
+      "lng": 30.5812175,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1274486008"
+    },
+    {
+      "osmId": "way/1274486009",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1516004,
+      "lng": 30.5743494,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1274486009"
+    },
+    {
+      "osmId": "way/128397238",
+      "nameUk": "Унава",
+      "widthM": 2,
+      "rawWidth": "2 m",
+      "lat": 50.1985465,
+      "lng": 29.9970324,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/128397238"
+    },
+    {
+      "osmId": "way/128400884",
+      "nameUk": "Унава",
+      "widthM": 2,
+      "rawWidth": "2 m",
+      "lat": 50.2274319,
+      "lng": 29.9922737,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/128400884"
+    },
+    {
+      "osmId": "way/1306004393",
+      "nameUk": "Мика",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.4795249,
+      "lng": 29.2197979,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1306004393"
+    },
+    {
+      "osmId": "way/1306004394",
+      "nameUk": "Мика",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.4765183,
+      "lng": 29.2171078,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1306004394"
+    },
+    {
+      "osmId": "way/1306004397",
+      "nameUk": "Мика",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.4774566,
+      "lng": 29.2173629,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1306004397"
+    },
+    {
+      "osmId": "way/1306004398",
+      "nameUk": "Мика",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.4783633,
+      "lng": 29.2179917,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1306004398"
+    },
+    {
+      "osmId": "way/1323499981",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1957702,
+      "lng": 30.3022129,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1323499981"
+    },
+    {
+      "osmId": "way/1323499982",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1962825,
+      "lng": 30.3027395,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1323499982"
+    },
+    {
+      "osmId": "way/1340640558",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.197328,
+      "lng": 30.3039915,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1340640558"
+    },
+    {
+      "osmId": "way/138575553",
+      "nameUk": "Пісківка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6972138,
+      "lng": 29.5805578,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/138575553"
+    },
+    {
+      "osmId": "way/138600165",
+      "nameUk": "Тетерів",
+      "widthM": 15,
+      "rawWidth": "15",
+      "lat": 50.6614373,
+      "lng": 29.5123064,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/138600165"
+    },
+    {
+      "osmId": "way/1444860663",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7958267,
+      "lng": 30.3153543,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1444860663"
+    },
+    {
+      "osmId": "way/1470199670",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2081665,
+      "lng": 30.3494509,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1470199670"
+    },
+    {
+      "osmId": "way/1470199671",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2088342,
+      "lng": 30.3490996,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1470199671"
+    },
+    {
+      "osmId": "way/1545161711",
+      "nameUk": "Дарниця",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4177818,
+      "lng": 30.5972326,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/1545161711"
+    },
+    {
+      "osmId": "way/180848834",
+      "nameUk": "Дарниця",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4171762,
+      "lng": 30.5950871,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/180848834"
+    },
+    {
+      "osmId": "way/180848835",
+      "nameUk": "Дарниця",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4243222,
+      "lng": 30.6188955,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/180848835"
+    },
+    {
+      "osmId": "way/180848836",
+      "nameUk": "Дарниця",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4214781,
+      "lng": 30.6097296,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/180848836"
+    },
+    {
+      "osmId": "way/183299236",
+      "nameUk": "Петіль",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.275095,
+      "lng": 30.5056068,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/183299236"
+    },
+    {
+      "osmId": "way/215566176",
+      "nameUk": "Тетерів",
+      "widthM": 30,
+      "rawWidth": "30",
+      "lat": 50.5386046,
+      "lng": 29.3445274,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/215566176"
+    },
+    {
+      "osmId": "way/215566188",
+      "nameUk": "Тетерів",
+      "widthM": 30,
+      "rawWidth": "30",
+      "lat": 50.6174479,
+      "lng": 29.4457571,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/215566188"
+    },
+    {
+      "osmId": "way/218731586",
+      "nameUk": "Стугна",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1315524,
+      "lng": 30.0288162,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/218731586"
+    },
+    {
+      "osmId": "way/221980525",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2061557,
+      "lng": 30.352393,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221980525"
+    },
+    {
+      "osmId": "way/221980646",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2100313,
+      "lng": 30.348295,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221980646"
+    },
+    {
+      "osmId": "way/221980975",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2162192,
+      "lng": 30.3451756,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221980975"
+    },
+    {
+      "osmId": "way/221981241",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2224977,
+      "lng": 30.3351542,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221981241"
+    },
+    {
+      "osmId": "way/221981330",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.202505,
+      "lng": 30.3640666,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221981330"
+    },
+    {
+      "osmId": "way/221981390",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2024824,
+      "lng": 30.4006155,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221981390"
+    },
+    {
+      "osmId": "way/221986186",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2155884,
+      "lng": 30.2924258,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221986186"
+    },
+    {
+      "osmId": "way/221986441",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2142334,
+      "lng": 30.305143,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221986441"
+    },
+    {
+      "osmId": "way/221986853",
+      "nameUk": "Здорівка",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2065164,
+      "lng": 30.3049861,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221986853"
+    },
+    {
+      "osmId": "way/221987086",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1898477,
+      "lng": 30.3038764,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/221987086"
+    },
+    {
+      "osmId": "way/229081458",
+      "nameUk": "Обводной канал",
+      "widthM": 10,
+      "rawWidth": "10",
+      "lat": 51.0395063,
+      "lng": 30.6018766,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/229081458"
+    },
+    {
+      "osmId": "way/232505407",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4696799,
+      "lng": 30.4277695,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/232505407"
+    },
+    {
+      "osmId": "way/232505408",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4640035,
+      "lng": 30.4207681,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/232505408"
+    },
+    {
+      "osmId": "way/263385731",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 51.0595646,
+      "lng": 31.8748734,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/263385731"
+    },
+    {
+      "osmId": "way/287979538",
+      "nameUk": null,
+      "widthM": 2.5,
+      "rawWidth": "2-3",
+      "lat": 50.7301355,
+      "lng": 30.220118,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/287979538"
+    },
+    {
+      "osmId": "way/287979550",
+      "nameUk": null,
+      "widthM": 2.5,
+      "rawWidth": "2-3",
+      "lat": 50.732394,
+      "lng": 30.218584,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/287979550"
+    },
+    {
+      "osmId": "way/288629843",
+      "nameUk": "Борщагівка (Нивка)",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.4627197,
+      "lng": 30.3248351,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/288629843"
+    },
+    {
+      "osmId": "way/289515783",
+      "nameUk": "Любка",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4822837,
+      "lng": 30.3537938,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/289515783"
+    },
+    {
+      "osmId": "way/289515784",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.482402,
+      "lng": 30.3461811,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/289515784"
+    },
+    {
+      "osmId": "way/28951640",
+      "nameUk": "Уж",
+      "widthM": 50,
+      "rawWidth": "50",
+      "lat": 51.2386947,
+      "lng": 29.8473935,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/28951640"
+    },
+    {
+      "osmId": "way/292226905",
+      "nameUk": "Пісківка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6888447,
+      "lng": 29.6261259,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/292226905"
+    },
+    {
+      "osmId": "way/292726842",
+      "nameUk": null,
+      "widthM": 0.3,
+      "rawWidth": "0.3",
+      "lat": 50.3937631,
+      "lng": 30.5108897,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/292726842"
+    },
+    {
+      "osmId": "way/293125223",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4598726,
+      "lng": 30.4058275,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/293125223"
+    },
+    {
+      "osmId": "way/293125227",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4600316,
+      "lng": 30.4074668,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/293125227"
+    },
+    {
+      "osmId": "way/29427014",
+      "nameUk": "Тетерів",
+      "widthM": 30,
+      "rawWidth": "30",
+      "lat": 50.3633681,
+      "lng": 28.9790675,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/29427014"
+    },
+    {
+      "osmId": "way/301722815",
+      "nameUk": null,
+      "widthM": 0.85,
+      "rawWidth": "0.5-1.2",
+      "lat": 50.7443447,
+      "lng": 30.1870944,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/301722815"
+    },
+    {
+      "osmId": "way/306524021",
+      "nameUk": "Сіверка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.3360396,
+      "lng": 30.3540622,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/306524021"
+    },
+    {
+      "osmId": "way/312103810",
+      "nameUk": "Кодра",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.6856945,
+      "lng": 29.5769881,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/312103810"
+    },
+    {
+      "osmId": "way/312639724",
+      "nameUk": "Кодра",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.6596867,
+      "lng": 29.5782908,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/312639724"
+    },
+    {
+      "osmId": "way/312753257",
+      "nameUk": "Гульва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4773184,
+      "lng": 29.6397244,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/312753257"
+    },
+    {
+      "osmId": "way/315311041",
+      "nameUk": "Гульва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.5124653,
+      "lng": 29.6585414,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/315311041"
+    },
+    {
+      "osmId": "way/315348392",
+      "nameUk": "Тетерів",
+      "widthM": 20,
+      "rawWidth": "20",
+      "lat": 50.6644662,
+      "lng": 29.5249236,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/315348392"
+    },
+    {
+      "osmId": "way/315500059",
+      "nameUk": "Кодра",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.6216316,
+      "lng": 29.5529572,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/315500059"
+    },
+    {
+      "osmId": "way/315500406",
+      "nameUk": "Кодра",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.6322775,
+      "lng": 29.5575235,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/315500406"
+    },
+    {
+      "osmId": "way/315501425",
+      "nameUk": "Кодра",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.6373533,
+      "lng": 29.5626949,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/315501425"
+    },
+    {
+      "osmId": "way/315502237",
+      "nameUk": null,
+      "widthM": 5,
+      "rawWidth": "5",
+      "lat": 50.641232,
+      "lng": 29.5670329,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/315502237"
+    },
+    {
+      "osmId": "way/316334688",
+      "nameUk": "Крдра",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.5755093,
+      "lng": 29.5327839,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/316334688"
+    },
+    {
+      "osmId": "way/316334798",
+      "nameUk": null,
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.5769196,
+      "lng": 29.535053,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/316334798"
+    },
+    {
+      "osmId": "way/316335113",
+      "nameUk": "Кодра",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.5814365,
+      "lng": 29.541029,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/316335113"
+    },
+    {
+      "osmId": "way/316335372",
+      "nameUk": "Кодра",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.5881055,
+      "lng": 29.5469835,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/316335372"
+    },
+    {
+      "osmId": "way/316336123",
+      "nameUk": "Кодра",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.5930337,
+      "lng": 29.5517417,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/316336123"
+    },
+    {
+      "osmId": "way/316336319",
+      "nameUk": "Кодра",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.5989381,
+      "lng": 29.5496228,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/316336319"
+    },
+    {
+      "osmId": "way/316340231",
+      "nameUk": "Кодра",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6072798,
+      "lng": 29.545047,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/316340231"
+    },
+    {
+      "osmId": "way/317402647",
+      "nameUk": "Сухий Кагарлик",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 49.8648304,
+      "lng": 30.9326779,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/317402647"
+    },
+    {
+      "osmId": "way/324869533",
+      "nameUk": null,
+      "widthM": 1.5,
+      "rawWidth": "1.5",
+      "lat": 50.7218897,
+      "lng": 30.3046649,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/324869533"
+    },
+    {
+      "osmId": "way/329469546",
+      "nameUk": "Почайна",
+      "widthM": 1.5,
+      "rawWidth": "1.5",
+      "lat": 50.4894791,
+      "lng": 30.5057384,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/329469546"
+    },
+    {
+      "osmId": "way/329497309",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.571514,
+      "lng": 30.0756441,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/329497309"
+    },
+    {
+      "osmId": "way/329499174",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.5707793,
+      "lng": 30.0864133,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/329499174"
+    },
+    {
+      "osmId": "way/339188402",
+      "nameUk": null,
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.2874355,
+      "lng": 30.5584649,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/339188402"
+    },
+    {
+      "osmId": "way/339188460",
+      "nameUk": null,
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.2891305,
+      "lng": 30.5616065,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/339188460"
+    },
+    {
+      "osmId": "way/355294564",
+      "nameUk": "Бережесть",
+      "widthM": 5,
+      "rawWidth": "5",
+      "lat": 51.2722966,
+      "lng": 29.4436193,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/355294564"
+    },
+    {
+      "osmId": "way/357367072",
+      "nameUk": "Козка",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.6213441,
+      "lng": 30.1567608,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/357367072"
+    },
+    {
+      "osmId": "way/357372897",
+      "nameUk": "Кізка",
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.6774551,
+      "lng": 30.2376103,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/357372897"
+    },
+    {
+      "osmId": "way/357736252",
+      "nameUk": "Шевелуха",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6796775,
+      "lng": 30.1918105,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/357736252"
+    },
+    {
+      "osmId": "way/358140840",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6798063,
+      "lng": 30.2186382,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/358140840"
+    },
+    {
+      "osmId": "way/358140844",
+      "nameUk": "Шевелуха",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6818766,
+      "lng": 30.2361873,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/358140844"
+    },
+    {
+      "osmId": "way/365671869",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4646735,
+      "lng": 30.4229422,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/365671869"
+    },
+    {
+      "osmId": "way/365671871",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.465136,
+      "lng": 30.4235137,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/365671871"
+    },
+    {
+      "osmId": "way/365671873",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4642968,
+      "lng": 30.4218812,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/365671873"
+    },
+    {
+      "osmId": "way/368892376",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6861077,
+      "lng": 29.3704828,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/368892376"
+    },
+    {
+      "osmId": "way/368893006",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6807159,
+      "lng": 29.3680185,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/368893006"
+    },
+    {
+      "osmId": "way/368893103",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6769702,
+      "lng": 29.3733829,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/368893103"
+    },
+    {
+      "osmId": "way/369134548",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.669218,
+      "lng": 29.3992345,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/369134548"
+    },
+    {
+      "osmId": "way/369135175",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6633408,
+      "lng": 29.4215719,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/369135175"
+    },
+    {
+      "osmId": "way/369135868",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6573963,
+      "lng": 29.4383113,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/369135868"
+    },
+    {
+      "osmId": "way/369136094",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.652341,
+      "lng": 29.4469402,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/369136094"
+    },
+    {
+      "osmId": "way/370939137",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4607814,
+      "lng": 30.4133231,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/370939137"
+    },
+    {
+      "osmId": "way/370939138",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4605729,
+      "lng": 30.4121197,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/370939138"
+    },
+    {
+      "osmId": "way/370939139",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4602709,
+      "lng": 30.4089184,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/370939139"
+    },
+    {
+      "osmId": "way/370939140",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.460539,
+      "lng": 30.410539,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/370939140"
+    },
+    {
+      "osmId": "way/371288114",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4635611,
+      "lng": 30.4192422,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/371288114"
+    },
+    {
+      "osmId": "way/382541375",
+      "nameUk": "Клов",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4375542,
+      "lng": 30.5249745,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/382541375"
+    },
+    {
+      "osmId": "way/382541379",
+      "nameUk": "Клов",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4311416,
+      "lng": 30.5072051,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/382541379"
+    },
+    {
+      "osmId": "way/402221837",
+      "nameUk": "Котурка",
+      "widthM": 2.5,
+      "rawWidth": "2.5",
+      "lat": 50.5056275,
+      "lng": 30.3680055,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/402221837"
+    },
+    {
+      "osmId": "way/403829909",
+      "nameUk": null,
+      "widthM": 3,
+      "rawWidth": "3",
+      "lat": 50.3892271,
+      "lng": 31.2594902,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/403829909"
+    },
+    {
+      "osmId": "way/406417926",
+      "nameUk": "Сіверка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.3453283,
+      "lng": 30.3569692,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/406417926"
+    },
+    {
+      "osmId": "way/409873053",
+      "nameUk": "Вирва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.701609,
+      "lng": 29.5003489,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/409873053"
+    },
+    {
+      "osmId": "way/409873231",
+      "nameUk": "Вирва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.7067729,
+      "lng": 29.4191314,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/409873231"
+    },
+    {
+      "osmId": "way/428063628",
+      "nameUk": "Вирва",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.692623,
+      "lng": 29.5337178,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/428063628"
+    },
+    {
+      "osmId": "way/429435589",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.7934566,
+      "lng": 29.5946273,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/429435589"
+    },
+    {
+      "osmId": "way/429435676",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.8027304,
+      "lng": 29.5993212,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/429435676"
+    },
+    {
+      "osmId": "way/430216580",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6836177,
+      "lng": 29.5494463,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/430216580"
+    },
+    {
+      "osmId": "way/435305781",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.5707133,
+      "lng": 29.6242722,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/435305781"
+    },
+    {
+      "osmId": "way/435530819",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6054673,
+      "lng": 29.61281,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/435530819"
+    },
+    {
+      "osmId": "way/435531336",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6038825,
+      "lng": 29.6178987,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/435531336"
+    },
+    {
+      "osmId": "way/435532610",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.6014208,
+      "lng": 29.6243682,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/435532610"
+    },
+    {
+      "osmId": "way/435536114",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.5955982,
+      "lng": 29.608755,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/435536114"
+    },
+    {
+      "osmId": "way/435628268",
+      "nameUk": "Тростянка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.5516922,
+      "lng": 29.6207794,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/435628268"
+    },
+    {
+      "osmId": "way/435637034",
+      "nameUk": "Тростянка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.5548103,
+      "lng": 29.5934203,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/435637034"
+    },
+    {
+      "osmId": "way/438874341",
+      "nameUk": "Тростянка",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.5818371,
+      "lng": 29.592437,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/438874341"
+    },
+    {
+      "osmId": "way/440247294",
+      "nameUk": "Требухівка",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6631901,
+      "lng": 29.6301948,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/440247294"
+    },
+    {
+      "osmId": "way/452560058",
+      "nameUk": "Котурка",
+      "widthM": 2.5,
+      "rawWidth": "2.5",
+      "lat": 50.5189893,
+      "lng": 30.3642813,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/452560058"
+    },
+    {
+      "osmId": "way/452560061",
+      "nameUk": "Котурка",
+      "widthM": 2.5,
+      "rawWidth": "2.5",
+      "lat": 50.5157115,
+      "lng": 30.3667839,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/452560061"
+    },
+    {
+      "osmId": "way/470146109",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4708178,
+      "lng": 30.4292709,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/470146109"
+    },
+    {
+      "osmId": "way/470146110",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4704836,
+      "lng": 30.4288473,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/470146110"
+    },
+    {
+      "osmId": "way/470146998",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4711111,
+      "lng": 30.429636,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/470146998"
+    },
+    {
+      "osmId": "way/470147000",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.472353,
+      "lng": 30.4298186,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/470147000"
+    },
+    {
+      "osmId": "way/470147001",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4736089,
+      "lng": 30.4292098,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/470147001"
+    },
+    {
+      "osmId": "way/470147002",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4749982,
+      "lng": 30.4286981,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/470147002"
+    },
+    {
+      "osmId": "way/489247230",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4661984,
+      "lng": 30.4244555,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/489247230"
+    },
+    {
+      "osmId": "way/500526519",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1008994,
+      "lng": 30.3496496,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/500526519"
+    },
+    {
+      "osmId": "way/51556169",
+      "nameUk": "Остер",
+      "widthM": 10,
+      "rawWidth": "10 m",
+      "lat": 51.0702675,
+      "lng": 32.093343,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/51556169"
+    },
+    {
+      "osmId": "way/521358572",
+      "nameUk": "Мика",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.4374542,
+      "lng": 29.0778835,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/521358572"
+    },
+    {
+      "osmId": "way/524101031",
+      "nameUk": "Здрівля",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7362497,
+      "lng": 29.2436539,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/524101031"
+    },
+    {
+      "osmId": "way/531283174",
+      "nameUk": "Вирва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.7070515,
+      "lng": 29.4383146,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/531283174"
+    },
+    {
+      "osmId": "way/534235998",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6614941,
+      "lng": 29.4280344,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/534235998"
+    },
+    {
+      "osmId": "way/534236000",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6614995,
+      "lng": 29.4279136,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/534236000"
+    },
+    {
+      "osmId": "way/534236006",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6597523,
+      "lng": 29.4345426,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/534236006"
+    },
+    {
+      "osmId": "way/534236007",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.660784,
+      "lng": 29.4313165,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/534236007"
+    },
+    {
+      "osmId": "way/534236033",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6549704,
+      "lng": 29.4421857,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/534236033"
+    },
+    {
+      "osmId": "way/534236034",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.6550513,
+      "lng": 29.4420706,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/534236034"
+    },
+    {
+      "osmId": "way/53580933",
+      "nameUk": "Остер",
+      "widthM": 10,
+      "rawWidth": "10 m",
+      "lat": 51.0507954,
+      "lng": 31.8829991,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/53580933"
+    },
+    {
+      "osmId": "way/539888565",
+      "nameUk": "Котурка",
+      "widthM": 2.5,
+      "rawWidth": "2.5",
+      "lat": 50.5103333,
+      "lng": 30.3672202,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/539888565"
+    },
+    {
+      "osmId": "way/539888566",
+      "nameUk": "Котурка",
+      "widthM": 2.5,
+      "rawWidth": "2.5",
+      "lat": 50.5128405,
+      "lng": 30.3681878,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/539888566"
+    },
+    {
+      "osmId": "way/54178278",
+      "nameUk": "Остер",
+      "widthM": 10,
+      "rawWidth": "10 m",
+      "lat": 51.0539998,
+      "lng": 31.8430902,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/54178278"
+    },
+    {
+      "osmId": "way/54178282",
+      "nameUk": "Остер",
+      "widthM": 10,
+      "rawWidth": "10 m",
+      "lat": 51.0532189,
+      "lng": 31.8188092,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/54178282"
+    },
+    {
+      "osmId": "way/54178285",
+      "nameUk": "Остер",
+      "widthM": 10,
+      "rawWidth": "10 m",
+      "lat": 51.0471331,
+      "lng": 31.8009069,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/54178285"
+    },
+    {
+      "osmId": "way/543495446",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7726513,
+      "lng": 29.2427971,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/543495446"
+    },
+    {
+      "osmId": "way/543495447",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7724094,
+      "lng": 29.2435961,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/543495447"
+    },
+    {
+      "osmId": "way/543495448",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7722966,
+      "lng": 29.2439671,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/543495448"
+    },
+    {
+      "osmId": "way/544868501",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.5854601,
+      "lng": 30.0703538,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/544868501"
+    },
+    {
+      "osmId": "way/549613584",
+      "nameUk": "Здрівля",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.741838,
+      "lng": 29.2532425,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/549613584"
+    },
+    {
+      "osmId": "way/549613592",
+      "nameUk": "Здрівля",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7520054,
+      "lng": 29.2707249,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/549613592"
+    },
+    {
+      "osmId": "way/549613596",
+      "nameUk": "Здрівля",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7477508,
+      "lng": 29.2628213,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/549613596"
+    },
+    {
+      "osmId": "way/553600458",
+      "nameUk": "Здрівля",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7427581,
+      "lng": 29.1195107,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/553600458"
+    },
+    {
+      "osmId": "way/553817594",
+      "nameUk": "Каратуль",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.0789082,
+      "lng": 31.5141877,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/553817594"
+    },
+    {
+      "osmId": "way/561999417",
+      "nameUk": "Здрівля",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7478303,
+      "lng": 29.2630718,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/561999417"
+    },
+    {
+      "osmId": "way/561999418",
+      "nameUk": "Здрівля",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.7477825,
+      "lng": 29.2629393,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/561999418"
+    },
+    {
+      "osmId": "way/575078906",
+      "nameUk": "Сухоберезиця",
+      "widthM": 5,
+      "rawWidth": "5",
+      "lat": 50.3993368,
+      "lng": 31.4526682,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/575078906"
+    },
+    {
+      "osmId": "way/577878456",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4870682,
+      "lng": 30.6230871,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/577878456"
+    },
+    {
+      "osmId": "way/577878457",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.4863787,
+      "lng": 30.620827,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/577878457"
+    },
+    {
+      "osmId": "way/577878458",
+      "nameUk": null,
+      "widthM": 1.5,
+      "rawWidth": "1.5",
+      "lat": 50.4861023,
+      "lng": 30.6195131,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/577878458"
+    },
+    {
+      "osmId": "way/577879159",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.485197,
+      "lng": 30.6202908,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/577879159"
+    },
+    {
+      "osmId": "way/603897651",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.4866057,
+      "lng": 30.6213758,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/603897651"
+    },
+    {
+      "osmId": "way/603898119",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4871441,
+      "lng": 30.6187222,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/603898119"
+    },
+    {
+      "osmId": "way/616155025",
+      "nameUk": null,
+      "widthM": 0.3,
+      "rawWidth": "0.3",
+      "lat": 50.4850812,
+      "lng": 30.6179667,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/616155025"
+    },
+    {
+      "osmId": "way/638272496",
+      "nameUk": null,
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 51.2513709,
+      "lng": 31.9027562,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/638272496"
+    },
+    {
+      "osmId": "way/638272497",
+      "nameUk": null,
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 51.2492279,
+      "lng": 31.8960947,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/638272497"
+    },
+    {
+      "osmId": "way/638272498",
+      "nameUk": null,
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 51.2460308,
+      "lng": 31.8789714,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/638272498"
+    },
+    {
+      "osmId": "way/640476754",
+      "nameUk": null,
+      "widthM": 0.1,
+      "rawWidth": "0.1",
+      "lat": 50.4813439,
+      "lng": 30.4333938,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/640476754"
+    },
+    {
+      "osmId": "way/640476755",
+      "nameUk": null,
+      "widthM": 0.1,
+      "rawWidth": "0.1",
+      "lat": 50.4812851,
+      "lng": 30.4335204,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/640476755"
+    },
+    {
+      "osmId": "way/640476756",
+      "nameUk": null,
+      "widthM": 0.1,
+      "rawWidth": "0.1",
+      "lat": 50.481086,
+      "lng": 30.434011,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/640476756"
+    },
+    {
+      "osmId": "way/640476758",
+      "nameUk": null,
+      "widthM": 0.1,
+      "rawWidth": "0.1",
+      "lat": 50.4811846,
+      "lng": 30.4338495,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/640476758"
+    },
+    {
+      "osmId": "way/643835777",
+      "nameUk": "Пісківка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.693786,
+      "lng": 29.5924976,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/643835777"
+    },
+    {
+      "osmId": "way/643835778",
+      "nameUk": "Пісківка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.692807,
+      "lng": 29.599381,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/643835778"
+    },
+    {
+      "osmId": "way/661082982",
+      "nameUk": "Прорва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.3388406,
+      "lng": 30.6984293,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/661082982"
+    },
+    {
+      "osmId": "way/685386779",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.3303657,
+      "lng": 30.1496396,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/685386779"
+    },
+    {
+      "osmId": "way/689755564",
+      "nameUk": "Прорва",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.340543,
+      "lng": 30.6985574,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/689755564"
+    },
+    {
+      "osmId": "way/695913055",
+      "nameUk": "Сухий Кагарлик",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 49.8475179,
+      "lng": 30.9260408,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/695913055"
+    },
+    {
+      "osmId": "way/695913056",
+      "nameUk": "Сухий Кагарлик",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 49.8544229,
+      "lng": 30.9275946,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/695913056"
+    },
+    {
+      "osmId": "way/709595746",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.0612249,
+      "lng": 31.5427165,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/709595746"
+    },
+    {
+      "osmId": "way/709595749",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.0596071,
+      "lng": 31.5468746,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/709595749"
+    },
+    {
+      "osmId": "way/709595750",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.0596913,
+      "lng": 31.551511,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/709595750"
+    },
+    {
+      "osmId": "way/729373335",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2041481,
+      "lng": 30.3046964,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/729373335"
+    },
+    {
+      "osmId": "way/729376588",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1829332,
+      "lng": 30.3019233,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/729376588"
+    },
+    {
+      "osmId": "way/729376589",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1839031,
+      "lng": 30.3035973,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/729376589"
+    },
+    {
+      "osmId": "way/766763439",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1834371,
+      "lng": 30.2345903,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/766763439"
+    },
+    {
+      "osmId": "way/766763440",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1586447,
+      "lng": 30.4038636,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/766763440"
+    },
+    {
+      "osmId": "way/774726125",
+      "nameUk": null,
+      "widthM": 0,
+      "rawWidth": "0",
+      "lat": 50.1720397,
+      "lng": 30.2951176,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/774726125"
+    },
+    {
+      "osmId": "way/784595877",
+      "nameUk": "Сухоберезиця",
+      "widthM": 5,
+      "rawWidth": "5",
+      "lat": 50.3650114,
+      "lng": 31.4504123,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/784595877"
+    },
+    {
+      "osmId": "way/784595878",
+      "nameUk": "Сухоберезиця",
+      "widthM": 5,
+      "rawWidth": "5",
+      "lat": 50.3931844,
+      "lng": 31.4480084,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/784595878"
+    },
+    {
+      "osmId": "way/785519543",
+      "nameUk": "Сіверка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.3489137,
+      "lng": 30.360444,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/785519543"
+    },
+    {
+      "osmId": "way/794512725",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1553523,
+      "lng": 30.6786149,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/794512725"
+    },
+    {
+      "osmId": "way/794512726",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1588902,
+      "lng": 30.5880459,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/794512726"
+    },
+    {
+      "osmId": "way/807595254",
+      "nameUk": "Дарниця",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4227558,
+      "lng": 30.6133938,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/807595254"
+    },
+    {
+      "osmId": "way/807595255",
+      "nameUk": "Дарниця",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4226117,
+      "lng": 30.6129087,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/807595255"
+    },
+    {
+      "osmId": "way/807595256",
+      "nameUk": "Дарниця",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4229023,
+      "lng": 30.6138873,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/807595256"
+    },
+    {
+      "osmId": "way/807595257",
+      "nameUk": "Дарниця",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4234711,
+      "lng": 30.615989,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/807595257"
+    },
+    {
+      "osmId": "way/824332076",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1474146,
+      "lng": 30.5675161,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/824332076"
+    },
+    {
+      "osmId": "way/824332077",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.142026,
+      "lng": 30.5606818,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/824332077"
+    },
+    {
+      "osmId": "way/828727718",
+      "nameUk": null,
+      "widthM": 0.5,
+      "rawWidth": "0.5",
+      "lat": 50.8116873,
+      "lng": 30.3794148,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/828727718"
+    },
+    {
+      "osmId": "way/856837166",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2029052,
+      "lng": 30.3674782,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/856837166"
+    },
+    {
+      "osmId": "way/856837167",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2025201,
+      "lng": 30.3641875,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/856837167"
+    },
+    {
+      "osmId": "way/856837168",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2029201,
+      "lng": 30.3810488,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/856837168"
+    },
+    {
+      "osmId": "way/856837169",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2032802,
+      "lng": 30.3708193,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/856837169"
+    },
+    {
+      "osmId": "way/858300076",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1834114,
+      "lng": 30.233612,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/858300076"
+    },
+    {
+      "osmId": "way/858300077",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1833455,
+      "lng": 30.2325748,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/858300077"
+    },
+    {
+      "osmId": "way/894021489",
+      "nameUk": "Вершинка",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.4347967,
+      "lng": 30.4480223,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/894021489"
+    },
+    {
+      "osmId": "way/919340591",
+      "nameUk": "Сухий Кагарлик",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 49.8775689,
+      "lng": 30.9343274,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/919340591"
+    },
+    {
+      "osmId": "way/919340592",
+      "nameUk": "Сухий Кагарлик",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 49.8752432,
+      "lng": 30.931625,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/919340592"
+    },
+    {
+      "osmId": "way/919340593",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 49.8840014,
+      "lng": 30.9366474,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/919340593"
+    },
+    {
+      "osmId": "way/919340594",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 49.8898189,
+      "lng": 30.936924,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/919340594"
+    },
+    {
+      "osmId": "way/919340595",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 49.8881972,
+      "lng": 30.9375211,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/919340595"
+    },
+    {
+      "osmId": "way/919345258",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 49.879236,
+      "lng": 30.9756551,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/919345258"
+    },
+    {
+      "osmId": "way/919345259",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 49.8720314,
+      "lng": 30.940709,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/919345259"
+    },
+    {
+      "osmId": "way/919345260",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 49.870864,
+      "lng": 30.9504,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/919345260"
+    },
+    {
+      "osmId": "way/921790417",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.217295,
+      "lng": 30.344403,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/921790417"
+    },
+    {
+      "osmId": "way/921790418",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2173604,
+      "lng": 30.3443281,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/921790418"
+    },
+    {
+      "osmId": "way/927864577",
+      "nameUk": null,
+      "widthM": 5,
+      "rawWidth": "5",
+      "lat": 50.3142519,
+      "lng": 30.5578718,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/927864577"
+    },
+    {
+      "osmId": "way/928289926",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1812495,
+      "lng": 30.2985612,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/928289926"
+    },
+    {
+      "osmId": "way/928289927",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.1819783,
+      "lng": 30.3002356,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/928289927"
+    },
+    {
+      "osmId": "way/934254326",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1828706,
+      "lng": 30.2408917,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/934254326"
+    },
+    {
+      "osmId": "way/934254327",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1823412,
+      "lng": 30.247101,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/934254327"
+    },
+    {
+      "osmId": "way/935106053",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.164603,
+      "lng": 30.6068169,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/935106053"
+    },
+    {
+      "osmId": "way/935106054",
+      "nameUk": "Стугна",
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.1703161,
+      "lng": 30.6256031,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/935106054"
+    },
+    {
+      "osmId": "way/942234168",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.3340255,
+      "lng": 30.1476939,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/942234168"
+    },
+    {
+      "osmId": "way/942234169",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.3339396,
+      "lng": 30.1477506,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/942234169"
+    },
+    {
+      "osmId": "way/942234181",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.3267396,
+      "lng": 30.1505207,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/942234181"
+    },
+    {
+      "osmId": "way/942234182",
+      "nameUk": null,
+      "widthM": 2,
+      "rawWidth": "2",
+      "lat": 50.3268072,
+      "lng": 30.1506241,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/942234182"
+    },
+    {
+      "osmId": "way/98497268",
+      "nameUk": "Сирець",
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.4597844,
+      "lng": 30.4044044,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/98497268"
+    },
+    {
+      "osmId": "way/99371638",
+      "nameUk": "Дарниця",
+      "widthM": 4,
+      "rawWidth": "4",
+      "lat": 50.4264166,
+      "lng": 30.6265582,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/99371638"
+    },
+    {
+      "osmId": "way/998128671",
+      "nameUk": null,
+      "widthM": 1,
+      "rawWidth": "1",
+      "lat": 50.2031768,
+      "lng": 30.3912106,
+      "confidence": "low",
+      "sourceUrl": "https://www.openstreetmap.org/way/998128671"
+    }
+  ]
+}

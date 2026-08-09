@@ -1,0 +1,189 @@
+{
+  "checkedAt": "2026-08-08",
+  "generatedAt": "2026-08-08T12:57:11.526Z",
+  "method": "live_scrape",
+  "sources": [
+    {
+      "id": "koda-nav",
+      "title": "КОДА — заборона навігації",
+      "url": "https://koda.gov.ua/do-uvagy-meshkancziv-kyyivskoyi-oblasti-tryvaye-zaborona-navigacziyi-na-vodojmah-kyyivshhyny/",
+      "fetchedAt": "2026-08-08T12:57:02.810Z",
+      "httpStatus": 200,
+      "signals": [
+        "nav_ban",
+        "small_craft",
+        "martial_law"
+      ],
+      "ok": true
+    },
+    {
+      "id": "kotsyubynske-swim",
+      "title": "Коцюбинське — купатися заборонено",
+      "url": "https://kotsyubinskarada.gov.ua/news/222029-kupatis-zaboroneno",
+      "fetchedAt": "2026-08-08T12:57:03.134Z",
+      "httpStatus": 200,
+      "signals": [
+        "swim_ban",
+        "mass_recreation",
+        "martial_law",
+        "bucha"
+      ],
+      "ok": true
+    },
+    {
+      "id": "irpin-swim",
+      "title": "Ірпінь — купання заборонено",
+      "url": "https://imr.gov.ua/uvaga-kupannya-zaboroneno-mistsevi-vodojmy-mozhut-nesty-nebezpeku/",
+      "fetchedAt": "2026-08-08T12:57:04.316Z",
+      "httpStatus": 200,
+      "signals": [
+        "mass_recreation",
+        "martial_law",
+        "bucha",
+        "irpin"
+      ],
+      "ok": true
+    },
+    {
+      "id": "bilogorodka-swim",
+      "title": "Білогородка — заборона відпочинку на водоймах",
+      "url": "https://bilohorodka.org.ua/zaborona-na-vidpochynok-na-vodnykh-ob-iektakh-de-mozhna-kupatysia-u-kyivskij-oblasti/",
+      "fetchedAt": "2026-08-08T12:57:04.600Z",
+      "httpStatus": 403,
+      "signals": [],
+      "ok": false
+    },
+    {
+      "id": "boryspil-swim",
+      "title": "Бориспіль — заборона купання",
+      "url": "https://borispol-rada.gov.ua/item/59155-u-hromadi-diie-zaborona-na-kupannia-na-vodnykh-obiektakh.html",
+      "fetchedAt": "2026-08-08T12:57:04.961Z",
+      "httpStatus": 200,
+      "signals": [
+        "martial_law",
+        "boryspil"
+      ],
+      "ok": true
+    },
+    {
+      "id": "borodyanka-swim",
+      "title": "Бородянка — купання заборонено",
+      "url": "https://bsr.gov.ua/kupannya-u-vodojmah-borodyanskoyi-gromady-zaboroneno/",
+      "fetchedAt": "2026-08-08T12:57:06.273Z",
+      "httpStatus": 200,
+      "signals": [
+        "bucha"
+      ],
+      "ok": true
+    },
+    {
+      "id": "borshchagivka-swim",
+      "title": "Борщагівка — купання заборонено",
+      "url": "https://brada.gov.ua/society/kupannia-zaboroneno/",
+      "fetchedAt": "2026-08-08T12:57:07.300Z",
+      "httpStatus": 200,
+      "signals": [
+        "mass_recreation",
+        "martial_law"
+      ],
+      "ok": true
+    },
+    {
+      "id": "zazymya-desna",
+      "title": "Зазимська громада — без Десни",
+      "url": "https://zotg.gov.ua/provodymo-svoye-dozvillya-bez-desny/",
+      "fetchedAt": "2026-08-08T12:57:08.393Z",
+      "httpStatus": 200,
+      "signals": [
+        "small_craft",
+        "martial_law",
+        "dnipro_cascade"
+      ],
+      "ok": true
+    },
+    {
+      "id": "kyiv-comments-bans",
+      "title": "Огляд заборон у Київській області",
+      "url": "https://kyiv.comments.ua/ua/news/society/human-rights/24694-u-kiivskiy-oblasti-prodovzhuyut-vvoditi-zaboroni-prichini.html",
+      "fetchedAt": "2026-08-08T12:57:08.730Z",
+      "httpStatus": 200,
+      "signals": [
+        "mass_recreation",
+        "martial_law",
+        "irpin",
+        "bilogorodka",
+        "boryspil"
+      ],
+      "ok": true
+    },
+    {
+      "id": "rules-dnipro-cascade",
+      "title": "Огляд правил під час війни",
+      "url": "https://www.izum.ua/ru/chy-mozhna-plavaty-na-lodtsi-pid-chas-viiny-ryzyky-ta-pravyla-2026/",
+      "fetchedAt": "2026-08-08T12:57:08.761Z",
+      "httpStatus": 0,
+      "signals": [],
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "id": "spot-telbin-0",
+      "title": "Озеро Тельбін",
+      "url": "https://sup-port.kyiv.ua/sup-port-telbin/",
+      "fetchedAt": "2026-08-08T12:57:10.917Z",
+      "httpStatus": 200,
+      "signals": [],
+      "ok": true
+    },
+    {
+      "id": "spot-telbin-1",
+      "title": "Озеро Тельбін",
+      "url": "https://news.telegraf.com.ua/ukr/kiev/2025-06-10/5911585-chista-voda-ta-khoroshiy-plyazh-de-znakhoditsya-naykrashche-ozero-dlya-kupannya-v-kievi",
+      "fetchedAt": "2026-08-08T12:57:11.287Z",
+      "httpStatus": 200,
+      "signals": [],
+      "ok": true
+    },
+    {
+      "id": "spot-vyrlytsia-2",
+      "title": "Озеро Вирлиця",
+      "url": "https://funtime.com.ua/nature/vyrlytsya-lake",
+      "fetchedAt": "2026-08-08T12:57:11.526Z",
+      "httpStatus": 200,
+      "signals": [],
+      "ok": true
+    }
+  ],
+  "derivedRules": [
+    {
+      "id": "oblast_navigation_ban",
+      "active": true,
+      "level": null,
+      "noteUk": "Контекст: загальна заборона цивільної навігації КОДА. Не фарбує карту жовтим само по собі — див. local-rules.json."
+    },
+    {
+      "id": "cascade_dnipro",
+      "active": true,
+      "level": "banned_navigation",
+      "noteUk": "Каскад Дніпра / водосховища — повна заборона цивільного виходу."
+    },
+    {
+      "id": "community_mass_recreation",
+      "active": true,
+      "level": "restricted",
+      "communities": [
+        "bucha",
+        "irpin",
+        "bilogorodka",
+        "boryspil"
+      ],
+      "noteUk": "Сигнали місцевих заборон масового відпочинку (еvidence застосовується лише через local-rules.json)."
+    },
+    {
+      "id": "martial_law_context",
+      "active": true,
+      "level": null,
+      "noteUk": "Контекст воєнного стану у джерелах."
+    }
+  ]
+}

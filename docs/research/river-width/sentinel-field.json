@@ -1,0 +1,8 @@
+{
+  "methodId": "sentinel_field",
+  "priority": 1,
+  "collectedAt": "2026-08-08T21:30:20Z",
+  "features": [],
+  "mineNotesUk": "Проскановано public/data/spots.json (30 spots), public/data/club-trip-reports.json (+ docs/research копія), docs/research/* і docs/methodology-river-width.md. Явних числових ширин у метрах (bank-to-bank / русло) для річок/підходів Київщини НЕ знайдено. Єдиний якісний сигнал: club_report spotId=irpin-river — hazardsUk «вузьке русло» (Sapaequip «Високий берег», 2026, https://sapaequip.com/vysokyybereh); метрів немає → у features не включено. Sentinel-2 вимірів у репозиторії немає і в цій збірці не обчислювалось.",
+  "sentinelPlaybookUk": "Пізніше (GEE / локальний пайплайн): (1) взяти curated точки маршрутів (Ірпінь, Козинка, вузькі плеса Десни/Росі) + OSM осьову waterway; (2) вибрати безхмарний Sentinel-2 L2A у сезон SUP (пізнє літо, типовий низький рівень, не паводок); (3) NDWI=(G-NIR)/(G+NIR) або MNDWI=(G-SWIR)/(G+SWIR), поріг води сегментувати → бінарна маска русла; (4) уздовж осі кроком ~50–100 м провести перпендикуляри і виміряти bank-to-bank по масці (=widthM); (5) зберегти медіану + P10/P90, дату сцени, cloud%, confidence (вузькі <~20 м при 10 м пікселі — medium/low); (6) не змішувати з озерами/водосховищами; (7) калібрувати точковими польовими/клубними метрами, коли з’являться. Роздільність 10 м: надійніше для ≳15–25 м; вужчі канали — лише якісний клас або ground truth."
+}

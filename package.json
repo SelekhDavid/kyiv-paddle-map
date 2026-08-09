@@ -1,0 +1,31 @@
+{
+  "name": "kyiv-paddle-map",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "fetch-osm": "node scripts/fetch-osm.mjs",
+    "fetch-shapes": "node scripts/fetch-shapes.mjs",
+    "fetch-hazards": "node scripts/fetch-hazards.mjs",
+    "fetch-hydro-posts": "node scripts/fetch-hydro-posts.mjs",
+    "scrape-bans": "node scripts/scrape-bans.mjs",
+    "classify-rivers": "node scripts/classify-rivers.mjs"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.16",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.3"
+  }
+}
