@@ -364,17 +364,19 @@ export function useMapData() {
 
     async function load() {
       try {
+        // Respect Vite `base` (GitHub Pages: /kyiv-paddle-map/)
+        const dataUrl = (file: string) => `${import.meta.env.BASE_URL}data/${file}`
         const settled = await Promise.allSettled([
-          fetch('/data/spots.json', { signal: ac.signal }),
-          fetch('/data/rules.json', { signal: ac.signal }),
-          fetch('/data/water-shapes.geojson', { signal: ac.signal }),
-          fetch('/data/classification.json', { signal: ac.signal }),
-          fetch('/data/club-trip-reports.json', { signal: ac.signal }),
-          fetch('/data/river-hazards.json', { signal: ac.signal }),
-          fetch('/data/hydro-posts.json', { signal: ac.signal }),
-          fetch('/data/water-quality.json', { signal: ac.signal }),
-          fetch('/data/water-incidents.json', { signal: ac.signal }),
-          fetch('/data/river-widths.json', { signal: ac.signal }),
+          fetch(dataUrl('spots.json'), { signal: ac.signal }),
+          fetch(dataUrl('rules.json'), { signal: ac.signal }),
+          fetch(dataUrl('water-shapes.geojson'), { signal: ac.signal }),
+          fetch(dataUrl('classification.json'), { signal: ac.signal }),
+          fetch(dataUrl('club-trip-reports.json'), { signal: ac.signal }),
+          fetch(dataUrl('river-hazards.json'), { signal: ac.signal }),
+          fetch(dataUrl('hydro-posts.json'), { signal: ac.signal }),
+          fetch(dataUrl('water-quality.json'), { signal: ac.signal }),
+          fetch(dataUrl('water-incidents.json'), { signal: ac.signal }),
+          fetch(dataUrl('river-widths.json'), { signal: ac.signal }),
         ])
 
         const res = (i: number): Response | null => {
