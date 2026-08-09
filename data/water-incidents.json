@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-09T00:26:00.000Z",
+  "fetchedAt": null,
+  "bbox": {
+    "south": 49.85,
+    "west": 29.2,
+    "north": 51.28,
+    "east": 32.3
+  },
+  "sources": [
+    {
+      "id": "dsns-kyiv",
+      "nameUk": "ГУ ДСНС України у м. Києві",
+      "role": "incident_feed",
+      "urls": [
+        "https://kyiv.dsns.gov.ua/"
+      ],
+      "noteUk": "Новини / НП; великі розливи (Кирилівське тощо). Scrapable HTML; не GeoJSON."
+    },
+    {
+      "id": "dsns-ua",
+      "nameUk": "ДСНС України",
+      "role": "incident_feed",
+      "urls": [
+        "https://dsns.gov.ua/",
+        "https://t.me/dsns_telegram"
+      ],
+      "noteUk": "Національні зведення + Telegram для масштабних водних НП."
+    },
+    {
+      "id": "dsns-kyiv-oblast",
+      "nameUk": "ГУ ДСНС у Київській області",
+      "role": "incident_feed",
+      "urls": [
+        "https://kv.dsns.gov.ua/",
+        "https://t.me/dsns_kyiv_region"
+      ],
+      "noteUk": "Обласні НП; вода — коли релевантно."
+    },
+    {
+      "id": "dei-stolreg",
+      "nameUk": "ДЕІ Столичного округу",
+      "role": "incident_feed",
+      "urls": [
+        "https://stolreg.dei.gov.ua/"
+      ],
+      "noteUk": "Первинне джерело локальних скидів / нафти: HTML-пости з координатами та ГДК."
+    },
+    {
+      "id": "dei-ua",
+      "nameUk": "ДЕІ України",
+      "role": "incident_feed",
+      "urls": [
+        "https://www.dei.gov.ua/"
+      ],
+      "noteUk": "Національні зведення (нагляд за Кирилівським тощо)."
+    },
+    {
+      "id": "davr-monitoring",
+      "nameUk": "ДАВР — моніторинг поверхневих вод",
+      "role": "surface_water_chemistry",
+      "urls": [
+        "http://monitoring.davr.gov.ua/",
+        "http://monitoring.davr.gov.ua/EcoWaterMon/GDKMap/Index"
+      ],
+      "noteUk": "Пости хімії / ГДК-карта; не пляжі. Live poll — фаза 2."
+    },
+    {
+      "id": "datagov-surface-water",
+      "nameUk": "data.gov.ua — моніторинг поверхневих вод",
+      "role": "surface_water_chemistry",
+      "urls": [
+        "https://data.gov.ua/dataset/133ce38c-9533-4fb0-b146-b211299a8731"
+      ],
+      "noteUk": "Місячні CSV (пости Десна / Дніпро тощо)."
+    },
+    {
+      "id": "ecozagroza",
+      "nameUk": "ЕкоЗагроза",
+      "role": "incident_feed",
+      "urls": [
+        "https://ecozagroza.gov.ua"
+      ],
+      "noteUk": "Офіційна карта загроз + громадянинські повідомлення; шар моніторингу ДАВР."
+    },
+    {
+      "id": "mepr-desna-crisis",
+      "nameUk": "Міндовкілля — реагування Сейм/Десна",
+      "role": "basin_crisis",
+      "urls": [
+        "https://mepr.gov.ua/?usefullinks=reaguvannya-na-nadzvychajnu-podiyu-na-richkah-sejm-ta-desna"
+      ],
+      "noteUk": "Кризові дайджести транскордонних подій; ручна курація під час події."
+    },
+    {
+      "id": "pleso",
+      "nameUk": "КП «Плесо»",
+      "role": "bathing_sites",
+      "urls": [
+        "https://pleso.kyiv.ua/"
+      ],
+      "noteUk": "Пляжі, тижневі новини якості води, дайджести очищення (Кирилівське)."
+    },
+    {
+      "id": "kyiv-cdc",
+      "nameUk": "Київський міський ЦКПХ МОЗ",
+      "role": "bathing_labs",
+      "urls": [
+        "https://kyiv.cdc.gov.ua/"
+      ],
+      "noteUk": "Таблиці проб у рекреаційних зонах (HTML)."
+    },
+    {
+      "id": "kyivcity",
+      "nameUk": "Портал Києва (КМДА)",
+      "role": "incident_feed",
+      "urls": [
+        "https://kyivcity.gov.ua/news/"
+      ],
+      "noteUk": "Офіційні ретрансляції Плесо / ДЕІ / Департаменту довкілля."
+    },
+    {
+      "id": "savednipro",
+      "nameUk": "SaveDnipro / SaveEcoBot",
+      "role": "secondary_aggregator",
+      "urls": [
+        "https://t.me/savednipro",
+        "https://www.savednipro.org/",
+        "https://www.saveecobot.com/"
+      ],
+      "noteUk": "НГО-агрегатор і скарги; не первинне джерело bloom/sewage. SaveEcoBot — переважно повітря."
+    }
+  ],
+  "incidents": [
+    {
+      "id": "inc-desna-seim-2024",
+      "titleUk": "Транскордонне органічне забруднення Сейм → Десна (цукровий завод, Курська обл.)",
+      "severity": "high",
+      "status": "resolved",
+      "startedAt": "2024-08-14",
+      "endedAt": "2024-09-30",
+      "lat": 50.7023,
+      "lng": 30.7269,
+      "waterBodyUk": "Десна (басейн Сейм/Десна)",
+      "spotIds": [
+        "desna-mouth"
+      ],
+      "sampleSiteIds": [
+        "wq-desna-mouth"
+      ],
+      "hostRiverOsmId": null,
+      "summaryUk": "Фронт хвилі: Сумщина → Чернігів → Київщина (Літки / Бровари / Деснянський водозабір м. Київ); якір — пост біля с. Літки. Масовий замор риби вгору по течії. На київських водозаборах Міндовкілля звітувало про норму/прийнятні показники наприкінці вересня 2024; для SUP — advisory у період проходження хвилі. Статичний знімок research 2026-08-09.",
+      "sourceUrls": [
+        "https://mepr.gov.ua/?usefullinks=reaguvannya-na-nadzvychajnu-podiyu-na-richkah-sejm-ta-desna"
+      ],
+      "placeholder": false
+    },
+    {
+      "id": "inc-kyrylivske-oil-2026-07",
+      "titleUk": "Витік нафтопродуктів в озеро Кирилівське після атаки РФ",
+      "severity": "critical",
+      "status": "monitoring",
+      "startedAt": "2026-07-02",
+      "endedAt": null,
+      "lat": 50.4925,
+      "lng": 30.4585,
+      "waterBodyUk": "оз. Кирилівське / система Опечень",
+      "spotIds": [
+        "sobachne"
+      ],
+      "sampleSiteIds": [],
+      "hostRiverOsmId": null,
+      "summaryUk": "Опечень: Кирилівське ← струмок Сирець; ризик для Почайни/Дніпра стримували бонами. ~20600 м² плівки; ДСНС зібрало ~317 м³ з поверхні до ~17.07.2026. Купання/риболовля заборонені. Повторне незначне забруднення після атаки ~08.08.2026. Найближчі paddle-spots на Оболоні — advisory. Статичний знімок research 2026-08-09.",
+      "sourceUrls": [
+        "https://kyiv.dsns.gov.ua/news/nadzvicaini-podiyi/roboti-dsns-zi-zboru-naftoproduktiv-z-poverxni-vodoimi-na-ozeri-kirilivske-zaverseno"
+      ],
+      "placeholder": false
+    },
+    {
+      "id": "inc-bucha-sewage-2026-03",
+      "titleUk": "Критичний скид неочищених стічних вод у річку Буча",
+      "severity": "critical",
+      "status": "monitoring",
+      "startedAt": "2026-03-02",
+      "endedAt": null,
+      "lat": 50.5375262,
+      "lng": 30.2312418,
+      "waterBodyUk": "р. Буча",
+      "spotIds": [
+        "irpin-river"
+      ],
+      "sampleSiteIds": [],
+      "hostRiverOsmId": null,
+      "summaryUk": "Колодязь / колектор біля мосту Буча–Ірпінь (вул. Соборна за місцевими ЗМІ). ДЕІ: NH₄⁺ перевищення ~2094× ГДК; O₂ 2.2 мг/дм³. Матеріали → поліція/прокуратура. Нижня Ірпінь не тотожна Бучі, але релевантно для басейну малих річок Київщини. Статичний знімок research 2026-08-09.",
+      "sourceUrls": [
+        "https://stolreg.dei.gov.ua/post/1477"
+      ],
+      "placeholder": false
+    },
+    {
+      "id": "inc-siverka-discharge-2026",
+      "titleUk": "Скид невідомої речовини / забруднення р. Сіверка (Вишнева ТГ)",
+      "severity": "high",
+      "status": "monitoring",
+      "startedAt": "2026-01-01",
+      "endedAt": null,
+      "lat": 50.386,
+      "lng": 30.368,
+      "waterBodyUk": "р. Сіверка",
+      "spotIds": [],
+      "sampleSiteIds": [],
+      "hostRiverOsmId": null,
+      "summaryUk": "Поблизу с. Крюківщина (за текстами ДЕІ). Координати наближені — уточнювати з постів 1505/1514. Ланцюг постів ДЕІ; проби + передача в поліцію/прокуратуру. Немає match у spots.json. Статичний знімок research 2026-08-09.",
+      "sourceUrls": [
+        "https://stolreg.dei.gov.ua/post/1514"
+      ],
+      "placeholder": true
+    },
+    {
+      "id": "inc-ros-oil-belaya-tserkva",
+      "titleUk": "Сліди нафтопродуктів біля очисних / канал → р. Рось (Біла Церква)",
+      "severity": "high",
+      "status": "monitoring",
+      "startedAt": "2026-01-01",
+      "endedAt": null,
+      "lat": 49.795,
+      "lng": 30.112,
+      "waterBodyUk": "р. Рось",
+      "spotIds": [
+        "bila-tserkva-ros"
+      ],
+      "sampleSiteIds": [],
+      "hostRiverOsmId": null,
+      "summaryUk": "ДЕІ ПЕК Біла Церква описує нагромадження нафтопродуктів у потічку/каналі з ризиком для Росі. Координати потребують верифікації з оригінального поста (трапляються опечатки). Факт події — official; точність гео — medium. Статичний знімок research 2026-08-09.",
+      "sourceUrls": [
+        "https://stolreg.dei.gov.ua/post/1521"
+      ],
+      "placeholder": true
+    },
+    {
+      "id": "inc-telbin-lab-fail-pattern",
+      "titleUk": "Рекреаційні проби на оз. Тельбін періодично не відповідають нормам",
+      "severity": "medium",
+      "status": "monitoring",
+      "startedAt": "2024-06-01",
+      "endedAt": null,
+      "lat": 50.4265,
+      "lng": 30.609,
+      "waterBodyUk": "оз. Тельбін",
+      "spotIds": [
+        "telbin"
+      ],
+      "sampleSiteIds": [],
+      "hostRiverOsmId": null,
+      "summaryUk": "Муніципальний пляж / зона відпочинку Тельбін. Повторюваний сезонний патерн (Плесо/ЦКПХ) — monitoring, не разова аварія; оновлювати з останньої тижневої таблиці. Офіційний пляжний сезон за воєнного стану часто не відкривають — lab_fail інформує contact risk для SUP. Статичний знімок research 2026-08-09.",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/kp_pleso_provelo_doslidzhennya_yakosti_vodi_na_15_stolichnikh_plyazhakh_probi_ne_vidpovidayut_sanitarno-gigiyenichnim_vimogam/"
+      ],
+      "placeholder": false
+    },
+    {
+      "id": "inc-dnipro-bloom-seasonal",
+      "titleUk": "Сезонне цвітіння синьо-зелених водоростей (ціанобактерії) на Дніпрі та в затоках",
+      "severity": "medium",
+      "status": "monitoring",
+      "startedAt": "2023-07-01",
+      "endedAt": null,
+      "lat": 50.4455,
+      "lng": 30.5755,
+      "waterBodyUk": "Дніпро (Київ)",
+      "spotIds": [
+        "hydropark",
+        "dnipro-kyiv-reach",
+        "koncha-zaspa"
+      ],
+      "sampleSiteIds": [
+        "pleso-venetsiia",
+        "pleso-dytiachyi",
+        "pleso-molodizhnyi"
+      ],
+      "hostRiverOsmId": null,
+      "summaryUk": "Київська ділянка Дніпра / Гідропарк та слабопроточні затоки. Щорічний тепловий патерн (monitoring). ДЕІ радить уникати контакту з «зеленою» водою. Багато spotIds уже legally banned_navigation — bloom релевантний для contact messaging. Статичний знімок research 2026-08-09.",
+      "sourceUrls": [
+        "https://stolreg.dei.gov.ua/post/693"
+      ],
+      "placeholder": false
+    },
+    {
+      "id": "inc-hydropark-beaches-red-flags-2024",
+      "titleUk": "Червоні прапори на низці муніципальних пляжів (хвиля лабораторій, літо 2024)",
+      "severity": "medium",
+      "status": "resolved",
+      "startedAt": "2024-07-01",
+      "endedAt": "2024-08-31",
+      "lat": 50.4405,
+      "lng": 30.5625,
+      "waterBodyUk": "Дніпро / міські озера (пляжі КП «Плесо»)",
+      "spotIds": [
+        "hydropark",
+        "telbin"
+      ],
+      "sampleSiteIds": [
+        "pleso-venetsiia",
+        "pleso-veselka",
+        "pleso-dytiachyi",
+        "pleso-zolotyi",
+        "pleso-molodizhnyi",
+        "pleso-peredmistna-slobidka",
+        "pleso-raiduha",
+        "pleso-telbin",
+        "pleso-tsentralnyi",
+        "pleso-chortoryi"
+      ],
+      "hostRiverOsmId": null,
+      "summaryUk": "Венеція, Веселка, Дитячий, Золотий, Молодіжний, Передмістна Слобідка, Райдуга, Тельбін, Центральний, Чорторий — типовий перелік зведень у спеку. Media relay; для live-фази дублювати цитатою Плесо/ЦКПХ з датою проб. Статичний знімок research 2026-08-09.",
+      "sourceUrls": [
+        "https://www.unian.ua/tourism/news/u-kiyevi-zaboronili-kupatisya-na-bilshosti-plyazhiv-novini-kiyeva-11119463.html"
+      ],
+      "placeholder": false
+    },
+    {
+      "id": "inc-riverstone-bloom-smell-rumor",
+      "titleUk": "Стояча вода / сморід біля Дніпровської набережної (ЖК RiverStone) — скарги мешканців",
+      "severity": "low",
+      "status": "monitoring",
+      "startedAt": "2025-07-01",
+      "endedAt": null,
+      "lat": 50.417,
+      "lng": 30.585,
+      "waterBodyUk": "Дніпро (локальна заплава/укріплення)",
+      "spotIds": [
+        "dnipro-kyiv-reach"
+      ],
+      "sampleSiteIds": [],
+      "hostRiverOsmId": null,
+      "summaryUk": "Дарницький р-н, набережна; локальний застій. Research status був unconfirmed/rumor (схема мапи: monitoring). Не виставляти unsafe без лабораторії чи ДЕІ. Статичний знімок research 2026-08-09.",
+      "sourceUrls": [
+        "https://glavcom.ua/kyiv/news/u-kijevi-na-dniprovskij-naberezhnij-zatsvila-voda-video-1131985.html"
+      ],
+      "placeholder": true
+    }
+  ]
+}

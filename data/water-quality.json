@@ -1,0 +1,1129 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-08T21:31:28.867Z",
+  "fetchedAt": null,
+  "bbox": {
+    "south": 49.85,
+    "west": 29.2,
+    "north": 51.28,
+    "east": 32.3
+  },
+  "sources": [
+    {
+      "id": "pleso",
+      "nameUk": "КП «Плесо»",
+      "role": "bathing_sites",
+      "urls": [
+        "https://pleso.kyiv.ua/",
+        "http://pleso.kyiv.ua/локації/",
+        "http://pleso.kyiv.ua/лабораторія/",
+        "https://pleso.kyiv.ua/wp-json/wp/v2/posts",
+        "https://pleso.kyiv.ua/2026/07/24/%d0%b2%d0%be%d0%b4%d0%b0-%d0%bd%d0%b0-%d0%bc%d1%83%d0%bd%d1%96%d1%86%d0%b8%d0%bf%d0%b0%d0%bb%d1%8c%d0%bd%d0%b8%d1%85-%d0%bf%d0%bb%d1%8f%d0%b6%d0%b0%d1%85-%d0%ba%d0%b8%d1%94%d0%b2%d0%b0-%d0%b2%d1%96/",
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/"
+      ],
+      "noteUk": "Міські пляжі + агреговані лаб-повідомлення (мікро). Live таблиці проб на сайті немає — див. docs/research/pleso-bathing.md."
+    },
+    {
+      "id": "kyivcity-gis",
+      "nameUk": "Портал даних Києва / ArcGIS (муніципальні пляжі)",
+      "role": "bathing_sites",
+      "urls": [
+        "https://gis.kyivcity.gov.ua/api/rest/services/%D0%9F%D0%BB%D1%8F%D0%B6%D1%96_%D1%82%D0%B0_%D0%B7%D0%BE%D0%BD%D0%B8_%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%BA%D1%83/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=geojson",
+        "https://data.kyivcity.gov.ua/dataset/perelik-munitsypalnykh-pliazhiv-kyieva-dep-ecology",
+        "https://data.kyivcity.gov.ua/dashboard/munitsypalni-pliazhi-kyieva"
+      ],
+      "noteUk": "15 Point features: coords, waterobject, beachstatus (каталог ІАС, не лаб-проба). Зріз: docs/research/municipal-beaches-snapshot.json."
+    },
+    {
+      "id": "moz",
+      "nameUk": "МОЗ / ЦГЗ (Центр громадського здоров’я)",
+      "role": "advisory",
+      "urls": [
+        "https://phc.org.ua/news",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya",
+        "https://phc.org.ua/monitoring-i-statistika"
+      ],
+      "noteUk": "Щотижневі бріфи «Якість води на пляжах» (pass/fail, рідко числа). Зріз 2026-08-06: docs/research/water-quality-snapshot.json. GIS beachstatus ≠ лаб-статус."
+    },
+    {
+      "id": "dpss",
+      "nameUk": "Держпродспоживслужба (ГУ в Київській області)",
+      "role": "official_ban",
+      "urls": [
+        "https://dpssko.gov.ua/",
+        "https://dpssko.gov.ua/blog/2024/05/31/%d1%81%d0%be%d1%86%d1%96%d0%b0%d0%bb%d1%8c%d0%bd%d0%be-%d0%b3%d1%96%d0%b3%d1%96%d1%94%d0%bd%d1%96%d1%87%d0%bd%d0%b8%d0%b9-%d0%bc%d0%be%d0%bd%d1%96%d1%82%d0%be%d1%80%d0%b8%d0%bd%d0%b3-%d0%bd%d0%b0/"
+      ],
+      "noteUk": "Низька цінність для live купального статусу (переважно харч/вет); рекреаційна вода області йде через ЦГЗ / ОЦКПХ. Див. docs/research/water-quality-bathing-safety.md §2."
+    },
+    {
+      "id": "lab-centers",
+      "nameUk": "Лабораторні центри МОЗ / ЦКПХ",
+      "role": "lab_samples",
+      "urls": [
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://kyiv.cdc.gov.ua/",
+        "https://kyiv.cdc.gov.ua/articles/rezultaty-monitoryngu-yakosti-vody-vidkrytyh-vodojm-ta-gruntu-pisku-v-zonah-rekreatsiyi-plyazhah-m-kyyeva-z-19-08-2024r-po-25-08-2024r/",
+        "https://kv.cdc.gov.ua/",
+        "https://kv.cdc.gov.ua/activity/laboratory-studies/"
+      ],
+      "noteUk": "Київський міський ЦКПХ — іменовані списки / таблиці (пріоритет над ЦГЗ narrative). Київський обласний ЦКПХ — sparse public board; область часто лише в бріфах ЦГЗ."
+    },
+    {
+      "id": "phc",
+      "nameUk": "ЦГЗ МОЗ — бріфи якості води на пляжах",
+      "role": "advisory",
+      "urls": [
+        "https://phc.org.ua/news",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "noteUk": "Дубль/уточнення moz: national weekly HTML briefs (scrape_news_titles)."
+    },
+    {
+      "id": "oblast-cdc",
+      "nameUk": "Київський обласний ЦКПХ",
+      "role": "lab_samples",
+      "urls": [
+        "https://kv.cdc.gov.ua/",
+        "https://kv.cdc.gov.ua/activity/laboratory-studies/"
+      ],
+      "noteUk": "Публічних пляжних таблиць мало; Чайка / Переяслав / Біла Церква — переважно через агрегацію ЦГЗ."
+    },
+    {
+      "id": "dpssko",
+      "nameUk": "ГУ Держпродспоживслужби в Київській області",
+      "role": "official_ban",
+      "urls": [
+        "https://dpssko.gov.ua/",
+        "https://dpssko.gov.ua/blog/2024/05/31/%d1%81%d0%be%d1%86%d1%96%d0%b0%d0%bb%d1%8c%d0%bd%d0%be-%d0%b3%d1%96%d0%b3%d1%96%d1%94%d0%bd%d1%96%d1%87%d0%bd%d0%b8%d0%b9-%d0%bc%d0%be%d0%bd%d1%96%d1%82%d0%be%d1%80%d0%b8%d0%bd%d0%b3-%d0%bd%d0%b0/"
+      ],
+      "noteUk": "Low-value для bathing feed (див. dpss)."
+    }
+  ],
+  "sampleSites": [
+    {
+      "id": "pleso-venetsiia",
+      "nameUk": "Венеція",
+      "lat": 50.44933543206731,
+      "lng": 30.574993184267328,
+      "kind": "beach",
+      "spotId": "hydropark",
+      "spotIds": [
+        "hydropark"
+      ],
+      "waterBodyUk": "Венеціанська протока, острів Долобецький",
+      "hostRiverOsmId": null,
+      "regionUk": "Дніпровський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{F143A769-A6DB-4D3D-A18F-6667A620A8DA}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T05:11:51.000Z"
+      },
+      "noteUk": null,
+      "placeholder": false
+    },
+    {
+      "id": "pleso-verbnyi",
+      "nameUk": "Вербний",
+      "lat": 50.491062263873026,
+      "lng": 30.51429201725942,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "озеро Вербне",
+      "hostRiverOsmId": null,
+      "regionUk": "Оболонський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{774BED46-CF9C-4897-A97E-FE7DAB6973E6}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": null
+      },
+      "noteUk": "Немає strong spot. GIS district інколи помилково Голосіївський; фактично Оболонь / оз. Вербне.",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-veselka",
+      "nameUk": "Веселка",
+      "lat": 50.45506196084134,
+      "lng": 30.581886671179294,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "Русанівська протока",
+      "hostRiverOsmId": null,
+      "regionUk": "Дніпровський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{BE1F0D9A-EE32-4A77-8C64-E873873E333A}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T05:09:43.000Z"
+      },
+      "noteUk": "Partial→hydropark (Русанівська протока / Микільська Слобідка, ~1.4 км); у spotIds не включено.",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-galernyi",
+      "nameUk": "Галерний",
+      "lat": 50.37023871225886,
+      "lng": 30.55087729761589,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "затока Галерна",
+      "hostRiverOsmId": null,
+      "regionUk": "Голосіївський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{37414027-755F-4B5A-A22B-1FD3ED99FC87}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": null
+      },
+      "noteUk": "Weak≠koncha-zaspa (~8 км південніше). GIS ≈ Корчувате.",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-dytiachyi",
+      "nameUk": "Дитячий",
+      "lat": 50.447362273036475,
+      "lng": 30.571912324517683,
+      "kind": "beach",
+      "spotId": "hydropark",
+      "spotIds": [
+        "hydropark"
+      ],
+      "waterBodyUk": "Венеціанська протока, острів Венеціанський",
+      "hostRiverOsmId": null,
+      "regionUk": "Дніпровський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{4C4FCAD2-2BD8-4FD5-A5F8-61A38650E51A}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T04:51:28.000Z"
+      },
+      "noteUk": null,
+      "placeholder": false
+    },
+    {
+      "id": "pleso-zolotyi",
+      "nameUk": "Золотий",
+      "lat": 50.43052639050086,
+      "lng": 30.581090675772284,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "р. Дніпро, острів Венеціанський",
+      "hostRiverOsmId": null,
+      "regionUk": "Дніпровський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{F0186337-241C-4575-83D6-1BFE77E7334A}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T04:51:28.000Z"
+      },
+      "noteUk": "Partial→hydropark (~1.4 км, південь Венеціанського); у spotIds не включено.",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-molodizhnyi",
+      "nameUk": "Молодіжний",
+      "lat": 50.45104468412849,
+      "lng": 30.57039971131115,
+      "kind": "beach",
+      "spotId": "hydropark",
+      "spotIds": [
+        "hydropark"
+      ],
+      "waterBodyUk": "р. Десенка, острів Долобецький",
+      "hostRiverOsmId": null,
+      "regionUk": "Дніпровський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{65C9B2A3-8DC3-43E9-9B88-EAD20F25B806}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T04:51:28.000Z"
+      },
+      "noteUk": null,
+      "placeholder": false
+    },
+    {
+      "id": "pleso-ostriv-obolonskyi",
+      "nameUk": "Острів Оболонський",
+      "lat": 50.50895919485063,
+      "lng": 30.518683550410973,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "затока Наталка та р. Дніпро",
+      "hostRiverOsmId": null,
+      "regionUk": "Оболонський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{7E2FF3EE-28D0-4BBB-961C-68760356F913}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T04:51:28.000Z"
+      },
+      "noteUk": "Weak≠sobachne (затока Наталка окремо). Краще окремий spot natalka/obolonskyi-island.",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-peredmistna-slobidka",
+      "nameUk": "Передмістна Слобідка",
+      "lat": 50.437932834821595,
+      "lng": 30.57142313127743,
+      "kind": "beach",
+      "spotId": "hydropark",
+      "spotIds": [
+        "hydropark"
+      ],
+      "waterBodyUk": "р. Дніпро, острів Венеціанський",
+      "hostRiverOsmId": null,
+      "regionUk": "Дніпровський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{C352CED4-1DF9-435C-8B35-011493345211}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T04:51:28.000Z"
+      },
+      "noteUk": null,
+      "placeholder": false
+    },
+    {
+      "id": "pleso-pushcha-vodytsia",
+      "nameUk": "Пуща-Водиця",
+      "lat": 50.540014197679376,
+      "lng": 30.344976218739138,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "ставок Горащиха на р. Котурка у Пущі-Водиці (8 лінія)",
+      "hostRiverOsmId": null,
+      "regionUk": "Оболонський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{BEF16D50-C18D-4D61-84D5-C95C030A1451}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T05:09:43.000Z"
+      },
+      "noteUk": "Partial→blakytne/redkyne (той район, але інша водойма: Гаращиха/Горащиха ≠ Блакитні озера); у spotIds не включено.",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-raiduha",
+      "nameUk": "Райдуга",
+      "lat": 50.48625710197903,
+      "lng": 30.58021317118923,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "озеро Райдуга",
+      "hostRiverOsmId": null,
+      "regionUk": "Дніпровський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{DA160D05-B1FE-4442-A178-ECE47E4D9ABB}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T05:09:43.000Z"
+      },
+      "noteUk": "Немає spot. Не плутати з radunka (оз. Радунка).",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-telbin",
+      "nameUk": "Тельбін",
+      "lat": 50.42738254759813,
+      "lng": 30.603756797468723,
+      "kind": "beach",
+      "spotId": "telbin",
+      "spotIds": [
+        "telbin"
+      ],
+      "waterBodyUk": "озеро Тельбін",
+      "hostRiverOsmId": null,
+      "regionUk": "Дніпровський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{15E77E07-6717-45E5-96AF-E79C2C8B62C3}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": null
+      },
+      "noteUk": "GIS district інколи Голосіївський — фактично Дніпровський / Березняки.",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-troieshchyna",
+      "nameUk": "Троєщина",
+      "lat": 50.50539824094157,
+      "lng": 30.566739419429116,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "затока р. Десенка",
+      "hostRiverOsmId": null,
+      "regionUk": "Деснянський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{90CE4146-EC65-4237-89FE-682D11E35D4B}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T04:51:28.000Z"
+      },
+      "noteUk": "Weak≠sonyachne (затока Десенки ≠ Сонячне озеро).",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-tsentralnyi",
+      "nameUk": "Центральний",
+      "lat": 50.45881082046921,
+      "lng": 30.532967784479027,
+      "kind": "beach",
+      "spotId": "trukhaniv",
+      "spotIds": [
+        "trukhaniv"
+      ],
+      "waterBodyUk": "річка Дніпро",
+      "hostRiverOsmId": null,
+      "regionUk": "Дніпровський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{24AA0B59-0A25-41A9-8D8C-8C8AB769808A}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T04:51:28.000Z"
+      },
+      "noteUk": "Офіційна назва «Центральний» на Трухановому.",
+      "placeholder": false
+    },
+    {
+      "id": "pleso-chortoryi",
+      "nameUk": "Чорторий",
+      "lat": 50.49622573590609,
+      "lng": 30.53440215749249,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "р. Дніпро",
+      "hostRiverOsmId": null,
+      "regionUk": "Деснянський",
+      "sourceIds": [
+        "pleso",
+        "kyivcity-gis",
+        "lab-centers",
+        "phc",
+        "moz"
+      ],
+      "provider": "pleso/gis",
+      "gisGlobalId": "{F917E77B-4CBE-4215-AF96-54E0621603A1}",
+      "catalog": {
+        "canBatheFlag": true,
+        "flagSource": "gis.beachstatus",
+        "flagUpdatedAt": "2025-06-20T04:51:28.000Z"
+      },
+      "noteUk": "Немає точного spot (Муромець / гирло Десни area).",
+      "placeholder": false
+    },
+    {
+      "id": "wq-desna-mouth",
+      "nameUk": "Гирло Десни (зона контакту)",
+      "lat": 50.58,
+      "lng": 30.53,
+      "kind": "water_body",
+      "spotId": "desna-mouth",
+      "spotIds": [
+        "desna-mouth"
+      ],
+      "waterBodyUk": "Десна",
+      "hostRiverOsmId": null,
+      "regionUk": "Київська область",
+      "sourceIds": [
+        "moz",
+        "dpss",
+        "phc",
+        "lab-centers"
+      ],
+      "provider": null,
+      "gisGlobalId": null,
+      "catalog": null,
+      "noteUk": "Не муніципальний пляж. Точковий OK на пляжі «Троєщина» (Десенка); stretch гирла без стабільного beach status. Інцидент Сейм/Десна 2024 — окремо в water-incidents.",
+      "placeholder": true
+    },
+    {
+      "id": "beach-oblast-chaika-obukhiv",
+      "nameUk": "Дитячий пляж «Чайка»",
+      "lat": 50.02,
+      "lng": 30.72,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "р. Рось",
+      "hostRiverOsmId": null,
+      "regionUk": "с. Чайки, Обухівський район",
+      "sourceIds": [
+        "phc",
+        "moz",
+        "oblast-cdc"
+      ],
+      "provider": "phc/oblast-cdc",
+      "gisGlobalId": null,
+      "catalog": null,
+      "noteUk": "Обласний пляж (Рось). Координати орієнтовні; статус з бріфу ЦГЗ 06.08.2026.",
+      "placeholder": false
+    },
+    {
+      "id": "beach-oblast-pereiaslav-city",
+      "nameUk": "Міський пляж Переяслав",
+      "lat": 50.07,
+      "lng": 31.45,
+      "kind": "beach",
+      "spotId": null,
+      "spotIds": [],
+      "waterBodyUk": "Канівське водосховище",
+      "hostRiverOsmId": null,
+      "regionUk": "м. Переяслав",
+      "sourceIds": [
+        "phc",
+        "moz",
+        "oblast-cdc"
+      ],
+      "provider": "phc",
+      "gisGlobalId": null,
+      "catalog": null,
+      "noteUk": "У 2026 часто без статусу офіційного пляжу; проби нерегулярні (ЦГЗ: не досліджувалось у вікні бріфу).",
+      "placeholder": true
+    },
+    {
+      "id": "beach-oblast-bila-tserkva-central",
+      "nameUk": "Пляж «Центральний» (Біла Церква)",
+      "lat": 49.795,
+      "lng": 30.13,
+      "kind": "beach",
+      "spotId": "bila-tserkva-ros",
+      "spotIds": [
+        "bila-tserkva-ros"
+      ],
+      "waterBodyUk": "р. Рось",
+      "hostRiverOsmId": null,
+      "regionUk": "м. Біла Церква",
+      "sourceIds": [
+        "phc",
+        "moz",
+        "oblast-cdc"
+      ],
+      "provider": "phc",
+      "gisGlobalId": null,
+      "catalog": null,
+      "noteUk": "У 2026 не має статусу офіційного пляжу; у бріфі 06.08.2026 — без проби.",
+      "placeholder": true
+    },
+    {
+      "id": "wq-irpin-river",
+      "nameUk": "р. Ірпінь (середня течія / контактна зона)",
+      "lat": 50.48,
+      "lng": 30.35,
+      "kind": "water_body",
+      "spotId": "irpin-river",
+      "spotIds": [
+        "irpin-river"
+      ],
+      "waterBodyUk": "Ірпінь",
+      "hostRiverOsmId": null,
+      "regionUk": "Київська область",
+      "sourceIds": [
+        "moz",
+        "oblast-cdc",
+        "dpssko"
+      ],
+      "provider": null,
+      "gisGlobalId": null,
+      "catalog": null,
+      "noteUk": "Публічних рекреаційних проб МОЗ/ЦГЗ/ОЦКПХ не знайдено. Координати вирівняні під spot irpin-river.",
+      "placeholder": true
+    }
+  ],
+  "observations": {
+    "pleso-venetsiia": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-verbnyi": {
+      "status": "advisory",
+      "labelUk": "Хімічне відхилення (ЦКПХ); мікро OK у бріфі ЦГЗ",
+      "sampledAt": "2026-07-13",
+      "metricsNoteUk": "ЦКПХ 13–14.07.2026: санітарно-хімічне перевищення на оз. Вербне (пріоритет над narrative). Бріф ЦГЗ станом на 06.08.2026 (проби ≈30.07): Вербний у списку compliant мікро. Плесо 04.08.2026: агрегат мікро OK на 15 пляжах (без імен) — не знімає chem advisory. Офіційний сезон не відкритий. GIS beachstatus ≠ лаб.",
+      "confidence": "high",
+      "authority": "ЦКПХ",
+      "sourceUrls": [
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "sanitaryChemical": "fail",
+        "microbiological": "pass",
+        "parasitological": "unknown"
+      },
+      "labName": "ДУ «Київський міський ЦКПХ МОЗ» (+ агрегація ЦГЗ)",
+      "sourceKind": "cdc_news",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-veselka": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-galernyi": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-dytiachyi": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-zolotyi": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-molodizhnyi": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-ostriv-obolonskyi": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-peredmistna-slobidka": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-pushcha-vodytsia": {
+      "status": "advisory",
+      "labelUk": "Хімічне відхилення (ЦКПХ / Гаращиха); мікро OK у бріфі ЦГЗ",
+      "sampledAt": "2026-07-13",
+      "metricsNoteUk": "ЦКПХ 13–14.07.2026: санітарно-хімічне перевищення на ставку Гаращиха (Пуща-Водиця). Бріф ЦГЗ 06.08.2026: «Пуща-Водиця» 5–7 у compliant мікро. Плесо 04.08 агрегат мікро OK — не знімає chem advisory. Сезон не відкритий.",
+      "confidence": "high",
+      "authority": "ЦКПХ",
+      "sourceUrls": [
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "sanitaryChemical": "fail",
+        "microbiological": "pass",
+        "parasitological": "unknown"
+      },
+      "labName": "ДУ «Київський міський ЦКПХ МОЗ» (+ агрегація ЦГЗ)",
+      "sourceKind": "cdc_news",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-raiduha": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-telbin": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-troieshchyna": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-tsentralnyi": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "pleso-chortoryi": {
+      "status": "ok",
+      "labelUk": "Відповідає нормам (ЦГЗ іменовано + мікро Плесо)",
+      "sampledAt": "2026-08-04",
+      "metricsNoteUk": "Бріф ЦГЗ 06.08.2026 (Київ, вікно проб ≈30.07): іменований OK. Плесо/КМДА 04.08.2026: мікро OK (агрегат 15 пляжів, без per-beach таблиці). ЦКПХ 13–14.07.2026: також у списку OK. Хімія per-beach після липня публічно не оновлена. Офіційний сезон купання не відкритий. GIS beachstatus — каталог, не проба.",
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://kyivcity.gov.ua/news/sanitarno-mikrobiologichni_pokazniki_vodi_na_munitsipalnikh_plyazhakh_kiyeva_vidpovidayut_normi__pleso/",
+        "https://kyiv.cdc.gov.ua/news/yakist-vody-na-kyyivskyh-plyazhah-aktualna-informatsiya/",
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": false,
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass",
+        "sanitaryChemical": "unknown",
+        "parasitological": "unknown"
+      },
+      "labName": "територіальні ЦКПХ (агреговано ЦГЗ) / КП «Плесо»",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false
+    },
+    "wq-desna-mouth": {
+      "status": "unknown",
+      "labelUk": "Stretch без стабільного beach-status",
+      "sampledAt": null,
+      "metricsNoteUk": "Гирло Десни: стабільних щотижневих проб «пляжного» статусу для всього stretch немає. Є пляж «Троєщина» на Десенці (pleso-troieshchyna / ЦГЗ OK). Інцидент Сейм/Десна 2024 — у water-incidents, не active unsafe на 2026-08.",
+      "confidence": "low",
+      "authority": null,
+      "sourceUrls": [
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": true,
+      "publishedAt": "2026-08-07",
+      "labName": null,
+      "sourceKind": "other",
+      "seasonOfficiallyOpen": false
+    },
+    "beach-oblast-chaika-obukhiv": {
+      "status": "ok",
+      "labelUk": "Дитячий пляж «Чайка» — відповідає (бріф ЦГЗ)",
+      "sampledAt": "2026-07-30",
+      "publishedAt": "2026-08-07",
+      "dims": {
+        "microbiological": "pass"
+      },
+      "labName": "Київський ОЦКПХ (через бріф ЦГЗ)",
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false,
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "metricsNoteUk": "Київська область у бріфі ЦГЗ станом на 6 серпня 2026: дитячий пляж «Чайка» (с. Чайки, Обухівський р-н, р. Рось) — безпечно щодо опублікованих критеріїв. Сезон офіційно не відкритий.",
+      "placeholder": false
+    },
+    "beach-oblast-pereiaslav-city": {
+      "status": "unknown",
+      "labelUk": "Проби не брали (бріф ЦГЗ 06.08.2026)",
+      "sampledAt": null,
+      "publishedAt": "2026-08-07",
+      "labName": null,
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false,
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "metricsNoteUk": "У бріфі ЦГЗ 06.08.2026 — дослідження не проводились; у 2026 без статусу офіційного пляжу (Канівське вдсх.).",
+      "placeholder": true
+    },
+    "beach-oblast-bila-tserkva-central": {
+      "status": "unknown",
+      "labelUk": "Не досліджувалось (бріф ЦГЗ 06.08.2026)",
+      "sampledAt": null,
+      "publishedAt": "2026-08-07",
+      "labName": null,
+      "sourceKind": "phc_brief",
+      "seasonOfficiallyOpen": false,
+      "confidence": "medium",
+      "authority": "ЦГЗ",
+      "sourceUrls": [
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "metricsNoteUk": "«Центральний» Біла Церква (Рось): не досліджено у вікні бріфу 30.07–06.08.2026; не офіційний пляж 2026.",
+      "placeholder": true
+    },
+    "wq-irpin-river": {
+      "status": "unknown",
+      "labelUk": "Немає публічних рекреаційних проб",
+      "sampledAt": null,
+      "publishedAt": null,
+      "labName": null,
+      "sourceKind": "other",
+      "seasonOfficiallyOpen": false,
+      "confidence": "low",
+      "authority": null,
+      "sourceUrls": [],
+      "metricsNoteUk": "Публічних проб рекреаційної якості для р. Ірпінь у джерелах МОЗ/ЦГЗ/ОЦКПХ не знайдено (research 2026-08-09).",
+      "placeholder": true
+    }
+  },
+  "byRiverNameToken": {
+    "десна": {
+      "status": "unknown",
+      "labelUk": null,
+      "sampledAt": null,
+      "noteUk": "Пляжні проби точкові (Десенка / Троєщина); інцидент 2024 закритий — не автоматичний unsafe.",
+      "sourceUrls": [
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": true
+    },
+    "ірпінь": {
+      "status": "unknown",
+      "labelUk": null,
+      "sampledAt": null,
+      "noteUk": "Немає іменованих пляжних проб у ЦГЗ/ОЦКПХ.",
+      "sourceUrls": [],
+      "placeholder": true
+    },
+    "рось": {
+      "status": "unknown",
+      "labelUk": null,
+      "sampledAt": "2026-07-30",
+      "noteUk": "Точковий OK на Чайці (Обухів); Біла Церква без свіжої проби в бріфі 06.08.2026.",
+      "sourceUrls": [
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": true
+    },
+    "тетерів": {
+      "status": "unknown",
+      "labelUk": null,
+      "sampledAt": null,
+      "noteUk": "Край області / Житомир гідропарк у національних бріфах — не Kyiv oblast bathing board.",
+      "sourceUrls": [],
+      "placeholder": true
+    },
+    "дніпро": {
+      "status": "unknown",
+      "labelUk": null,
+      "sampledAt": null,
+      "noteUk": "Мапити лише через pleso-* / spots, не весь київський stretch.",
+      "sourceUrls": [
+        "https://phc.org.ua/news/yakist-vodi-na-plyazhakh-ukraini-stanom-na-6-serpnya-de-bezpechno-kupatisya"
+      ],
+      "placeholder": true
+    }
+  }
+}

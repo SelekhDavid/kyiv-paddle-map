@@ -1,0 +1,60 @@
+{
+  "updated": "2026-08-08",
+  "disclaimerUk": "Колір на карті показує, що відомо про місцеві правила громад (рішення рад, комісій з безпеки, поради щодо якості води). Окрема загальна заборона області на цивільну навігацію може діяти всюди, але сама по собі не робить усі водойми жовтими. Статус змінюється — перед виходом перевірте офіційні джерела. Ця мапа не є дозволом.",
+  "disclaimerEn": "Map colors encode local community/hromada evidence (council TEB-NS decisions, water advisories). The general KODA civil-navigation ban may still apply oblast-wide in law, but does not by itself paint a waterbody yellow. Status changes — verify official sources before going out. This map is not a permit.",
+  "regionalRules": [
+    {
+      "id": "koda-navigation-ban",
+      "titleUk": "Заборона виходити на воду в області",
+      "level": "banned_navigation",
+      "appliesTo": ["Kyiv oblast waterbodies", "small craft", "water entertainment equipment"],
+      "summaryUk": "На водоймах Київщини під час воєнного стану заборонено цивільну навігацію: човни, катери, водні мотоцикли та засоби розваг на воді. SUP, каяки й катамарани зазвичай теж підпадають під цю заборону.",
+      "sources": [
+        {
+          "title": "КОДА — заборона навігації",
+          "url": "https://koda.gov.ua/do-uvagy-meshkancziv-kyyivskoyi-oblasti-tryvaye-zaborona-navigacziyi-na-vodojmah-kyyivshhyny/"
+        }
+      ]
+    },
+    {
+      "id": "dnipro-cascade",
+      "titleUk": "Дніпро та його водосховища",
+      "level": "banned_navigation",
+      "appliesTo": ["Kyiv Reservoir", "Kaniv Reservoir", "other cascade reservoirs"],
+      "summaryUk": "Київське, Канівське та інші водосховища каскаду — повна заборона цивільного виходу на воду. Окремо обмежені зони біля ГЕС і дамб.",
+      "sources": [
+        {
+          "title": "Огляд правил під час війни",
+          "url": "https://www.izum.ua/ru/chy-mozhna-plavaty-na-lodtsi-pid-chas-viiny-ryzyky-ta-pravyla-2026/"
+        }
+      ]
+    },
+    {
+      "id": "community-mass-recreation",
+      "titleUk": "Місцеві заборони купання й відпочинку",
+      "level": "restricted",
+      "appliesTo": ["Бучанський район", "Ірпінь", "Білогородка", "Бориспіль", "Баришівка", "інші громади"],
+      "summaryUk": "Окремі громади на час воєнного стану забороняють купання й масовий відпочинок на своїх водоймах (пляжі, водний спорт, атракціони) — навіть там, де немає судноплавства.",
+      "sources": [
+        {
+          "title": "Коцюбинське — купатися заборонено",
+          "url": "https://kotsyubinskarada.gov.ua/news/222029-kupatis-zaboroneno"
+        },
+        {
+          "title": "Огляд заборон у Київській області",
+          "url": "https://kyiv.comments.ua/ua/news/society/human-rights/24694-u-kiivskiy-oblasti-prodovzhuyut-vvoditi-zaboroni-prichini.html"
+        }
+      ]
+    }
+  ],
+  "touristLoadMethod": {
+    "approachUk": "Наскільки людне місце — приблизна оцінка за відкритими гідами, сторінками прокату SUP і згадками в спеціалізованих джерелах. Це не live-підрахунок відвідувачів із соцмереж.",
+    "scale": {
+      "1": "дуже тихо",
+      "2": "тихше звичайного",
+      "3": "середньо",
+      "4": "людно",
+      "5": "дуже людно"
+    }
+  }
+}

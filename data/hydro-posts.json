@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-08T21:23:53.625Z",
+  "fetchedAt": "2026-08-08T21:23:53.625Z",
+  "source": {
+    "provider": "hydro-ua",
+    "noteUk": "Дзеркало спостережень УкрГМЦ (meteo.gov.ua). Первинне джерело — Укргідрометцентр.",
+    "endpoints": [
+      "https://hydro-ua.com/api/hydroday.json",
+      "https://hydro-ua.com/api/hydroauto.json"
+    ],
+    "officialUi": [
+      "https://www.meteo.gov.ua/ua/Faktichni-sposterezhennya-merezhi-hidrolohichnikh-postiv",
+      "https://www.meteo.gov.ua/ua/Dani-avtomatichnikh-hidrolohichnikh-postiv"
+    ]
+  },
+  "bbox": {
+    "south": 49.85,
+    "west": 29.2,
+    "north": 51.28,
+    "east": 32.3
+  },
+  "priorityRiversUk": [
+    "Десна",
+    "Тетерів",
+    "Рось",
+    "Ірпінь",
+    "Стугна",
+    "Трубіж",
+    "Здвиж",
+    "Дніпро"
+  ],
+  "counts": {
+    "stations": 9,
+    "withLevel": 9,
+    "auto": 1,
+    "dailyOnly": 8,
+    "priority": 8
+  },
+  "stations": [
+    {
+      "id": "79043",
+      "nameUk": "Неданчичі",
+      "riverUk": "Дніпро",
+      "basinUk": null,
+      "lat": 51.50007,
+      "lng": 30.587199,
+      "kind": "daily",
+      "feedKinds": [
+        "daily"
+      ],
+      "thresholdsCm": {
+        "low": null,
+        "normal": null,
+        "high": null
+      },
+      "hostRiverOsmId": null,
+      "sourceUrl": "https://www.meteo.gov.ua/ua/Faktichni-sposterezhennya-merezhi-hidrolohichnikh-postiv",
+      "priorityRiver": true
+    },
+    {
+      "id": "80127",
+      "nameUk": "Макошине",
+      "riverUk": "Десна",
+      "basinUk": null,
+      "lat": 51.452086,
+      "lng": 32.344852,
+      "kind": "daily",
+      "feedKinds": [
+        "daily"
+      ],
+      "thresholdsCm": {
+        "low": null,
+        "normal": null,
+        "high": null
+      },
+      "hostRiverOsmId": null,
+      "sourceUrl": "https://www.meteo.gov.ua/ua/Faktichni-sposterezhennya-merezhi-hidrolohichnikh-postiv",
+      "priorityRiver": true
+    },
+    {
+      "id": "80131",
+      "nameUk": "Чернігів",
+      "riverUk": "Десна",
+      "basinUk": null,
+      "lat": 51.476281,
+      "lng": 31.308572,
+      "kind": "daily",
+      "feedKinds": [
+        "daily"
+      ],
+      "thresholdsCm": {
+        "low": null,
+        "normal": null,
+        "high": null
+      },
+      "hostRiverOsmId": null,
+      "sourceUrl": "https://www.meteo.gov.ua/ua/Faktichni-sposterezhennya-merezhi-hidrolohichnikh-postiv",
+      "priorityRiver": true
+    },
+    {
+      "id": "80133",
+      "nameUk": "Морівськ",
+      "riverUk": "Десна",
+      "basinUk": null,
+      "lat": 51.076867,
+      "lng": 30.886183,
+      "kind": "daily",
+      "feedKinds": [
+        "daily"
+      ],
+      "thresholdsCm": {
+        "low": null,
+        "normal": null,
+        "high": null
+      },
+      "hostRiverOsmId": null,
+      "sourceUrl": "https://www.meteo.gov.ua/ua/Faktichni-sposterezhennya-merezhi-hidrolohichnikh-postiv",
+      "priorityRiver": true
+    },
+    {
+      "id": "80136",
+      "nameUk": "Літки",
+      "riverUk": "Десна",
+      "basinUk": null,
+      "lat": 50.698998,
+      "lng": 30.724795,
+      "kind": "daily",
+      "feedKinds": [
+        "daily"
+      ],
+      "thresholdsCm": {
+        "low": null,
+        "normal": null,
+        "high": null
+      },
+      "hostRiverOsmId": null,
+      "sourceUrl": "https://www.meteo.gov.ua/ua/Faktichni-sposterezhennya-merezhi-hidrolohichnikh-postiv",
+      "priorityRiver": true
+    },
+    {
+      "id": "80295",
+      "nameUk": "Фесюри",
+      "riverUk": "Рось",
+      "basinUk": null,
+      "lat": 49.654557,
+      "lng": 29.956207,
+      "kind": "daily",
+      "feedKinds": [
+        "daily"
+      ],
+      "thresholdsCm": {
+        "low": null,
+        "normal": null,
+        "high": null
+      },
+      "hostRiverOsmId": null,
+      "sourceUrl": "https://www.meteo.gov.ua/ua/Faktichni-sposterezhennya-merezhi-hidrolohichnikh-postiv",
+      "priorityRiver": true
+    },
+    {
+      "id": "80605",
+      "nameUk": "Іванків",
+      "riverUk": "Тетерів",
+      "basinUk": null,
+      "lat": 50.931181,
+      "lng": 29.908118,
+      "kind": "daily",
+      "feedKinds": [
+        "daily"
+      ],
+      "thresholdsCm": {
+        "low": null,
+        "normal": null,
+        "high": null
+      },
+      "hostRiverOsmId": null,
+      "sourceUrl": "https://www.meteo.gov.ua/ua/Faktichni-sposterezhennya-merezhi-hidrolohichnikh-postiv",
+      "priorityRiver": true
+    },
+    {
+      "id": "80903",
+      "nameUk": "Чорнобиль",
+      "riverUk": "Прип’ять",
+      "basinUk": null,
+      "lat": 51.276148,
+      "lng": 30.241005,
+      "kind": "daily",
+      "feedKinds": [
+        "daily"
+      ],
+      "thresholdsCm": {
+        "low": null,
+        "normal": null,
+        "high": null
+      },
+      "hostRiverOsmId": null,
+      "sourceUrl": "https://www.meteo.gov.ua/ua/Faktichni-sposterezhennya-merezhi-hidrolohichnikh-postiv",
+      "priorityRiver": false
+    },
+    {
+      "id": "80986",
+      "nameUk": "Київ",
+      "riverUk": "Дніпро",
+      "basinUk": "Басейн Дніпра",
+      "lat": 50.441667,
+      "lng": 30.569444,
+      "kind": "auto",
+      "feedKinds": [
+        "auto",
+        "daily"
+      ],
+      "thresholdsCm": {
+        "low": null,
+        "normal": null,
+        "high": null
+      },
+      "hostRiverOsmId": null,
+      "sourceUrl": "https://www.meteo.gov.ua/ua/Dani-avtomatichnikh-hidrolohichnikh-postiv",
+      "priorityRiver": true
+    }
+  ],
+  "observations": {
+    "79043": {
+      "levelCm": 296,
+      "observedAt": "2026-08-08T09:00:00.000Z",
+      "tempC": 26,
+      "changeCm": -1,
+      "balticSystemM": 103.54
+    },
+    "80127": {
+      "levelCm": 187,
+      "observedAt": "2026-08-08T09:00:00.000Z",
+      "tempC": 26,
+      "changeCm": -1,
+      "balticSystemM": 110.63
+    },
+    "80131": {
+      "levelCm": 140,
+      "observedAt": "2026-08-08T09:00:00.000Z",
+      "tempC": 26,
+      "changeCm": -2,
+      "balticSystemM": 103.84
+    },
+    "80133": {
+      "levelCm": 117,
+      "observedAt": "2026-08-08T09:00:00.000Z",
+      "tempC": 25,
+      "changeCm": -2,
+      "balticSystemM": 100.2
+    },
+    "80136": {
+      "levelCm": 84,
+      "observedAt": "2026-08-08T09:00:00.000Z",
+      "tempC": 25,
+      "changeCm": -2,
+      "balticSystemM": 93.06
+    },
+    "80295": {
+      "levelCm": 144,
+      "observedAt": "2026-08-08T09:00:00.000Z",
+      "tempC": 25,
+      "changeCm": 0,
+      "balticSystemM": 157.92
+    },
+    "80605": {
+      "levelCm": 62,
+      "observedAt": "2026-08-08T09:00:00.000Z",
+      "tempC": 23,
+      "changeCm": -1,
+      "balticSystemM": 109.15
+    },
+    "80903": {
+      "levelCm": 271,
+      "observedAt": "2026-08-08T09:00:00.000Z",
+      "tempC": 26,
+      "changeCm": -8,
+      "balticSystemM": 102.71
+    },
+    "80986": {
+      "levelCm": 458,
+      "observedAt": "2026-08-08T20:00:00.000Z",
+      "tempC": 25,
+      "changeCm": -6,
+      "balticSystemM": 91.41
+    }
+  }
+}
