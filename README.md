@@ -31,7 +31,7 @@ npm run build          # production → dist/
 
 ## Live map
 
-After GitHub Pages deploy: **https://\<your-user\>.github.io/kyiv-paddle-map/**
+Live: **https://selekhdavid.github.io/kyiv-paddle-map/**
 
 Scrape is best-effort: some URLs may fail (timeouts / blocks). Classification still falls back to oblast-default rules from whatever signals succeed. Re-run scrape periodically; the UI shows **Інформація станом на {checkedAt}**.
 
