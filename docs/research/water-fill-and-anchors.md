@@ -41,9 +41,10 @@ Scope: Kyiv oblast map (Svelte + MapLibre + PMTiles shell).
 
 | ID | Рішення | Статус |
 |----|---------|--------|
-| B1 | Interior anchors для standing (`polylabel` / point-on-surface) у `spots.json` | done (`npm run fix:anchors`) |
-| A1 | Зменшити dual-water (акцент на product fill лише для bound) | done (`light_nolabels` + bound-only fill) |
-| A4 | Default fill лише matched standing `osmId`; unbound poly не заливати як продукт | done (`WaterMap.svelte`) |
+| B1 | Interior anchors для standing | superseded: **точки прибрано**; якір лише для fitBounds |
+| A1 | Dual-water | done |
+| A4 | Fill лише matched standing | done → еволюція: **кольорова клікабельна заливка + лінії річок** |
+| Click-fill | Немає pin; select = fill/line + список | done |
 | A2 | `make_valid` / rewind у build:pmtiles | далі |
 | A3 | tippecanoe + більший buffer / maxzoom | далі |
 | B2/B3 | Zoom-roles; Дніпро як сегменти, не один pin-meta | далі (ui-roadmap) |

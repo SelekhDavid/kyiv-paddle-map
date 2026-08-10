@@ -3,7 +3,7 @@
   import maplibregl from 'maplibre-gl'
   import { Protocol } from 'pmtiles'
   import 'maplibre-gl/dist/maplibre-gl.css'
-  import type { Spot } from '../lib/types'
+  import type { RestrictionLevel, Spot } from '../lib/types'
   import { absoluteDataUrl } from '../lib/dataUrl'
   import { isStandingWaterKind, spotMatchedOsmIds } from '../lib/geo'
   import { MAP_CENTER, MAP_EXTENT, MAP_ZOOM } from '../lib/mapExtent'
@@ -22,111 +22,181 @@
   let protocol: Protocol | null = null
   let ready = $state(false)
   let mapError = $state<string | null>(null)
+  let hoverOsmId: string | null = null
+  let selectedOsmIds: string[] = []
 
-  const POLY_FILTER: maplibregl.FilterSpecification = [
+  const POLY: maplibregl.FilterSpecification = [
     'any',
     ['==', ['geometry-type'], 'Polygon'],
     ['==', ['geometry-type'], 'MultiPolygon'],
   ]
-
-  const LINE_FILTER: maplibregl.FilterSpecification = [
+  const LINE: maplibregl.FilterSpecification = [
     'any',
     ['==', ['geometry-type'], 'LineString'],
     ['==', ['geometry-type'], 'MultiLineString'],
   ]
 
-  function standingOsmIds(list: Spot[]): string[] {
-    const ids = new Set<string>()
+  const INTERACTIVE = ['water-fill', 'water-outline', 'water-line-bound'] as const
+
+  function osmToSpot(list: Spot[]): Map<string, Spot> {
+    const m = new Map<string, Spot>()
+    for (const s of list) {
+      for (const id of spotMatchedOsmIds(s)) m.set(id, s)
+    }
+    return m
+  }
+
+  function standingIds(list: Spot[]): string[] {
+    const ids: string[] = []
     for (const s of list) {
       if (!isStandingWaterKind(s.kind)) continue
-      for (const id of spotMatchedOsmIds(s)) ids.add(id)
+      ids.push(...spotMatchedOsmIds(s))
     }
-    return [...ids]
+    return [...new Set(ids)]
   }
 
-  function boundFillFilter(list: Spot[]): maplibregl.FilterSpecification {
-    const ids = standingOsmIds(list)
-    if (!ids.length) {
-      return ['all', POLY_FILTER, ['==', ['get', 'osmId'], '__none__']]
+  function riverIds(list: Spot[]): string[] {
+    const ids: string[] = []
+    for (const s of list) {
+      if (isStandingWaterKind(s.kind)) continue
+      ids.push(...spotMatchedOsmIds(s))
     }
-    return ['all', POLY_FILTER, ['in', ['get', 'osmId'], ['literal', ids]]]
+    return [...new Set(ids)]
   }
 
-  function spotsGeoJson(list: Spot[]): GeoJSON.FeatureCollection {
-    return {
-      type: 'FeatureCollection',
-      features: list.map((s) => ({
-        type: 'Feature',
-        geometry: { type: 'Point', coordinates: [s.lng, s.lat] },
-        properties: {
-          id: s.id,
-          nameUk: s.nameUk,
-          level: s.restriction?.level ?? 'check_local',
-          color: RESTRICTION_COLORS[s.restriction?.level ?? 'check_local'],
-        },
-      })),
+  function colorByOsmMatch(list: Spot[]): maplibregl.ExpressionSpecification {
+    const expr: unknown[] = ['match', ['get', 'osmId']]
+    let n = 0
+    for (const s of list) {
+      const level = (s.restriction?.level ?? 'check_local') as RestrictionLevel
+      const color = RESTRICTION_COLORS[level]
+      for (const id of spotMatchedOsmIds(s)) {
+        expr.push(id, color)
+        n++
+      }
+    }
+    if (!n) return ['literal', '#7a9eae']
+    expr.push('#7a9eae')
+    return expr as maplibregl.ExpressionSpecification
+  }
+
+  function idFilter(
+    geom: maplibregl.FilterSpecification,
+    ids: string[],
+  ): maplibregl.FilterSpecification {
+    if (!ids.length) return ['all', geom, ['==', ['get', 'osmId'], '__none__']]
+    return ['all', geom, ['in', ['get', 'osmId'], ['literal', ids]]]
+  }
+
+  function clearStates(ids: string[]) {
+    if (!map) return
+    for (const id of ids) {
+      try {
+        map.setFeatureState(
+          { source: 'water', sourceLayer: 'water', id },
+          { selected: false, hover: false },
+        )
+      } catch {
+        /* tile not loaded */
+      }
     }
   }
 
-  function syncSpots() {
+  function applyFeatureStates() {
     if (!map || !ready) return
-    const src = map.getSource('spots') as maplibregl.GeoJSONSource | undefined
-    src?.setData(spotsGeoJson(spots))
-    if (map.getLayer('water-fill-bound')) {
-      map.setFilter('water-fill-bound', boundFillFilter(spots))
+    clearStates(selectedOsmIds)
+    if (hoverOsmId) clearStates([hoverOsmId])
+
+    selectedOsmIds = []
+    if (selectedId) {
+      const spot = spots.find((s) => s.id === selectedId)
+      if (spot) selectedOsmIds = spotMatchedOsmIds(spot)
     }
-    if (map.getLayer('water-outline-bound')) {
-      map.setFilter('water-outline-bound', boundFillFilter(spots))
+    for (const id of selectedOsmIds) {
+      try {
+        map.setFeatureState({ source: 'water', sourceLayer: 'water', id }, { selected: true })
+      } catch {
+        /* */
+      }
+    }
+    if (hoverOsmId && osmToSpot(spots).has(hoverOsmId)) {
+      try {
+        map.setFeatureState(
+          { source: 'water', sourceLayer: 'water', id: hoverOsmId },
+          { hover: true, selected: selectedOsmIds.includes(hoverOsmId) },
+        )
+      } catch {
+        /* */
+      }
     }
   }
 
-  function syncSelection() {
+  function syncLayers() {
     if (!map || !ready) return
-    if (map.getLayer('spots-circle')) {
-      map.setPaintProperty('spots-circle', 'circle-stroke-width', [
-        'case',
-        ['==', ['get', 'id'], selectedId ?? ''],
-        3,
-        1,
-      ])
-      map.setPaintProperty('spots-circle', 'circle-radius', [
-        'case',
-        ['==', ['get', 'id'], selectedId ?? ''],
-        9,
-        6,
-      ])
-    }
+    const sIds = standingIds(spots)
+    const rIds = riverIds(spots)
+    const color = colorByOsmMatch(spots)
+    map.setFilter('water-fill', idFilter(POLY, sIds))
+    map.setFilter('water-outline', idFilter(POLY, sIds))
+    map.setFilter('water-line-bound', idFilter(LINE, rIds))
+    map.setPaintProperty('water-fill', 'fill-color', color)
+    map.setPaintProperty('water-outline', 'line-color', color)
+    map.setPaintProperty('water-line-bound', 'line-color', color)
+    applyFeatureStates()
+  }
+
+  function flyToSelection() {
+    if (!map || !ready || !selectedId) return
     const spot = spots.find((s) => s.id === selectedId)
     if (!spot) return
 
-    // Highlight selected standing polys stronger
-    const ids = isStandingWaterKind(spot.kind) ? spotMatchedOsmIds(spot) : []
-    if (map.getLayer('water-fill-selected')) {
-      map.setFilter(
-        'water-fill-selected',
-        ids.length
-          ? ['all', POLY_FILTER, ['in', ['get', 'osmId'], ['literal', ids]]]
-          : ['==', ['get', 'osmId'], '__none__'],
-      )
+    const ids = spotMatchedOsmIds(spot)
+    if (ids.length && map.isSourceLoaded('water')) {
+      const feats = map.querySourceFeatures('water', {
+        sourceLayer: 'water',
+        filter: ['in', ['get', 'osmId'], ['literal', ids]],
+      })
+      if (feats.length) {
+        const b = new maplibregl.LngLatBounds()
+        for (const f of feats) {
+          const g = f.geometry
+          if (!g) continue
+          if (g.type === 'Polygon') {
+            for (const ring of g.coordinates) for (const c of ring) b.extend(c as [number, number])
+          } else if (g.type === 'MultiPolygon') {
+            for (const poly of g.coordinates)
+              for (const ring of poly) for (const c of ring) b.extend(c as [number, number])
+          } else if (g.type === 'LineString') {
+            for (const c of g.coordinates) b.extend(c as [number, number])
+          } else if (g.type === 'MultiLineString') {
+            for (const line of g.coordinates) for (const c of line) b.extend(c as [number, number])
+          }
+        }
+        if (!b.isEmpty()) {
+          map.fitBounds(b, { padding: 72, maxZoom: 13, duration: 650 })
+          return
+        }
+      }
     }
-
     map.easeTo({ center: [spot.lng, spot.lat], zoom: Math.max(map.getZoom(), 11), duration: 600 })
   }
 
   $effect(() => {
     spots
-    syncSpots()
+    if (ready) syncLayers()
   })
 
   $effect(() => {
     selectedId
-    syncSelection()
+    if (ready) {
+      applyFeatureStates()
+      flyToSelection()
+    }
   })
 
   onMount(() => {
     protocol = new Protocol()
     maplibregl.addProtocol('pmtiles', protocol.tile)
-
     const pmtilesUrl = `pmtiles://${absoluteDataUrl('water.pmtiles')}`
 
     map = new maplibregl.Map({
@@ -134,7 +204,6 @@
       style: {
         version: 8,
         sources: {
-          // Positron: quieter water fill than Carto light_all → less dual-water clash
           carto: {
             type: 'raster',
             tiles: [
@@ -147,67 +216,83 @@
           water: {
             type: 'vector',
             url: pmtilesUrl,
+            promoteId: 'osmId',
             attribution: 'Water: OpenStreetMap',
           },
         },
         layers: [
           { id: 'carto', type: 'raster', source: 'carto' },
-          // A4: product fill ONLY for standing spots with OSM bind (not full OSM mesh)
           {
-            id: 'water-fill-bound',
-            type: 'fill',
-            source: 'water',
-            'source-layer': 'water',
-            filter: boundFillFilter(spots),
-            paint: {
-              'fill-color': '#5a9fc4',
-              'fill-opacity': 0.38,
-            },
-          },
-          {
-            id: 'water-outline-bound',
+            id: 'water-line-context',
             type: 'line',
             source: 'water',
             'source-layer': 'water',
-            filter: boundFillFilter(spots),
+            filter: LINE,
             paint: {
-              'line-color': '#2f6f94',
-              'line-width': 1.2,
-              'line-opacity': 0.9,
+              'line-color': '#9db0bb',
+              'line-width': ['interpolate', ['linear'], ['zoom'], 8, 0.35, 13, 1],
+              'line-opacity': 0.35,
             },
           },
           {
-            id: 'water-fill-selected',
+            id: 'water-fill',
             type: 'fill',
             source: 'water',
             'source-layer': 'water',
-            filter: ['==', ['get', 'osmId'], '__none__'],
+            filter: idFilter(POLY, standingIds(spots)),
             paint: {
-              'fill-color': '#0b6e4f',
-              'fill-opacity': 0.28,
-            },
-          },
-          // Rivers: thin network context (axes), not area fills
-          {
-            id: 'water-line',
-            type: 'line',
-            source: 'water',
-            'source-layer': 'water',
-            filter: LINE_FILTER,
-            paint: {
-              'line-color': '#6a8fa3',
-              'line-width': [
-                'interpolate',
-                ['linear'],
-                ['zoom'],
-                8,
-                0.6,
-                12,
-                1.8,
-                14,
-                2.4,
+              'fill-color': colorByOsmMatch(spots),
+              'fill-opacity': [
+                'case',
+                ['boolean', ['feature-state', 'selected'], false],
+                0.72,
+                ['boolean', ['feature-state', 'hover'], false],
+                0.58,
+                ['interpolate', ['linear'], ['zoom'], 7, 0.22, 10, 0.4, 13, 0.52],
               ],
-              'line-opacity': 0.55,
+            },
+          },
+          {
+            id: 'water-outline',
+            type: 'line',
+            source: 'water',
+            'source-layer': 'water',
+            filter: idFilter(POLY, standingIds(spots)),
+            paint: {
+              'line-color': colorByOsmMatch(spots),
+              'line-width': [
+                'case',
+                ['boolean', ['feature-state', 'selected'], false],
+                3.2,
+                ['boolean', ['feature-state', 'hover'], false],
+                2.4,
+                ['interpolate', ['linear'], ['zoom'], 8, 0.8, 13, 1.6],
+              ],
+              'line-opacity': 0.95,
+            },
+          },
+          {
+            id: 'water-line-bound',
+            type: 'line',
+            source: 'water',
+            'source-layer': 'water',
+            filter: idFilter(LINE, riverIds(spots)),
+            paint: {
+              'line-color': colorByOsmMatch(spots),
+              'line-width': [
+                'case',
+                ['boolean', ['feature-state', 'selected'], false],
+                5,
+                ['boolean', ['feature-state', 'hover'], false],
+                3.5,
+                ['interpolate', ['linear'], ['zoom'], 8, 1.2, 12, 2.6, 14, 3.4],
+              ],
+              'line-opacity': [
+                'case',
+                ['boolean', ['feature-state', 'selected'], false],
+                0.95,
+                0.7,
+              ],
             },
           },
         ],
@@ -230,35 +315,49 @@
 
     map.on('load', () => {
       if (!map) return
-      map.addSource('spots', {
-        type: 'geojson',
-        data: spotsGeoJson(spots),
+
+      for (const layer of INTERACTIVE) {
+        map.on('mouseenter', layer, () => {
+          if (map) map.getCanvas().style.cursor = 'pointer'
+        })
+        map.on('mouseleave', layer, () => {
+          if (map) map.getCanvas().style.cursor = ''
+          if (hoverOsmId) {
+            const prev = hoverOsmId
+            hoverOsmId = null
+            clearStates([prev])
+            applyFeatureStates()
+          }
+        })
+        map.on('mousemove', layer, (e) => {
+          const osmId = e.features?.[0]?.properties?.osmId
+          if (typeof osmId !== 'string' || osmId === hoverOsmId) return
+          const prev = hoverOsmId
+          hoverOsmId = osmId
+          if (prev) clearStates([prev])
+          applyFeatureStates()
+        })
+      }
+
+      map.on('click', (e) => {
+        const hits = map!.queryRenderedFeatures(e.point, { layers: [...INTERACTIVE] })
+        if (!hits.length) {
+          onSelect(null)
+          return
+        }
+        const osmId = hits[0]?.properties?.osmId
+        if (typeof osmId !== 'string') return
+        const spot = osmToSpot(spots).get(osmId)
+        if (spot) onSelect(spot.id)
       })
-      map.addLayer({
-        id: 'spots-circle',
-        type: 'circle',
-        source: 'spots',
-        paint: {
-          'circle-color': ['get', 'color'],
-          'circle-radius': 6,
-          'circle-stroke-color': '#fff',
-          'circle-stroke-width': 1,
-          'circle-opacity': 0.92,
-        },
+
+      map.on('sourcedata', (ev) => {
+        if (ev.sourceId === 'water' && ev.isSourceLoaded) applyFeatureStates()
       })
-      map.on('mouseenter', 'spots-circle', () => {
-        if (map) map.getCanvas().style.cursor = 'pointer'
-      })
-      map.on('mouseleave', 'spots-circle', () => {
-        if (map) map.getCanvas().style.cursor = ''
-      })
-      map.on('click', 'spots-circle', (e) => {
-        const id = e.features?.[0]?.properties?.id
-        if (typeof id === 'string') onSelect(id)
-      })
+
       ready = true
-      syncSpots()
-      syncSelection()
+      syncLayers()
+      if (selectedId) flyToSelection()
     })
 
     return () => {
