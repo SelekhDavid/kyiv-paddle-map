@@ -36,6 +36,8 @@ npm run build          # production → dist/
 
 Live: **https://selekhdavid.github.io/kyiv-paddle-map/**
 
+**PMTiles build (tippecanoe on GitHub Actions, not your PC):** [`docs/tippecanoe-pmtiles.md`](docs/tippecanoe-pmtiles.md) · workflow `Build water PMTiles`.
+
 Scrape is best-effort: some URLs may fail (timeouts / blocks). Classification still falls back to oblast-default rules from whatever signals succeed. Re-run scrape periodically; the UI shows **Інформація станом на {checkedAt}**.
 
 Toggle “усі OSM контури” in the sidebar for polygon waters; rivers use colored classification (no unclassified blue overlay).
