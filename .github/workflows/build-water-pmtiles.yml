@@ -1,0 +1,62 @@
+# Build water.pmtiles with tippecanoe (GitHub-hosted runner — no local CPU)
+
+name: Build water PMTiles
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - public/data/water-shapes.geojson
+      - public/data/spots.json
+      - scripts/prepare-water-for-tiles.mjs
+      - scripts/build-water-pmtiles.mjs
+      - .github/workflows/build-water-pmtiles.yml
+
+permissions:
+  contents: write
+
+jobs:
+  tippecanoe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install tippecanoe (felt)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libsqlite3-dev zlib1g-dev git
+          git clone --depth 1 https://github.com/felt/tippecanoe.git /tmp/tippecanoe
+          make -C /tmp/tippecanoe -j"$(nproc)"
+          sudo make -C /tmp/tippecanoe install
+          tippecanoe --version
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build PMTiles
+        env:
+          CI: 'true'
+        run: node scripts/build-water-pmtiles.mjs
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: water-pmtiles
+          path: public/data/water.pmtiles
+          if-no-files-found: error
+
+      - name: Commit updated water.pmtiles
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/water.pmtiles
+          if git diff --staged --quiet; then
+            echo "No PMTiles changes"
+            exit 0
+          fi
+          git commit -m "Rebuild water.pmtiles with tippecanoe"
+          git push
