@@ -5,6 +5,7 @@
   import 'maplibre-gl/dist/maplibre-gl.css'
   import type { Spot } from '../lib/types'
   import { absoluteDataUrl } from '../lib/dataUrl'
+  import { isStandingWaterKind, spotMatchedOsmIds } from '../lib/geo'
   import { MAP_CENTER, MAP_EXTENT, MAP_ZOOM } from '../lib/mapExtent'
   import { RESTRICTION_COLORS } from '../lib/labels'
 
@@ -21,6 +22,35 @@
   let protocol: Protocol | null = null
   let ready = $state(false)
   let mapError = $state<string | null>(null)
+
+  const POLY_FILTER: maplibregl.FilterSpecification = [
+    'any',
+    ['==', ['geometry-type'], 'Polygon'],
+    ['==', ['geometry-type'], 'MultiPolygon'],
+  ]
+
+  const LINE_FILTER: maplibregl.FilterSpecification = [
+    'any',
+    ['==', ['geometry-type'], 'LineString'],
+    ['==', ['geometry-type'], 'MultiLineString'],
+  ]
+
+  function standingOsmIds(list: Spot[]): string[] {
+    const ids = new Set<string>()
+    for (const s of list) {
+      if (!isStandingWaterKind(s.kind)) continue
+      for (const id of spotMatchedOsmIds(s)) ids.add(id)
+    }
+    return [...ids]
+  }
+
+  function boundFillFilter(list: Spot[]): maplibregl.FilterSpecification {
+    const ids = standingOsmIds(list)
+    if (!ids.length) {
+      return ['all', POLY_FILTER, ['==', ['get', 'osmId'], '__none__']]
+    }
+    return ['all', POLY_FILTER, ['in', ['get', 'osmId'], ['literal', ids]]]
+  }
 
   function spotsGeoJson(list: Spot[]): GeoJSON.FeatureCollection {
     return {
@@ -42,6 +72,12 @@
     if (!map || !ready) return
     const src = map.getSource('spots') as maplibregl.GeoJSONSource | undefined
     src?.setData(spotsGeoJson(spots))
+    if (map.getLayer('water-fill-bound')) {
+      map.setFilter('water-fill-bound', boundFillFilter(spots))
+    }
+    if (map.getLayer('water-outline-bound')) {
+      map.setFilter('water-outline-bound', boundFillFilter(spots))
+    }
   }
 
   function syncSelection() {
@@ -61,9 +97,20 @@
       ])
     }
     const spot = spots.find((s) => s.id === selectedId)
-    if (spot) {
-      map.easeTo({ center: [spot.lng, spot.lat], zoom: Math.max(map.getZoom(), 11), duration: 600 })
+    if (!spot) return
+
+    // Highlight selected standing polys stronger
+    const ids = isStandingWaterKind(spot.kind) ? spotMatchedOsmIds(spot) : []
+    if (map.getLayer('water-fill-selected')) {
+      map.setFilter(
+        'water-fill-selected',
+        ids.length
+          ? ['all', POLY_FILTER, ['in', ['get', 'osmId'], ['literal', ids]]]
+          : ['==', ['get', 'osmId'], '__none__'],
+      )
     }
+
+    map.easeTo({ center: [spot.lng, spot.lat], zoom: Math.max(map.getZoom(), 11), duration: 600 })
   }
 
   $effect(() => {
@@ -87,11 +134,12 @@
       style: {
         version: 8,
         sources: {
+          // Positron: quieter water fill than Carto light_all → less dual-water clash
           carto: {
             type: 'raster',
             tiles: [
-              'https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
-              'https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
+              'https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png',
+              'https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png',
             ],
             tileSize: 256,
             attribution: '&copy; OpenStreetMap &copy; CARTO',
@@ -104,35 +152,62 @@
         },
         layers: [
           { id: 'carto', type: 'raster', source: 'carto' },
+          // A4: product fill ONLY for standing spots with OSM bind (not full OSM mesh)
           {
-            id: 'water-fill',
+            id: 'water-fill-bound',
             type: 'fill',
             source: 'water',
             'source-layer': 'water',
-            filter: [
-              'any',
-              ['==', ['geometry-type'], 'Polygon'],
-              ['==', ['geometry-type'], 'MultiPolygon'],
-            ],
+            filter: boundFillFilter(spots),
             paint: {
-              'fill-color': '#7eb6d9',
-              'fill-opacity': 0.45,
+              'fill-color': '#5a9fc4',
+              'fill-opacity': 0.38,
             },
           },
+          {
+            id: 'water-outline-bound',
+            type: 'line',
+            source: 'water',
+            'source-layer': 'water',
+            filter: boundFillFilter(spots),
+            paint: {
+              'line-color': '#2f6f94',
+              'line-width': 1.2,
+              'line-opacity': 0.9,
+            },
+          },
+          {
+            id: 'water-fill-selected',
+            type: 'fill',
+            source: 'water',
+            'source-layer': 'water',
+            filter: ['==', ['get', 'osmId'], '__none__'],
+            paint: {
+              'fill-color': '#0b6e4f',
+              'fill-opacity': 0.28,
+            },
+          },
+          // Rivers: thin network context (axes), not area fills
           {
             id: 'water-line',
             type: 'line',
             source: 'water',
             'source-layer': 'water',
-            filter: [
-              'any',
-              ['==', ['geometry-type'], 'LineString'],
-              ['==', ['geometry-type'], 'MultiLineString'],
-            ],
+            filter: LINE_FILTER,
             paint: {
-              'line-color': '#3d7ea6',
-              'line-width': 1.6,
-              'line-opacity': 0.85,
+              'line-color': '#6a8fa3',
+              'line-width': [
+                'interpolate',
+                ['linear'],
+                ['zoom'],
+                8,
+                0.6,
+                12,
+                1.8,
+                14,
+                2.4,
+              ],
+              'line-opacity': 0.55,
             },
           },
         ],

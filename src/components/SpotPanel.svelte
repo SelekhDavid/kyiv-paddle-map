@@ -17,7 +17,7 @@
   <header class="panel-head">
     <p class="brand">Київщина</p>
     <h1>Мапа водойм</h1>
-    <p class="status">SUP і плавання · контури OSM</p>
+    <p class="status">SUP і плавання · якір усередині водойми · контури OSM</p>
   </header>
 
   <label class="search">

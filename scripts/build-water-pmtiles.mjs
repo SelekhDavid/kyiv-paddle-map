@@ -41,9 +41,9 @@ const index = geojsonvt(gj, {
   maxZoom: MAX_Z,
   indexMaxZoom: MAX_Z,
   indexMaxPoints: 0,
-  tolerance: 3,
+  tolerance: 2,
   extent: 4096,
-  buffer: 64,
+  buffer: 128,
   lineMetrics: false,
   promoteId: null,
 })

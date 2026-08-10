@@ -42,6 +42,8 @@ Toggle “усі OSM контури” in the sidebar for polygon waters; rivers
 
 **Display rules** (point vs polygon vs river line, modes, integrity): [`docs/methodology-waterbody-display.md`](docs/methodology-waterbody-display.md).
 
+**Fill & anchors research:** [`docs/research/water-fill-and-anchors.md`](docs/research/water-fill-and-anchors.md).
+
 **UI roadmap** (map-first · режими · mobile, P0–P3): [`docs/ui-roadmap.md`](docs/ui-roadmap.md).
 
 **Stack (accepted):** [`docs/stack-svelte-maplibre.md`](docs/stack-svelte-maplibre.md) · research: [`docs/tech-stack-research.md`](docs/tech-stack-research.md).

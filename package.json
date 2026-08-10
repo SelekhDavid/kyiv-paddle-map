@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "deploy:pages": "npm run build && npx gh-pages -d dist -t -m \"Deploy GitHub Pages site\"",
     "build:pmtiles": "node scripts/build-water-pmtiles.mjs",
+    "fix:anchors": "node scripts/fix-spot-anchors.mjs",
     "fetch-osm": "node scripts/fetch-osm.mjs",
     "fetch-shapes": "node scripts/fetch-shapes.mjs",
     "fetch-hazards": "node scripts/fetch-hazards.mjs",
@@ -17,6 +18,7 @@
     "classify-rivers": "node scripts/classify-rivers.mjs"
   },
   "dependencies": {
+    "@mapbox/polylabel": "^1.0.2",
     "maplibre-gl": "^5.6.0",
     "pmtiles": "^4.3.0"
   },
