@@ -23,7 +23,6 @@
   let ready = $state(false)
   let mapError = $state<string | null>(null)
   let hoverOsmId: string | null = null
-  let selectedOsmIds: string[] = []
 
   const POLY: maplibregl.FilterSpecification = [
     'any',
@@ -64,6 +63,12 @@
     return [...new Set(ids)]
   }
 
+  function selectedIds(): string[] {
+    if (!selectedId) return []
+    const spot = spots.find((s) => s.id === selectedId)
+    return spot ? spotMatchedOsmIds(spot) : []
+  }
+
   function colorByOsmMatch(list: Spot[]): maplibregl.ExpressionSpecification {
     const expr: unknown[] = ['match', ['get', 'osmId']]
     let n = 0
@@ -88,61 +93,29 @@
     return ['all', geom, ['in', ['get', 'osmId'], ['literal', ids]]]
   }
 
-  function clearStates(ids: string[]) {
-    if (!map) return
-    for (const id of ids) {
-      try {
-        map.setFeatureState(
-          { source: 'water', sourceLayer: 'water', id },
-          { selected: false, hover: false },
-        )
-      } catch {
-        /* tile not loaded */
-      }
-    }
-  }
-
-  function applyFeatureStates() {
-    if (!map || !ready) return
-    clearStates(selectedOsmIds)
-    if (hoverOsmId) clearStates([hoverOsmId])
-
-    selectedOsmIds = []
-    if (selectedId) {
-      const spot = spots.find((s) => s.id === selectedId)
-      if (spot) selectedOsmIds = spotMatchedOsmIds(spot)
-    }
-    for (const id of selectedOsmIds) {
-      try {
-        map.setFeatureState({ source: 'water', sourceLayer: 'water', id }, { selected: true })
-      } catch {
-        /* */
-      }
-    }
-    if (hoverOsmId && osmToSpot(spots).has(hoverOsmId)) {
-      try {
-        map.setFeatureState(
-          { source: 'water', sourceLayer: 'water', id: hoverOsmId },
-          { hover: true, selected: selectedOsmIds.includes(hoverOsmId) },
-        )
-      } catch {
-        /* */
-      }
-    }
-  }
-
   function syncLayers() {
     if (!map || !ready) return
     const sIds = standingIds(spots)
     const rIds = riverIds(spots)
     const color = colorByOsmMatch(spots)
+    const sel = selectedIds()
+    const hover = hoverOsmId && osmToSpot(spots).has(hoverOsmId) ? [hoverOsmId] : []
+    const hot = [...new Set([...sel, ...hover])]
+
     map.setFilter('water-fill', idFilter(POLY, sIds))
     map.setFilter('water-outline', idFilter(POLY, sIds))
     map.setFilter('water-line-bound', idFilter(LINE, rIds))
     map.setPaintProperty('water-fill', 'fill-color', color)
     map.setPaintProperty('water-outline', 'line-color', color)
     map.setPaintProperty('water-line-bound', 'line-color', color)
-    applyFeatureStates()
+
+    // highlight via dedicated layers (avoids promoteId + feature-state / slash ids)
+    map.setFilter('water-fill-hot', idFilter(POLY, hot.length ? hot.filter((id) => sIds.includes(id)) : []))
+    map.setFilter('water-outline-hot', idFilter(POLY, hot.length ? hot.filter((id) => sIds.includes(id)) : []))
+    map.setFilter(
+      'water-line-hot',
+      idFilter(LINE, hot.length ? hot.filter((id) => rIds.includes(id)) : []),
+    )
   }
 
   function flyToSelection() {
@@ -189,13 +162,14 @@
   $effect(() => {
     selectedId
     if (ready) {
-      applyFeatureStates()
+      syncLayers()
       flyToSelection()
     }
   })
 
   onMount(() => {
-    protocol = new Protocol()
+    // CRITICAL: metadata:true so TileJSON includes vector_layers (source-layer: water)
+    protocol = new Protocol({ metadata: true })
     maplibregl.addProtocol('pmtiles', protocol.tile)
     const pmtilesUrl = `pmtiles://${absoluteDataUrl('water.pmtiles')}`
 
@@ -216,7 +190,6 @@
           water: {
             type: 'vector',
             url: pmtilesUrl,
-            promoteId: 'osmId',
             attribution: 'Water: OpenStreetMap',
           },
         },
@@ -242,14 +215,7 @@
             filter: idFilter(POLY, standingIds(spots)),
             paint: {
               'fill-color': colorByOsmMatch(spots),
-              'fill-opacity': [
-                'case',
-                ['boolean', ['feature-state', 'selected'], false],
-                0.72,
-                ['boolean', ['feature-state', 'hover'], false],
-                0.58,
-                ['interpolate', ['linear'], ['zoom'], 7, 0.22, 10, 0.4, 13, 0.52],
-              ],
+              'fill-opacity': ['interpolate', ['linear'], ['zoom'], 7, 0.22, 10, 0.4, 13, 0.52],
             },
           },
           {
@@ -260,14 +226,7 @@
             filter: idFilter(POLY, standingIds(spots)),
             paint: {
               'line-color': colorByOsmMatch(spots),
-              'line-width': [
-                'case',
-                ['boolean', ['feature-state', 'selected'], false],
-                3.2,
-                ['boolean', ['feature-state', 'hover'], false],
-                2.4,
-                ['interpolate', ['linear'], ['zoom'], 8, 0.8, 13, 1.6],
-              ],
+              'line-width': ['interpolate', ['linear'], ['zoom'], 8, 0.8, 13, 1.6],
               'line-opacity': 0.95,
             },
           },
@@ -279,20 +238,43 @@
             filter: idFilter(LINE, riverIds(spots)),
             paint: {
               'line-color': colorByOsmMatch(spots),
-              'line-width': [
-                'case',
-                ['boolean', ['feature-state', 'selected'], false],
-                5,
-                ['boolean', ['feature-state', 'hover'], false],
-                3.5,
-                ['interpolate', ['linear'], ['zoom'], 8, 1.2, 12, 2.6, 14, 3.4],
-              ],
-              'line-opacity': [
-                'case',
-                ['boolean', ['feature-state', 'selected'], false],
-                0.95,
-                0.7,
-              ],
+              'line-width': ['interpolate', ['linear'], ['zoom'], 8, 1.2, 12, 2.6, 14, 3.4],
+              'line-opacity': 0.7,
+            },
+          },
+          {
+            id: 'water-fill-hot',
+            type: 'fill',
+            source: 'water',
+            'source-layer': 'water',
+            filter: idFilter(POLY, []),
+            paint: {
+              'fill-color': '#0b6e4f',
+              'fill-opacity': 0.35,
+            },
+          },
+          {
+            id: 'water-outline-hot',
+            type: 'line',
+            source: 'water',
+            'source-layer': 'water',
+            filter: idFilter(POLY, []),
+            paint: {
+              'line-color': '#064832',
+              'line-width': 3.2,
+              'line-opacity': 1,
+            },
+          },
+          {
+            id: 'water-line-hot',
+            type: 'line',
+            source: 'water',
+            'source-layer': 'water',
+            filter: idFilter(LINE, []),
+            paint: {
+              'line-color': '#064832',
+              'line-width': 5,
+              'line-opacity': 0.95,
             },
           },
         ],
@@ -310,11 +292,16 @@
 
     map.on('error', (e) => {
       console.error(e)
-      if (!mapError) mapError = 'Помилка шару карти (перевірте water.pmtiles)'
+      const msg = e.error?.message || String(e.error || '')
+      // Only surface water/pmtiles failures — ignore transient raster blips
+      if (/water|pmtiles|source layer/i.test(msg) && !mapError) {
+        mapError = `Помилка шару карти: ${msg}`
+      }
     })
 
     map.on('load', () => {
       if (!map) return
+      mapError = null
 
       for (const layer of INTERACTIVE) {
         map.on('mouseenter', layer, () => {
@@ -323,19 +310,15 @@
         map.on('mouseleave', layer, () => {
           if (map) map.getCanvas().style.cursor = ''
           if (hoverOsmId) {
-            const prev = hoverOsmId
             hoverOsmId = null
-            clearStates([prev])
-            applyFeatureStates()
+            syncLayers()
           }
         })
         map.on('mousemove', layer, (e) => {
           const osmId = e.features?.[0]?.properties?.osmId
           if (typeof osmId !== 'string' || osmId === hoverOsmId) return
-          const prev = hoverOsmId
           hoverOsmId = osmId
-          if (prev) clearStates([prev])
-          applyFeatureStates()
+          syncLayers()
         })
       }
 
@@ -349,10 +332,6 @@
         if (typeof osmId !== 'string') return
         const spot = osmToSpot(spots).get(osmId)
         if (spot) onSelect(spot.id)
-      })
-
-      map.on('sourcedata', (ev) => {
-        if (ev.sourceId === 'water' && ev.isSourceLoaded) applyFeatureStates()
       })
 
       ready = true
