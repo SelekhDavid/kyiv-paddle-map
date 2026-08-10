@@ -4,9 +4,11 @@ Interactive map of swim & paddle-board spots in **Kyiv city, Kyiv oblast, and ad
 
 ## Stack
 
-- Vite + React + TypeScript
-- Leaflet / OpenStreetMap tiles
-- Curated spot dataset + optional OSM Overpass layer
+- **Svelte 5** + Vite + TypeScript
+- **MapLibre GL** + **PMTiles** (контури водойм)
+- Curated spot dataset (`public/data/spots.json`)
+
+Див. [`docs/stack-svelte-maplibre.md`](docs/stack-svelte-maplibre.md), [`docs/tech-stack-research.md`](docs/tech-stack-research.md).
 
 ## Important (martial law)
 
@@ -23,6 +25,7 @@ Grades are **curated** (1–5) from public tourism guides, SUP rental pages, and
 ```bash
 npm install
 npm run fetch-shapes   # Overpass → public/data/water-shapes.geojson
+npm run build:pmtiles  # GeoJSON → public/data/water.pmtiles
 npm run scrape-bans    # Live public pages → classification-meta.json (checkedAt)
 npm run classify-rivers # Rules + meta → classification.json (all river osmIds)
 npm run dev
@@ -38,6 +41,10 @@ Scrape is best-effort: some URLs may fail (timeouts / blocks). Classification st
 Toggle “усі OSM контури” in the sidebar for polygon waters; rivers use colored classification (no unclassified blue overlay).
 
 **Display rules** (point vs polygon vs river line, modes, integrity): [`docs/methodology-waterbody-display.md`](docs/methodology-waterbody-display.md).
+
+**UI roadmap** (map-first · режими · mobile, P0–P3): [`docs/ui-roadmap.md`](docs/ui-roadmap.md).
+
+**Stack (accepted):** [`docs/stack-svelte-maplibre.md`](docs/stack-svelte-maplibre.md) · research: [`docs/tech-stack-research.md`](docs/tech-stack-research.md).
 
 ## Data files
 

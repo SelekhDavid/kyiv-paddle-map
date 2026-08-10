@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // GitHub Pages project site: https://<user>.github.io/kyiv-paddle-map/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [svelte()],
   base: '/kyiv-paddle-map/',
 })

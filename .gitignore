@@ -7,6 +7,7 @@ dist
 dist-ssr
 *.local
 *.tsbuildinfo
+.tmp-water-tiles
 .DS_Store
 .vscode/*
 !.vscode/extensions.json
